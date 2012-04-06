@@ -252,7 +252,8 @@ require(["jquery", "sakai/sakai.api.core", "/devwidgets/documentviewer/lib/docum
             }
         };
 
-        if (sakai.api.Content.hasPreview(widgetData.data)){
+        if (sakai.api.Content.hasPreview(widgetData.data) && $rootel.attr('data-loaded') !== 'true'){
+            $rootel.attr('data-loaded', 'true');
             data = widgetData.data;
             var mimeType = sakai.api.Content.getMimeType(widgetData.data);
 
