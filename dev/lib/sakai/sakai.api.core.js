@@ -43,7 +43,6 @@ define(
     
     var sakai = {
         api : {
-            Activity : sakai_util.Activity,
             Communication : sakai_comm,
             Content: sakai_content,
             Datetime: sakai_util.Datetime,

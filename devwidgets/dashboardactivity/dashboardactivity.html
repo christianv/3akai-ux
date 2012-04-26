@@ -18,14 +18,19 @@
 
     <div id="dashboardactivity_activity_template" style="display:none;"><!--
         {macro createContentSection(activity)}
-            {var mimeType = activity._mimeType}
-            {var description = sakai.api.i18n.getValueForKey(sakai.api.Content.getMimeTypeData(mimeType).description)}
-            {if sakai.config.MimeTypes[mimeType]}
-                <img src="${sakai.config.MimeTypes[mimeType].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${description}" />
+            {if activity['sakai:activity-type'] === 'group'}
+                <img src="${sakai.config.MimeTypes['other'].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${activity.profile['sakai:groupdescription']|safeOutput}" />
+                <a href="/~${activity.profile.homePath}" class="s3d-bold" title="${activity.profile['sakai:groupdescription']|safeOutput}">${activity.profile['sakai:group-title']|safeOutput}</a>
             {else}
-                <img src="${sakai.config.MimeTypes['other'].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${description}" />
+                {var mimeType = activity._mimeType}
+                {var description = sakai.api.i18n.getValueForKey(sakai.api.Content.getMimeTypeData(mimeType).description)}
+                {if sakai.config.MimeTypes[mimeType]}
+                    <img src="${sakai.config.MimeTypes[mimeType].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${description}" />
+                {else}
+                    <img src="${sakai.config.MimeTypes['other'].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${description}" />
+                {/if}
+                <a href="/content#p=${activity['sakai:pooled-content-path']|safeURL}" class="s3d-bold">${activity['sakai:pooled-content-file-name']|safeOutput}</a> <span>${description}</span>
             {/if}
-            <a href="/content#p=${activity['sakai:pooled-content-path']|safeURL}" class="s3d-bold">${activity['sakai:pooled-content-file-name']|safeOutput}</a> <span>${description}</span>
             <div>
                 <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary mylibrary_item_share_icon_icon savecontent_trigger" title="__MSG__ADD_TO__">__MSG__SAVE__</button>
                 <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-share mylibrary_item_share_icon share_trigger_click" title="__MSG__SHARE_CONTENT__">__MSG__SHARE__</button>
@@ -33,11 +38,11 @@
         {/macro}
 
         {macro createUserLink(userid)}
-            {if activity['sakai:activity-nonactor'] === userid}
+            {if activity['sakai:activity-audience'] === userid}
                 <span class="s3d-bold fl-force-left dashboardactivity_activity_message_reversed">${activity.translatedActivityMessageAction}</span>
             {/if}
             <a href="${activity.users[userid].homePath}" class="s3d-bold fl-force-left dashboardactivity_activity_item_name" title="__MSG__VIEW_USERS_PROFILE__">${sakai.api.User.getDisplayName(activity.users[userid])}</a>
-            {if activity['sakai:activity-nonactor'] !== userid}
+            {if activity['sakai:activity-audience'] !== userid}
                 <span class="s3d-bold">${activity.translatedActivityMessage}</span>
             {/if}
         {/macro}
@@ -65,8 +70,8 @@
                     {/if}
                 </div>
                 <div class="dashboardactivity_activity_updated_secondcolumn fl-force-left">
-                    {if reverse && activity['sakai:activity-nonactor']}
-                        ${createUserSection(activity['sakai:activity-nonactor'])}
+                    {if reverse && activity['sakai:activity-audience']}
+                        ${createUserSection(activity['sakai:activity-audience'])}
                     {else}
                         ${createContentSection(activity)}
                     {/if}
@@ -107,16 +112,16 @@
                 {if activity['sakai:activity-actor'] === sakai.data.me.user.userid}
                     ${createActivityItem(activity)}
                 {else}
-                    {var nonactor = activity['sakai:activity-nonactor']}
+                    {var audience = activity['sakai:activity-audience']}
                     {var comment = activity['sakai:comment-body']}
-                    {if nonactor}
+                    {if audience}
                         <div class="dashboard_activity_item_container">
                     {elseif comment}
                         <div class="dashboard_activity_item_container dashboard_activity_comment_container">
                     {/if}
 
                     {var userid = activity['sakai:activity-actor']}
-                    {if nonactor}
+                    {if audience}
                         ${createUserImage(userid)}
                         ${createUserLink(userid)}
                         ${createActivityItem(activity, true)}
@@ -128,7 +133,7 @@
                         ${createActivityItem(activity, false)}
                     {/if}
 
-                    {if nonactor || comment}
+                    {if audience || comment}
                         </div>
                     {/if}
                 {/if}

@@ -18,7 +18,7 @@
 
 /*globals sakai_global */
 // load the master sakai object to access all Sakai OAE API methods
-require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
+require(['jquery', 'sakai/sakai.api.core', 'underscore'], function($, sakai, _) {
 
     'use strict';
 
@@ -53,20 +53,26 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
         var dashboardactivityActivityTemplate = 'dashboardactivity_activity_template';
         var dashboardactivityActivityBadrequestTemplate = 'dashboardactivity_activity_badrequest_template';
         var dashboardactivityNoActivityTemplate = 'dashboardactivity_no_activity_template';
-        var dashboardactivityContentCommentsTemplate = 'dashboardactivity_content_comments_template'
+        var dashboardactivityContentCommentsTemplate = 'dashboardactivity_content_comments_template';
 
         // Widget variables
         var filter = 'all';
         var filterMap = {
+            // Comments
             'ADDED_COMMENT': 'comments',
-            'CREATED_FILE': 'updates',
+            'SENT_MESSAGE': 'comments',
+            // Sharing
             'SHARED_CONTENT': 'sharing',
-            'UPDATED_CONTENT': 'updates'
+            // Updates
+            'JOINED_GROUP': 'updates',
+            'CREATED_FILE': 'updates',
+            'GROUP_CREATED': 'updates',
+            'GROUP_UPDATED': 'updates',
+            'UPDATED_CONTENT': 'updates',
+            'UPDATED_FILE': 'updates',
+            'USER_UPDATED': 'updates'
         };
-        var context = {
-            'url': '',
-            'id': ''
-        };
+        var context = {};
 
 
         ////////////////////
@@ -81,6 +87,22 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
         var renderActivity = function(template, data) {
             $dashboardactivityContainer.html(
                 sakai.api.Util.TemplateRenderer(template, data || {})).show();
+        };
+
+        /**
+         * Add an activity item to the current filtered data
+         * But only do that when the previous item isn't the same
+         * @param {Array} filteredData FilteredData
+         * @param {Object} item Activity item you want to add
+         */
+        var addToFilteredData = function(filteredData, item) {
+            var last = _.last(filteredData);
+            if (last && last._path && item._path) {
+                if (last._path === item._path && last['sakai:activity-actor'] === item['sakai:activity-actor']) {
+                    return;
+                }
+            }
+            filteredData.push(item);
         };
 
         /**
@@ -100,7 +122,7 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
                 var filteredData = [];
                 $.each(data.results, function(index, item){
                     item.translatedActivityMessage = sakai.api.i18n.getValueForKey(
-                                                        item['sakai:activityMessage'], 'dashboardactivity');
+                           item['sakai:activityMessage'], 'dashboardactivity');
                     item.translatedActivityMessageAction = '';
                     if (item['sakai:activityMessageAction']) {
                         item.translatedActivityMessageAction = sakai.api.i18n.getValueForKey(
@@ -109,10 +131,10 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
                     // Filter based on the selected tab
                     if (filter !== 'all') {
                         if (filterMap[item['sakai:activityMessage']] === filter) {
-                            filteredData.push(item);
+                            addToFilteredData(filteredData, item);
                         }
                     } else {
-                        filteredData.push(item);
+                        addToFilteredData(filteredData, item);
                     }
                 });
 
@@ -134,9 +156,11 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
         var getActivityData = function() {
             $.ajax({
                 url: context.url,
-                data: {
+                data: $.extend({
                     items: 1000
-                },
+                }, context.data),
+                // We need to use traditional: true in order to convert arrays correctly
+                traditional: true,
                 success: function(data) {
                     parseActivityData(data);
                 },
@@ -183,7 +207,11 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
                 if (data.groupid) {
                     // Load activity for group
                     context = {
-                        'url': '/devwidgets/dashboardactivity/dummy/groupdummy.json',
+                        'url': '/var/search/activity/world.json',
+                        'data': {
+                            // [data.groupid, data.groupid + '-member', data.groupid + '-manager']
+                            'group': data.groupid
+                        },
                         'id': data.groupid
                     };
                 } else if (sakai_global.content_profile && sakai_global.content_profile.content_data) {
@@ -196,7 +224,7 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
                 } else {
                     // Load activity for a user
                     context = {
-                        'url': '/devwidgets/dashboardactivity/dummy/mydummy.json',
+                        'url': '/var/search/activity/myfeed.json',
                         'id': 'user'
                     };
                 }

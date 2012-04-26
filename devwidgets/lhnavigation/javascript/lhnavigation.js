@@ -757,7 +757,8 @@ require(['jquery', 'underscore', 'sakai/sakai.api.core', 'jquery-ui'], function(
                                 'width': 1,
                                 'elements': []
                             }]
-                        }]
+                        }],
+                        ':sakai:activityMessage': 'PAGE_CREATED'
                     };
                     var pageToCreate = {
                         '_ref': newpageid,
@@ -819,7 +820,8 @@ require(['jquery', 'underscore', 'sakai/sakai.api.core', 'jquery-ui'], function(
                                 'width': 1,
                                 'elements': []
                             }]
-                        }]
+                        }],
+                        ':sakai:activityMessage': 'PAGE_CREATED'
                     };
                     var pageToCreate = {
                         '_ref': fullRef,

@@ -1196,66 +1196,6 @@ define(
             ret = ret.substr( 0, ret.length - 3 );
             return ret;
         },
-
-        Activity : {
-            /**
-             * Wrapper function for creating a Nakamura activity
-             *
-             * @param nodeUrl {String} The URL of the node we would like the activity to be
-             * stored on
-             * @param appID {String} The ID of the application/functionality creating the
-             * activity
-             * @param templateID {String} The ID of the activity template
-             * @param extraData {Object} Any extra data which will be stored on the activity
-             * node
-             * @param callback {Function} Callback function executed at the end of the
-             * operation
-             * @returns void
-             */
-             createActivity : function(nodeUrl, appID, templateID, extraData, callback) {
-
-                // Check required params
-                if (typeof appID !== "string" || appID === "") {
-                    debug.error("sakai.api.Activity.createActivity(): appID is required argument!");
-                    return;
-                }
-                if (typeof templateID !== "string" || templateID === "") {
-                    debug.error("sakai.api.Activity.createActivity(): templateID is required argument!");
-                }
-
-                // Create event url with appropriate selector
-                var activityUrl = nodeUrl + ".activity.json";
-                // Create data object to send
-                var dataToSend = {
-                    "sakai:activity-appid": appID,
-                    "sakai:activity-templateid": templateID
-                };
-                for (var i in extraData) {
-                    if (extraData.hasOwnProperty(i)) {
-                        dataToSend[i] = extraData[i];
-                    }
-                }
-
-                // Send request to create the activity
-                $.ajax({
-                    url: activityUrl,
-                    traditional: true,
-                    type: "POST",
-                    data: dataToSend,
-                    success: function(data){
-                        if ($.isFunction(callback)) {
-                            callback(data, true);
-                        }
-                    },
-                    error: function(xhr, textStatus, thrownError) {
-
-                        if ($.isFunction(callback)) {
-                            callback(xhr.status, false);
-                        }
-                    }
-                });
-            }
-        },
         Datetime: {
             /**
              * Returns the current time in GMT milliseconds from the epoch

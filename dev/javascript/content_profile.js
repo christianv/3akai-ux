@@ -37,9 +37,8 @@ require(["jquery","sakai/sakai.api.core"], function($, sakai) {
 
         /**
          * Load the content profile for the current content path
-         * @param {Boolean} ignoreActivity Flag to also update activity data or not
          */
-        var loadContentProfile = function(callback, ignoreActivity){
+        var loadContentProfile = function(callback){
             // Check whether there is actually a content path in the URL
             if (content_path) {
                 // Get the content information, the members and managers and version information

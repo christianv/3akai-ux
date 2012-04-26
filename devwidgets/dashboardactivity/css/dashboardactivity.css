@@ -84,6 +84,7 @@
 #dashboardactivity_widget #dashboardactivity_show_more {
     display: block;
     margin: 15px auto 0;
+    width: 130px;
 }
 
 /* Bad request */

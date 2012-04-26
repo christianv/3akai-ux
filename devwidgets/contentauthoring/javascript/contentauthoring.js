@@ -1345,7 +1345,8 @@ require(['jquery', 'underscore', 'sakai/sakai.api.core', 'jquery-ui'], function(
                             // SAKIII-5486
                             ':operation': 'publish-sakaidoc-page',
                             ':dest': storePath,
-                            ':replace': true
+                            ':replace': true,
+                            ':sakai:activityMessage': 'PAGE_UPDATED'
                         }
                     });
                     batchRequests.push({

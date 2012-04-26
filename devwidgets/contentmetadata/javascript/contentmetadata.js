@@ -199,18 +199,6 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
             });
         };
 
-        var createActivity = function(activityMessage){
-            var activityData = {
-                "sakai:activityMessage": activityMessage
-            };
-            sakai.api.Activity.createActivity("/p/" + sakai_global.content_profile.content_data.data["_path"], "content", "default", activityData, function(responseData, success){
-                if (success) {
-                    // update the entity widget with the new activity
-                    $(window).trigger("updateContentActivity.entity.sakai", activityMessage);
-                }
-            });
-        };
-
         ////////////////////////
         /////// EDITTING ///////
         ////////////////////////
@@ -220,14 +208,10 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
             var path = sakai_global.content_profile.content_data.data["_path"];
             sakai.api.Util.tagEntity("/p/" + path, tags, sakai_global.content_profile.content_data.data["sakai:tags"], function(success, newTags){
                 // We need this check because it's possible that this is called after new content is shown.
-                // If that is the case, we still need to send the update tags activity, but not render the actual tags.
+                // If that is the case, we don't need to render the actual tags.
                 if(path === sakai_global.content_profile.content_data.data["_path"]){
                     sakai_global.content_profile.content_data.data["sakai:tags"] = newTags;
                     renderTags(false);
-                }
-                if (success) {
-                    // Create an activity
-                    createActivity("UPDATED_TAGS");
                 }
             });
         };
@@ -254,10 +238,10 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
                     "sakai:preview-url": preview.url,
                     "sakai:preview-type": preview.type,
                     "sakai:preview-avatar": preview.avatar,
+                    ':sakai:activityMessage': 'UPDATED_URL',
                     "length": url.length
                 },
                 success: function(){
-                    createActivity("UPDATED_URL");
                     $(window).trigger("updated.version.content.sakai");
                 }
             });
@@ -307,18 +291,22 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
             if (value !== sakai_global.content_profile.content_data.data['sakai:' + field]) {
                 switch (field) {
                     case 'description':
-                        saveData({'sakai:description': value}, function(success) {
+                        saveData({
+                            'sakai:description': value,
+                            ':sakai:activityMessage': 'UPDATED_DESCRIPTION'
+                        }, function(success) {
                             if (success) {
                                 sakai_global.content_profile.content_data.data['sakai:description'] = value;
-                                createActivity('UPDATED_DESCRIPTION');
                             }
                         });
                         break;
                     case 'copyright':
-                        saveData({'sakai:copyright': value}, function(success) {
+                        saveData({
+                            'sakai:copyright': value,
+                            ':sakai:activityMessage': 'UPDATED_COPYRIGHT'
+                        }, function(success) {
                             if (success) {
                                 sakai_global.content_profile.content_data.data['sakai:copyright'] = value;
-                                createActivity('UPDATED_COPYRIGHT');
                             }
                         });
                         break;

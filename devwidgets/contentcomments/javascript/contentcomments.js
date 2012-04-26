@@ -324,16 +324,9 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
                         $(contentcommentsMessageTxt, rootel).val("");
                         $(contentcommentsNamePosterTxt, rootel).val("");
                         $(contentcommentsMailPosterTxt, rootel).val("");
-                        // Add an acitivty
-                        sakai.api.Activity.createActivity("/p/" + contentData.data["_path"], "content", "default", {"sakai:activityMessage": "CONTENT_ADDED_COMMENT"}, function(responseData, success){
-                            if (success) {
-                                // update the entity widget with the new activity
-                                $window.trigger('updateContentActivity.entity.sakai', 'CONTENT_ADDED_COMMENT');
-                                if (!rootel.parents(".collectionviewer_collection_item_comments").length){
-                                    $window.trigger('sakai.entity.updatecountcache', {increment: true});
-                                }
-                            }
-                        });
+                        if (!rootel.parents(".collectionviewer_collection_item_comments").length){
+                            $window.trigger('sakai.entity.updatecountcache', {increment: true});
+                        }
                         // Get the contentcomments.
                         getComments();
                     },
