@@ -22,7 +22,7 @@
                 <img src="${sakai.config.MimeTypes['other'].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${activity.profile['sakai:groupdescription']|safeOutput}" />
                 <a href="/~${activity.profile.homePath}" class="s3d-bold" title="${activity.profile['sakai:groupdescription']|safeOutput}">${activity.profile['sakai:group-title']|safeOutput}</a>
             {else}
-                {var mimeType = activity._mimeType}
+                {var mimeType = activity.sourceNode._mimeType}
                 {var description = sakai.api.i18n.getValueForKey(sakai.api.Content.getMimeTypeData(mimeType).description)}
                 {if sakai.config.MimeTypes[mimeType]}
                     <img src="${sakai.config.MimeTypes[mimeType].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${description}" />
@@ -85,7 +85,7 @@
         {/macro}
 
         {macro createContentImage(activity)}
-            {var mimeType = activity._mimeType}
+            {var mimeType = activity.sourceNode._mimeType}
             {if sakai.config.MimeTypes[mimeType]}
                 <img src="${sakai.config.MimeTypes[mimeType].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${sakai.config.MimeTypes[mimeType].description}"/>
             {else}
