@@ -102,6 +102,12 @@ require(['jquery', 'sakai/sakai.api.core', 'underscore'], function($, sakai, _) 
                     return;
                 }
             }
+
+            // Filter out groups that don't have a title
+            if (item['sakai:activity-type'] === 'group' && !item.profile['sakai:group-title']) {
+                return;
+            }
+
             filteredData.push(item);
         };
 
@@ -116,6 +122,7 @@ require(['jquery', 'sakai/sakai.api.core', 'underscore'], function($, sakai, _) 
                 return;
             }
 
+            // Check whether there actually is any recent activity
             if (!data.results.length) {
                 renderActivity(dashboardactivityNoActivityTemplate);
             } else {

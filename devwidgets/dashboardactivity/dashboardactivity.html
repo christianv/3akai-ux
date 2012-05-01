@@ -29,20 +29,17 @@
                 {else}
                     <img src="${sakai.config.MimeTypes['other'].URL}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${description}" />
                 {/if}
-                <a href="/content#p=${activity['sakai:pooled-content-path']|safeURL}" class="s3d-bold">${activity['sakai:pooled-content-file-name']|safeOutput}</a> <span>${description}</span>
+                <a href="/content#p=${activity.sourceNode['sakai:pooled-content-path']|safeURL}" class="s3d-bold">${activity.sourceNode['sakai:pooled-content-file-name']|safeOutput}</a> <span>${description}</span>
             {/if}
             <div>
-                <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary mylibrary_item_share_icon_icon savecontent_trigger" title="__MSG__ADD_TO__">__MSG__SAVE__</button>
-                <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-share mylibrary_item_share_icon share_trigger_click" title="__MSG__SHARE_CONTENT__">__MSG__SHARE__</button>
+                <button data-entityid="${activity.sourceNode['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary mylibrary_item_share_icon_icon savecontent_trigger" title="__MSG__ADD_TO__">__MSG__SAVE__</button>
+                <button data-entityid="${activity.sourceNode['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-share mylibrary_item_share_icon share_trigger_click" title="__MSG__SHARE_CONTENT__">__MSG__SHARE__</button>
             </div>
         {/macro}
 
-        {macro createUserLink(userid)}
-            {if activity['sakai:activity-audience'] === userid}
-                <span class="s3d-bold fl-force-left dashboardactivity_activity_message_reversed">${activity.translatedActivityMessageAction}</span>
-            {/if}
+        {macro createUserLink(userid, showinfo)}
             <a href="${activity.users[userid].homePath}" class="s3d-bold fl-force-left dashboardactivity_activity_item_name" title="__MSG__VIEW_USERS_PROFILE__">${sakai.api.User.getDisplayName(activity.users[userid])}</a>
-            {if activity['sakai:activity-audience'] !== userid}
+            {if showinfo}
                 <span class="s3d-bold">${activity.translatedActivityMessage}</span>
             {/if}
         {/macro}
@@ -51,11 +48,13 @@
             <img src="${sakai.api.User.getProfilePicture(activity.users[userid])}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${sakai.api.User.getDisplayName(activity.users[userid])}"/>
         {/macro}
 
-        {macro createUserSection(userid)}
+        {macro createUserSection(userid, showinfo)}
             ${createUserImage(userid)}
             <div class="fl-force-left">
-                ${createUserLink(userid)}
-                <span class="fl-push dashboardactivity_activity_item_timeago">${$.timeago(new Date(activity._lastModified))}</span>
+                ${createUserLink(userid, showinfo)}
+                {if showinfo}
+                    <span class="fl-push dashboardactivity_activity_item_timeago">${$.timeago(new Date(activity._lastModified))}</span>
+                {/if}
             </div>
         {/macro}
 
@@ -66,12 +65,14 @@
                     {if reverse}
                         ${createContentSection(activity)}
                     {else}
-                        ${createUserSection(activity['sakai:activity-actor'])}
+                        ${createUserSection(activity['sakai:activity-actor'], true)}
                     {/if}
                 </div>
                 <div class="dashboardactivity_activity_updated_secondcolumn fl-force-left">
-                    {if reverse && activity['sakai:activity-audience']}
-                        ${createUserSection(activity['sakai:activity-audience'])}
+                    {if (activity['sakai:activityMessage'] === 'SENT_MESSAGE'
+                            || activity['sakai:activityMessage'] === 'NEW_CONTACT')
+                         && activity['sakai:activity-audience']}
+                        ${createUserSection(activity['sakai:activity-audience'][0], false)}
                     {else}
                         ${createContentSection(activity)}
                     {/if}
@@ -112,20 +113,12 @@
                 {if activity['sakai:activity-actor'] === sakai.data.me.user.userid}
                     ${createActivityItem(activity)}
                 {else}
-                    {var audience = activity['sakai:activity-audience']}
                     {var comment = activity['sakai:comment-body']}
-                    {if audience}
-                        <div class="dashboard_activity_item_container">
-                    {elseif comment}
+                    {if comment}
                         <div class="dashboard_activity_item_container dashboard_activity_comment_container">
                     {/if}
 
-                    {var userid = activity['sakai:activity-actor']}
-                    {if audience}
-                        ${createUserImage(userid)}
-                        ${createUserLink(userid)}
-                        ${createActivityItem(activity, true)}
-                    {elseif comment}
+                    {if comment}
                         ${createContentImage(activity)}
                         ${createContentLink(activity)}
                         ${createCommentItem(activity)}
@@ -133,7 +126,7 @@
                         ${createActivityItem(activity, false)}
                     {/if}
 
-                    {if audience || comment}
+                    {if comment}
                         </div>
                     {/if}
                 {/if}
