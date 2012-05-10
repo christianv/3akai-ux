@@ -52,6 +52,8 @@ define(function(){
             ME_SERVICE: "/system/me",
             MESSAGE_BOXCATEGORY_SERVICE: "/var/message/boxcategory.json",
             MESSAGE_BOXCATEGORY_ALL_SERVICE: "/var/message/boxcategory-all.json",
+            POOLED_CONTENT_EDITOR: "/var/search/pool/me/editor.json",
+            POOLED_CONTENT_EDITOR_ALL: "/var/search/pool/me/editor-all.json",
             POOLED_CONTENT_MANAGER: "/var/search/pool/me/manager.json",
             POOLED_CONTENT_MANAGER_ALL: "/var/search/pool/me/manager-all.json",
             POOLED_CONTENT_VIEWER: "/var/search/pool/me/viewer.json",

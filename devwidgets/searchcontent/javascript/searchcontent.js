@@ -40,6 +40,8 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/search_util.js"], fu
         var searchURLmap = {
             allfiles: sakai.config.URL.SEARCH_ALL_FILES,
             allfilesall: sakai.config.URL.SEARCH_ALL_FILES_ALL,
+            pooledcontenteditor: sakai.config.URL.POOLED_CONTENT_EDITOR,
+            pooledcontenteditorall: sakai.config.URL.POOLED_CONTENT_EDITOR_ALL,
             pooledcontentmanager: sakai.config.URL.POOLED_CONTENT_MANAGER,
             pooledcontentmanagerall: sakai.config.URL.POOLED_CONTENT_MANAGER_ALL,
             pooledcontentviewer: sakai.config.URL.POOLED_CONTENT_VIEWER,
@@ -81,6 +83,11 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/search_util.js"], fu
         };
 
         if (!sakai.data.me.user.anon) {
+            searchConfig.facetedConfig.facets.edit = {
+                'category': $('#searchcontent_result_content_i_edit').html(),
+                'searchurl': searchURLmap.pooledcontenteditor,
+                'searchurlall': searchURLmap.pooledcontenteditorall
+            };
             searchConfig.facetedConfig.facets.manage = {
                 "category": $("#searchcontent_result_content_I_manage").html(),
                 "searchurl": searchURLmap.pooledcontentmanager,
