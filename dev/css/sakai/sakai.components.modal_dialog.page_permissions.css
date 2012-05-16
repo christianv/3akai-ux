@@ -30,4 +30,3 @@
 .dialog_panel{position:relative;left:19px;top:-10px;width:200px;height:90px;background-color:#ddd;padding:15px;}
 .dialog_panel p{padding:0;margin:0;}
 .dialog_panel label{position:relative;left:10px;}
-#small_arrow{width:20px;height:12px;background-image:url(../images/small_arrow_left.png);position:relative;left:1px;top:25px;}
