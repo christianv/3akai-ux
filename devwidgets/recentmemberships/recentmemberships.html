@@ -8,7 +8,7 @@
                 <div class="s3d-no-results-container">
                     <div class="s3d-no-results-arrow-up"><!----></div>
                     <div class="s3d-no-results-icon s3d-no-results-memberships-small"><!----></div>
-                    <p>__MSG__NO_RESULTS_DESCRIPTION__ <a class="s3d-regular-links" href="/create#l=group" class="s3d-regular-links">__MSG__CREATE_ONE__</a></p>
+                    <p>REPLACED <a class="s3d-regular-links" href="/create#l=group" class="s3d-regular-links">REPLACED</a></p>
                 </div>
             </div>
        </div>
@@ -18,7 +18,7 @@
             <div id="recentmemberships_item_template"><!--
                 <div class="recentmemberships_item_img fl-force-left">
                     <a href="/~${entry[0].groupid}" title="${entry[0].displayLinkTitle}">
-                        <img class="s3d-icon-50" src="${sakai.api.Groups.getProfilePicture(entry[0])}" alt="__MSG__PROFILE_PICTURE_FOR__ ${entry[0]["sakai:group-title"]|safeOutput}"/>
+                        <img class="s3d-icon-50" src="${sakai.api.Groups.getProfilePicture(entry[0])}" alt="REPLACED ${entry[0]["sakai:group-title"]|safeOutput}"/>
                     </a>
                 </div>
                 <div class="recentmemberships_item_info">
@@ -28,10 +28,10 @@
                         </a>
                     </p>
                     {if entry[0].counts && entry[0].counts.contentCount > 0}
-                        <p class="recentmemberships_item_meta">${entry[0].counts.contentCount}{if entry[0].counts.contentCount === 1} __MSG__CONTENT_ITEM__{else} __MSG__CONTENT_ITEMS__{/if}</p>
+                        <p class="recentmemberships_item_meta">${entry[0].counts.contentCount}{if entry[0].counts.contentCount === 1} REPLACED{else} REPLACED{/if}</p>
                     {/if}
                     {if entry[0].counts.membersCount > 0}
-                        <p class="recentmemberships_item_meta">${entry[0].counts.membersCount}{if entry[0].counts.membersCount === 1} __MSG__PARTICIPANT__{else} __MSG__PARTICIPANTS__{/if}</p>
+                        <p class="recentmemberships_item_meta">${entry[0].counts.membersCount}{if entry[0].counts.membersCount === 1} REPLACED{else} REPLACED{/if}</p>
                     {/if}
                 </div>
 
@@ -46,10 +46,10 @@
     <div id="recentmemberships_item_member_template"><!--
         {if member}
             <div class="recentmemberships_item_related_info">
-                <p class="recentmemberships_item_meta_data">__MSG__RECENTLY_CONNECTED_TO__ <span class="s3d-bold">${group["sakai:group-title"]}</span></p>
+                <p class="recentmemberships_item_meta_data">REPLACED <span class="s3d-bold">${group["sakai:group-title"]}</span></p>
                 <div class="fl-force-left">
                 <a href="/~${member.memberId}" title="${member.memberLinkTitle}">
-                    <img class="s3d-icon-32" src="${member.memberPicture}" alt="__MSG__PROFILE_PICTURE_FOR__ ${member.memberName}" />
+                    <img class="s3d-icon-32" src="${member.memberPicture}" alt="REPLACED ${member.memberName}" />
                 </a>
                 </div>
                 <div class="recentmemberships_item_div">
@@ -65,7 +65,7 @@
     <div id="recentmemberships_latest_content_template"><!--
         {if content}
             <div class="recentmemberships_item_related_info s3d-draggable-container" data-canshare="${content.canShare}" data-scope="content" data-entityid="${content["_path"]}" {if sakai.api.Content.Collections.isCollection(content)} data-collection="true" {/if}>
-                <p class="recentmemberships_item_meta_data">__MSG__LATEST_CONTENT_TO__ <span class="s3d-bold">${group["sakai:group-title"]|safeOutput}</span></p>
+                <p class="recentmemberships_item_meta_data">REPLACED <span class="s3d-bold">${group["sakai:group-title"]|safeOutput}</span></p>
                 <div class="fl-force-left">
                     <a href="/content#p=${content['_path']|safeURL}/${content.name|safeURL}" title="${content.name}">
                     <span>
@@ -82,7 +82,7 @@
                         ${content.name}
                     </a>
                     <span class="recentmemberships_content_mimetype">${content.type|safeOutput}</span>
-                    <div>__MSG__BY__
+                    <div>REPLACED
                         <a class="recentmemberships_item_link s3d-widget-links s3d-bold" href="/~${author.authorId}">
                             ${author.authorName}
                         </a>
@@ -94,7 +94,7 @@
 
     <div class="s3d-widget-footer">
         <a class="recentmemberships_item_link s3d-widget-links" href="/me#l=memberships">
-            __MSG__SEE_ALL_MY_MEMBERSHIPS__
+            REPLACED
         </a>
     </div>
 

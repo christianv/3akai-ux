@@ -9,34 +9,34 @@
 
         <!-- SAVECONTENT CONTENT -->
         <div class="s3d-popover-container clearfix">
-            <h2 id="savecontent_title">__MSG__ADD_TO__</h2>
+            <h2 id="savecontent_title">REPLACED</h2>
             <div class="s3d-popover-inner">
                 <div id="savecontent_container"></div>
             </div>
-            <button type="button" id="savecontent_save" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right">__MSG__ADD__</button>
-            <button class="savecontent_close s3d-link-button s3d-bold fl-force-right" type="button">__MSG__CANCEL__</button>
+            <button type="button" id="savecontent_save" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right">REPLACED</button>
+            <button class="savecontent_close s3d-link-button s3d-bold fl-force-right" type="button">REPLACED</button>
         </div>
     </div>
 </div>
 
-<span style="display:none;" id="savecontent_my_add_library_title">__MSG__MY_LIBRARY__</span>
-<span style="display:none;" id="savecontent_my_add_library_body">__MSG__MY_LIBRARY_ADDED__</span>
-<span style="display:none;" id="savecontent_group_add_library_title">__MSG__LIBRARY__</span>
-<span style="display:none;" id="savecontent_group_add_library_body">__MSG__LIBRARY_ADDED__</span>
-<span style="display:none;" id="savecontent_collection_add_library_title">__MSG__COLLECTION__</span>
-<span style="display:none;" id="savecontent_collection_add_library_body">__MSG__COLLECTION_ADDED__</span>
+<span style="display:none;" id="savecontent_my_add_library_title">REPLACED</span>
+<span style="display:none;" id="savecontent_my_add_library_body">REPLACED</span>
+<span style="display:none;" id="savecontent_group_add_library_title">REPLACED</span>
+<span style="display:none;" id="savecontent_group_add_library_body">REPLACED</span>
+<span style="display:none;" id="savecontent_collection_add_library_title">REPLACED</span>
+<span style="display:none;" id="savecontent_collection_add_library_body">REPLACED</span>
 
 <div id="savecontent_template" style="display:none"><!--
-    __MSG__YOU_ARE_SAVING__
+    REPLACED
     {var done = false}
     {var canShare = true}
     {for file in files}
         {if file_index < 4}
-            "${file.body["sakai:pooled-content-file-name"]}"{if file_index != 3 && files.length > 1 && files.length -1 != file_index}{if file_index == files.length - 2} __MSG__AND__{else}, {/if}{/if}
+            "${file.body["sakai:pooled-content-file-name"]}"{if file_index != 3 && files.length > 1 && files.length -1 != file_index}{if file_index == files.length - 2} REPLACED{else}, {/if}{/if}
         {elseif !done}
-            __MSG__AND__ ${files.length - 4}
+            REPLACED ${files.length - 4}
             {if files.length > 4}
-                __MSG__MORE__
+                REPLACED
             {/if}
             {var done = true}
         {/if}
@@ -44,19 +44,19 @@
             {var canShare = false}
         {/if}
     {/for}
-    __MSG__TO__:
+    REPLACED:
     <select name="savecontent_select" id="savecontent_select">
         {if canShare}
             {for world in sakai.config.worldTemplates}
-                <option data-redirect="true" value="${world.id}">__MSG__A_NEW__ ${sakai.api.i18n.getValueForKey(world.title).toLowerCase()}</option>
+                <option data-redirect="true" value="${world.id}">REPLACED ${sakai.api.i18n.getValueForKey(world.title).toLowerCase()}</option>
             {/for}
-            <option value="new_collection">__MSG__A_NEW__ __MSG__COLLECTION_LC__</option>
+            <option value="new_collection">REPLACED REPLACED</option>
         {/if}
 
         {if libraryHasIt}
-            <option value="${sakai.data.me.user.userid}" id="mylibrary_option" disabled="disabled">__MSG__MY_LIBRARY__ (__MSG__GOT_IT__)</option>
+            <option value="${sakai.data.me.user.userid}" id="mylibrary_option" disabled="disabled">REPLACED (REPLACED)</option>
         {else}
-            <option value="${sakai.data.me.user.userid}" id="mylibrary_option">__MSG__MY_LIBRARY__</option>
+            <option value="${sakai.data.me.user.userid}" id="mylibrary_option">REPLACED</option>
         {/if}
 
         {if canShare}
@@ -64,15 +64,15 @@
                 {if g["sakai:group-title"]}
                     {if sakai.api.Content.Collections.isCollection(g)}
                         {if g.alreadyHasIt}
-                            <option value="${g["sakai:group-id"]}" {if g_index == 0} id="mylibrary_group_first"{/if} disabled="disabled"> ${g["sakai:group-title"]|safeOutput} (__MSG__GOT_IT__)</option>
+                            <option value="${g["sakai:group-id"]}" {if g_index == 0} id="mylibrary_group_first"{/if} disabled="disabled"> ${g["sakai:group-title"]|safeOutput} (REPLACED)</option>
                         {else}
                             <option value="${g["sakai:group-id"]}" {if g_index == 0} id="mylibrary_group_first"{/if}> ${g["sakai:group-title"]|safeOutput}</option>
                         {/if}
                     {else}
                         {if g.alreadyHasIt}
-                            <option value="${g["sakai:group-id"]}" {if g_index == 0} id="mylibrary_group_first"{/if} disabled="disabled"> __MSG__GROUPS_LIBRARY__ (__MSG__GOT_IT__)</option>
+                            <option value="${g["sakai:group-id"]}" {if g_index == 0} id="mylibrary_group_first"{/if} disabled="disabled"> REPLACED (REPLACED)</option>
                         {else}
-                            <option value="${g["sakai:group-id"]}" {if g_index == 0} id="mylibrary_group_first"{/if}> __MSG__GROUPS_LIBRARY__</option>
+                            <option value="${g["sakai:group-id"]}" {if g_index == 0} id="mylibrary_group_first"{/if}> REPLACED</option>
                         {/if}
                     {/if}
                 {/if}
@@ -80,7 +80,7 @@
         {/if}
     </select>
     {if !canShare}
-        <span class="s3d-bold">__MSG__SOME_ITEMS_CANT_BE_SHARED__ __MSG__UNCHECK_FOR_MORE_OPTIONS__</span>
+        <span class="s3d-bold">REPLACED REPLACED</span>
         <ul id="savecontent_cant_share_list">
             {for file in files}
                 {if !file.body.canShare}

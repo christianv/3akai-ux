@@ -1,7 +1,7 @@
 <!-- CSS -->
 <link href="/devwidgets/displayprofilesection/css/displayprofilesection.css" type="text/css" />
 
-<span style="display:none;">__MSG__IE_PLACEHOLDER__</span>
+<span style="display:none;">REPLACED</span>
 
 <!-- GENERAL INFO -->
 <div id="displayprofilesection_container">
@@ -33,7 +33,7 @@
 
     {macro renderTagField(config, field_id, data)}
         <div class="autosuggest_wrapper">
-            <button type="button" class="s3d-link-button s3d-bold list_categories">__MSG__LIST_CATEGORIES__</button>
+            <button type="button" class="s3d-link-button s3d-bold list_categories">REPLACED</button>
             <textarea id=${field_id} name="${field_id}" data-tag-field="true"></textarea>
         </div>
     {/macro}
@@ -74,10 +74,10 @@
         {/for}
         </div>
     {if !section.multiple}
-        <button type="submit" class="s3d-button s3d-overlay-button grey profile-section-save-button">__MSG__UPDATE__</button>
+        <button type="submit" class="s3d-button s3d-overlay-button grey profile-section-save-button">REPLACED</button>
     </form>
     {else}
-        <button type="button" class="displayprofilesection_remove_section s3d-bold s3d-link-button" id="displayprofilesection_remove_link_${unique}"><span>__MSG__REMOVE_THIS__ ${section.multipleLabel}</span></button>
+        <button type="button" class="displayprofilesection_remove_section s3d-bold s3d-link-button" id="displayprofilesection_remove_link_${unique}"><span>REPLACED ${section.multipleLabel}</span></button>
         <hr/>
     </div>
     {/if}
@@ -86,9 +86,9 @@
 <div id="displayprofilesection_edit_multiple_template"><!--
     <form id="displayprofilesection_form_${sectionid}">
         <div id="displayprofilesection_sections_${sectionid}" class="displayprofilesection_multiple_sections"></div>
-        <button type="submit" class="s3d-button s3d-overlay-button grey profile-section-save-button" style="display:none">__MSG__UPDATE__</button>
+        <button type="submit" class="s3d-button s3d-overlay-button grey profile-section-save-button" style="display:none">REPLACED</button>
     </form>
-    <button id="displayprofilesection_add_${sectionid}" class="displayprofilesection_add_section s3d-link-button s3d-bold" type="button"><span class="s3d-add_another_location"></span><span>__MSG__ADD_ANOTHER__ ${section.multipleLabel}</span></button>
+    <button id="displayprofilesection_add_${sectionid}" class="displayprofilesection_add_section s3d-link-button s3d-bold" type="button"><span class="s3d-add_another_location"></span><span>REPLACED ${section.multipleLabel}</span></button>
 --></div>
 
 <div id="displayprofilesection_view_multiple_template"><!--
@@ -102,7 +102,7 @@
         <p>
             <span id="displayprofilesection_no_results_text">${errorString}</span>
             <span id="displayprofilesection_no_results_message" {if !showMessage}style="display:none;"{/if}>
-                <button type="button" id="displayprofilesection_user_message" class="s3d-link-button sakai_sendmessage_overlay" sakai-entityid="${userid}" sakai-entityname="${displayName}" data-sakai-entitytype="user">__MSG__SEND_THEM_A_MESSAGE__</button> __MSG__TO_REMIND_THEM__
+                <button type="button" id="displayprofilesection_user_message" class="s3d-link-button sakai_sendmessage_overlay" sakai-entityid="${userid}" sakai-entityname="${displayName}" data-sakai-entitytype="user">REPLACED</button> REPLACED
             </span>
         </p>
     </div>
@@ -150,8 +150,8 @@
 
 <!-- ERROR CONTAINER -->
 <div id="profile_error" style="display:none;">
-    <div id="profile_error_form_error_server">__MSG__THERE_WAS_AN_ERROR_TRYING_TO_SAVE_YOUR_DATA_ON_THE_SERVER__. __MSG__PLEASE_TRY_AGAIN_LATER_OR_CALL_HELPDESK__.</div>
-    <div id="profile_message_form_successful">__MSG__YOUR_PROFILE_INFORMATION_HAS_BEEN_UPDATED__</div>
+    <div id="profile_error_form_error_server">REPLACED. REPLACED.</div>
+    <div id="profile_message_form_successful">REPLACED</div>
 </div>
 
 <!-- JAVASCRIPT -->

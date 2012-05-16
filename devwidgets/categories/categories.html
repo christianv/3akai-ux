@@ -6,13 +6,13 @@
     <div id="categories_expand_contract">
         <div class="categories_contract" style="display:none;"><!----></div>
         <div class="categories_expand"><!----></div>
-        <span class="s3d-bold">__MSG__CHOOSE_A_CATEGORY__</span>
+        <span class="s3d-bold">REPLACED</span>
     </div>
 </div>
 
 <div id="categories_items_template"><!--
     <div id="categories_items_scroll">
-        <a href="/categories" class="s3d-button s3d-overlay-button" id="categories_view_all">__MSG__VIEW_ALL__</a>
+        <a href="/categories" class="s3d-button s3d-overlay-button" id="categories_view_all">REPLACED</a>
         <div id="categories_view_next_raquo"></div>
         <div id="categories_items_scroll_buttons">
             {var count = 1}
@@ -34,7 +34,7 @@
                 {if item.spacer}
                     <li>
                         <div class="categories_item categories_spacer">
-                            __MSG__IE_PLACEHOLDER__
+                            REPLACED
                         </div>
                     </li>
                 {else}
@@ -54,13 +54,13 @@
                                             <img src="${sakai.api.Content.getMimeTypeData(sakai.api.Content.getMimeType(item.content)).URL}" class="categories_item_content_preview" alt="${item.content["sakai:pooled-content-file-name"]|safeOutput}"/>
                                         {/if}
                                         <a href="/content#p=${item.content["_path"]}/${item.content["sakai:pooled-content-file-name"]|safeURL}" class="s3d-regular-links s3d-bold" title="${item.content["sakai:pooled-content-file-name"]|safeOutput}">${sakai.api.Util.applyThreeDots(item.content["sakai:pooled-content-file-name"], 70, null, "s3d-bold")}</a>
-                                        <span style="display:none"><span class="categories_item_descriptive_text">__MSG__BY__</span> <a href="/~${item.content["sakai:pool-content-created-for"]}" class="s3d-regular-links s3d-bold">${item.content["sakai:pool-content-created-for"]}</a></span>
+                                        <span style="display:none"><span class="categories_item_descriptive_text">REPLACED</span> <a href="/~${item.content["sakai:pool-content-created-for"]}" class="s3d-regular-links s3d-bold">${item.content["sakai:pool-content-created-for"]}</a></span>
                                         {if item.content["sakai:description"]}
                                             {var size = 125}
                                             <span class="categories_content_description">${sakai.api.Util.applyThreeDots(item.content["sakai:description"], size)}</span>
                                         {/if}
-                                        <span class="categories_content_category_description"><span class="categories_content_usedin_icon categories_content_icon"></span>__MSG__USED_IN__ ${item.content.usedin} {if item.content.usedin == 1} __MSG__PLACE__{else} __MSG__PLACES__{/if}</span>
-                                        {if item.content.commentcount}<span class="categories_content_category_description"><span class="categories_content_comments_icon categories_content_icon"></span><a href="/content#p=${item.content["_path"]|safeURL}/${item.content["sakai:pooled-content-file-name"]|safeURL}" class="s3d-bold s3d-regular-links">${item.content.commentcount} {if item.content.commentcount == 1} __MSG__COMMENT__{else} __MSG__COMMENTS__{/if}</a></span>{/if}
+                                        <span class="categories_content_category_description"><span class="categories_content_usedin_icon categories_content_icon"></span>REPLACED ${item.content.usedin} {if item.content.usedin == 1} REPLACED{else} REPLACED{/if}</span>
+                                        {if item.content.commentcount}<span class="categories_content_category_description"><span class="categories_content_comments_icon categories_content_icon"></span><a href="/content#p=${item.content["_path"]|safeURL}/${item.content["sakai:pooled-content-file-name"]|safeURL}" class="s3d-bold s3d-regular-links">${item.content.commentcount} {if item.content.commentcount == 1} REPLACED{else} REPLACED{/if}</a></span>{/if}
                                         {var tags = sakai.api.Util.formatTags(item.content["sakai:tags"])}
                                         {if tags.length}
                                             <span class="categories_content_tags">

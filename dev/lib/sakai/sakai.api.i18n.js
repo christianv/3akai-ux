@@ -209,13 +209,6 @@ define(
              *  in the default language
              */
             var doI18N = function() {
-                var newstring = sakaii18nAPI.General.process(tostring);
-                // We actually use the old innerHTML function here because the $.html() function will
-                // try to reload all of the JavaScript files declared in the HTML, which we don't want as they
-                // will already be loaded
-                if($i18nable.length > 0){
-                    $i18nable[0].innerHTML = newstring;
-                }
                 finishI18N();
             };
 

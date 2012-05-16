@@ -4,7 +4,7 @@
 <!-- WIDGET BODY -->
 <div class="fl-widget-content s3d-widget-content">
     <div id="contacts_invited_container"></div>
-    <h1 class="s3d-contentpage-title">__MSG__MY_CONTACTS__</h1>
+    <h1 class="s3d-contentpage-title">REPLACED</h1>
 
     <div class="s3d-page-header-top-row" style="display:none;">
         <div class="s3d-button s3d-header-button s3d-header-smaller-button s3d-listview-options">
@@ -16,33 +16,33 @@
             </div>
         </div>
         <div id="contacts_sortarea" class="s3d-margin-top-5 s3d-page-header-sort-area">
-            <label for="contacts_sortby">__MSG__SORT_BY__:</label>
+            <label for="contacts_sortby">REPLACED:</label>
             <select id="contacts_sortby" name="contacts_sortby">
-                <option value="asc">__MSG__LAST_NAME__ __MSG__A_Z__</option>
-                <option value="desc">__MSG__LAST_NAME__ __MSG__Z_A__</option>
+                <option value="asc">REPLACED REPLACED</option>
+                <option value="desc">REPLACED REPLACED</option>
             </select>
         </div>
         <div class="s3d-search-container">
-            <input id="contacts_search_input" type="text" title="__MSG__SEARCH_THROUGH_MY_CONTACTS__" class="s3d-search-inputfield"/>
+            <input id="contacts_search_input" type="text" title="REPLACED" class="s3d-search-inputfield"/>
             <button type="button" id="contacts_search_button" class="s3d-button s3d-overlay-button s3d-search-button">
-                <img src="/dev/images/search_icon.png" alt="__MSG__SEARCH_THROUGH_MY_CONTACTS__"/>
+                <img src="/dev/images/search_icon.png" alt="REPLACED"/>
             </button>
-            <span class="s3d-search-result-count" style="display:none;"><span class="s3d-search-result-count-count s3d-bold"></span> <span class="s3d-search-result-count-label">__MSG__RESULTS__</span></span>
+            <span class="s3d-search-result-count" style="display:none;"><span class="s3d-search-result-count-count s3d-bold"></span> <span class="s3d-search-result-count-label">REPLACED</span></span>
         </div>
     </div>
     <div class="s3d-page-header-bottom-row" style="display:none;">
-        <a class="s3d-button s3d-large-button fl-force-right" href="/search#l=people">__MSG__FIND_MORE_PEOPLE__</a>
+        <a class="s3d-button s3d-large-button fl-force-right" href="/search#l=people">REPLACED</a>
         <div class="s3d-button s3d-header-button s3d-header-smaller-button" id="contacts_select_all_container">
             <input type="checkbox" id="contacts_select_checkbox"/>
         </div>
-        <label class="s3d-aural-text" for="contacts_select_checkbox">__MSG__SELECT_ALL__</label>
+        <label class="s3d-aural-text" for="contacts_select_checkbox">REPLACED</label>
         <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button addpeoplegroups_trigger" id="contacts_addpeople_button" disabled="true" data-entityname="" data-entityid="">
             <span class="s3d-page-header-add-to-icon"></span>
-            __MSG__ADD_TO__...
+            REPLACED...
         </button>
         <button id="contacts_message_button" sakai-entitytype="user" sakai-entityname="" sakai-entityid="" type="button" class="s3d-button s3d-header-button s3d-header-smaller-button sakai_sendmessage_overlay" disabled="true">
             <div class="s3d-action-icon s3d-actions-message"></div>
-            __MSG__MESSAGE__
+            REPLACED
         </button>
     </div>
 
@@ -59,27 +59,27 @@
 </div>
 
 <div id="contacts_title_template"><!--
-    <h1 class="s3d-contentpage-title">__MSG__CONTACTS__ {if accepted.total} (${accepted.total}){/if}</h1>
+    <h1 class="s3d-contentpage-title">REPLACED {if accepted.total} (${accepted.total}){/if}</h1>
 --></div>
 
 <div id="contacts_invited_template" style="display:none;"><!--
      {if invited.results && invited.results.length}
         <div class="contacts_main" id="contacts_invited">
-            <h1 class="s3d-contentpage-title">__MSG__PENDING_CONTACTS__</h1>
+            <h1 class="s3d-contentpage-title">REPLACED</h1>
             {var count = 0}
             <ul class="contacts_list_items">
                 {for i in invited.results}
                     {var count = count + 1}
                     <li class="fl-container fl-fix contacts_item{if count == 1} contacts_item_first{/if} s3d-search-result">
                         <div class="contacts_item_left_filler s3d-search-result-user-functions">
-                            <button title="__MSG__ACCEPT_CONNECTION__" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary contacts_item_plus contacts_add_to_contacts" id="contacts_add_to_contacts_${i.profile.userid}"></button>
+                            <button title="REPLACED" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary contacts_item_plus contacts_add_to_contacts" id="contacts_add_to_contacts_${i.profile.userid}"></button>
                         </div>
                         <a href="/~${i.profile.userid|safeURL}" title="${i.linkTitle}">
                         {if i.profile.basic.elements.picture}
-                            <img alt="__MSG__PROFILE_PICTURE_FOR__ ${sakai.api.User.getDisplayName(i.profile)}" src="${sakai.api.Util.constructProfilePicture(i.profile)}">
+                            <img alt="REPLACED ${sakai.api.User.getDisplayName(i.profile)}" src="${sakai.api.Util.constructProfilePicture(i.profile)}">
                         {elseif}
-                            <img alt="__MSG__PROFILE_PICTURE_FOR__ ${sakai.api.User.getDisplayName(i.profile)}" class="contacts_list_picture" src="${sakai.api.Util.constructProfilePicture(i.profile)}">
-                            <img alt="__MSG__PROFILE_PICTURE_FOR__ ${sakai.api.User.getDisplayName(i.profile)}" class="contacts_grid_picture" style="display:none;" src="/dev/images/default_User_icon_100x100.png">
+                            <img alt="REPLACED ${sakai.api.User.getDisplayName(i.profile)}" class="contacts_list_picture" src="${sakai.api.Util.constructProfilePicture(i.profile)}">
+                            <img alt="REPLACED ${sakai.api.User.getDisplayName(i.profile)}" class="contacts_grid_picture" style="display:none;" src="/dev/images/default_User_icon_100x100.png">
                         {/if}
                         </a>
                         <div class="contacts_list s3d-search-result-right">
@@ -87,7 +87,7 @@
                             <div class="contacts_item_counts">
                                 {if i.profile.counts.contentCount > 0}
                                     <a class="s3d-regular-light-links" href="/~${i.profile.userid|safeURL}#l=library">
-                                        ${i.profile.counts.contentCount || 0} {if i.profile.counts.contentCount === 1} __MSG__CONTENT_ITEM__{else} __MSG__CONTENT_ITEMS__{/if}
+                                        ${i.profile.counts.contentCount || 0} {if i.profile.counts.contentCount === 1} REPLACED{else} REPLACED{/if}
                                     </a>
                                     {if i.profile.counts.contactsCount > 0 || i.profile.counts.membershipsCount > 0}
                                         <span class="s3d-search-result-detail-separator"><span> | </span></span>
@@ -95,7 +95,7 @@
                                 {/if}
                                 {if i.profile.counts.contactsCount > 0}
                                     <a class="s3d-regular-light-links" href="/~${i.profile.userid|safeURL}#l=contacts">
-                                        ${i.profile.counts.contactsCount || 0} {if i.profile.counts.contactsCount === 1} __MSG__CONTACT_LC__{else} __MSG__CONTACTS_LC__{/if}
+                                        ${i.profile.counts.contactsCount || 0} {if i.profile.counts.contactsCount === 1} REPLACED{else} REPLACED{/if}
                                     </a>
                                     {if i.profile.counts.membershipsCount > 0}
                                         <span class="s3d-search-result-detail-separator"><span> | </span></span>
@@ -103,7 +103,7 @@
                                 {/if}
                                 {if i.profile.counts.membershipsCount > 0}
                                     <a class="s3d-regular-light-links" href="/~${i.profile.userid|safeURL}#l=memberships">
-                                        ${i.profile.counts.membershipsCount || 0} {if i.profile.counts.membershipsCount === 1} __MSG__MEMBERSHIP_LC__{else} __MSG__MEMBERSHIPS_LC__{/if}
+                                        ${i.profile.counts.membershipsCount || 0} {if i.profile.counts.membershipsCount === 1} REPLACED{else} REPLACED{/if}
                                     </a>
                                 {/if}
                             </div>
@@ -121,7 +121,7 @@
                                 </div>
                             {/if}
                             <div style="display:none;">
-                                <button type="button" class="s3d-link-button s3d-bold contacts_add_to_contacts" id="contacts_add_to_contacts_${i.profile.userid}">__MSG__ADD_TO_CONTACTS__</button>
+                                <button type="button" class="s3d-link-button s3d-bold contacts_add_to_contacts" id="contacts_add_to_contacts_${i.profile.userid}">REPLACED</button>
                             </div>
                         </div>
                     </li>
@@ -142,44 +142,44 @@
                         <div class="contacts_item_left_filler s3d-search-result-user-functions">
                             {if !sakai.data.me.user.anon && sakai_global.profile.main.mode.value !== "view"}
                                 <input type="checkbox" name="checkbox_${a.userid}" class="contacts_select_contact_checkbox" data-userid="${a.userid|safeOutput}" data-username="${a.name|safeOutput}" id="checkbox_${a.userid}"/>
-                                <label class="s3d-aural-text" for="checkbox_${a.userid}">__MSG__SELECT__ ${a.name}</label>
-                                <button title="__MSG__REMOVE_CONTACT__ ${a.name}" type="button" class="s3d-link-button s3d-action-icon s3d-actions-delete" data-sakai-entityid="${a.userid}" data-sakai-entityname="${a.name}"></button>
+                                <label class="s3d-aural-text" for="checkbox_${a.userid}">REPLACED ${a.name}</label>
+                                <button title="REPLACED ${a.name}" type="button" class="s3d-link-button s3d-action-icon s3d-actions-delete" data-sakai-entityid="${a.userid}" data-sakai-entityname="${a.name}"></button>
                                 <span class="contacts_gridview_items">
-                                    <button title="__MSG__SEND_MESSAGE_TO__ ${a.name|safeOutput}" sakai-entitytype="group" sakai-entityname="${a.name|safeOutput}" sakai-entityid="${a.userid}" class="s3d-link-button s3d-action-icon s3d-actions-message sakai_sendmessage_overlay"><span class="s3d-aural-text">__MSG__SEND_MESSAGE_TO__ ${a.name|safeOutput}</span></button>
+                                    <button title="REPLACED ${a.name|safeOutput}" sakai-entitytype="group" sakai-entityname="${a.name|safeOutput}" sakai-entityid="${a.userid}" class="s3d-link-button s3d-action-icon s3d-actions-message sakai_sendmessage_overlay"><span class="s3d-aural-text">REPLACED ${a.name|safeOutput}</span></button>
                                 </span>
                             {elseif !sakai.data.me.user.anon && sakai_global.profile.main.mode.value === "view"}
                                 <input type="checkbox" name="checkbox_${a.userid}" class="contacts_select_contact_checkbox" data-userid="${a.userid|safeOutput}" data-username="${a.name|safeOutput}"/>
                                 {if !a.connected}
                                     {if sakai.data.me.user.userid !== a.userid}
-                                        <button title="__MSG__REQUEST_CONNECTION_WITH__ ${a.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary sakai_addtocontacts_overlay" sakai-entityid="${a.userid}" sakai-entityname="${a.name|safeOutput}" {if a.picture}sakai-entitypicture="${a.picture}"{/if}></button>
+                                        <button title="REPLACED ${a.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary sakai_addtocontacts_overlay" sakai-entityid="${a.userid}" sakai-entityname="${a.name|safeOutput}" {if a.picture}sakai-entitypicture="${a.picture}"{/if}></button>
                                     {/if}
                                     <div class="left_filler" id="left_filler_${a.userid}" style="display:none;"></div>
                                 {else}
                                     {if a.accepted}
-                                        <div class="left_filler"><img src="/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
+                                        <div class="left_filler"><img src="/dev/images/accept.png" alt="REPLACED" /></div>
                                     {elseif a.invited}
-                                        <button title="__MSG__ACCEPT_CONNECTION_WITH__ ${a.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary link_accept_invitation" sakai-entityid="${a.userid|safeOutput}" sakai-entityname="${a.name|safeOutput}" {if a.picture}sakai-entitypicture="${a.picture}"{/if}></button>
-                                        <div class="left_filler" id="contacts_left_accept_${a.userid}" style="display:none;"><img src="/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
+                                        <button title="REPLACED ${a.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary link_accept_invitation" sakai-entityid="${a.userid|safeOutput}" sakai-entityname="${a.name|safeOutput}" {if a.picture}sakai-entitypicture="${a.picture}"{/if}></button>
+                                        <div class="left_filler" id="contacts_left_accept_${a.userid}" style="display:none;"><img src="/dev/images/accept.png" alt="REPLACED" /></div>
                                     {else}
                                         <div class="left_filler" id="contacts_left_filler_${a.userid}" style="display:none;"></div>
                                     {/if}
                                 {/if}
                                 {if !sakai.data.me.user.anon }
                                     <span class="contacts_gridview_items">
-                                        <button title="__MSG__SEND_MESSAGE_TO__ ${a.name|safeOutput}" sakai-entitytype="group" sakai-entityname="${a.name|safeOutput}" sakai-entityid="${a.userid}" class="s3d-link-button s3d-action-icon s3d-actions-message sakai_sendmessage_overlay"><span class="s3d-aural-text">__MSG__SEND_MESSAGE_TO__ ${a.name|safeOutput}</span></button>
+                                        <button title="REPLACED ${a.name|safeOutput}" sakai-entitytype="group" sakai-entityname="${a.name|safeOutput}" sakai-entityid="${a.userid}" class="s3d-link-button s3d-action-icon s3d-actions-message sakai_sendmessage_overlay"><span class="s3d-aural-text">REPLACED ${a.name|safeOutput}</span></button>
                                     </span>
                                 {/if}
                             {/if}
                         </div>
                         {if !sakai.data.me.user.anon }
                             <span class="contacts_listview_items">
-                                <button title="__MSG__SEND_MESSAGE_TO__ ${a.name|safeOutput}" sakai-entitytype="group" sakai-entityname="${a.name|safeOutput}" sakai-entityid="${a.userid}" class="s3d-link-button s3d-action-icon s3d-actions-message sakai_sendmessage_overlay"><span class="s3d-aural-text">__MSG__SEND_MESSAGE_TO__ ${a.name|safeOutput}</span></button>
+                                <button title="REPLACED ${a.name|safeOutput}" sakai-entitytype="group" sakai-entityname="${a.name|safeOutput}" sakai-entityid="${a.userid}" class="s3d-link-button s3d-action-icon s3d-actions-message sakai_sendmessage_overlay"><span class="s3d-aural-text">REPLACED ${a.name|safeOutput}</span></button>
                             </span>
                         {/if}
                         <a href="/~${a.userid|safeURL}" title="${a.linkTitle}">
-                            <img alt="__MSG__PROFILE_PICTURE_FOR__ ${a.name}" src="${a.picture}">
+                            <img alt="REPLACED ${a.name}" src="${a.picture}">
                             {if a.pictureLarge}
-                                <img alt="__MSG__PROFILE_PICTURE_FOR__ ${a.name}" src="${a.pictureLarge}" class="s3d-search-result-avatar-large">
+                                <img alt="REPLACED ${a.name}" src="${a.pictureLarge}" class="s3d-search-result-avatar-large">
                             {/if}
                         </a>
                         <div class="contacts_list s3d-search-result-right">
@@ -190,7 +190,7 @@
                             <div class="contacts_item_counts">
                                 {if a.counts.contentCount > 0}
                                     <a class="s3d-regular-light-links" href="/~${a.userid|safeURL}#l=library">
-                                        ${a.counts.contentCount || 0} {if a.counts.contentCount === 1} __MSG__CONTENT_ITEM__{else} __MSG__CONTENT_ITEMS__{/if}
+                                        ${a.counts.contentCount || 0} {if a.counts.contentCount === 1} REPLACED{else} REPLACED{/if}
                                     </a>
                                     {if a.counts.contactsCount > 0 || a.counts.membershipsCount > 0}
                                         <span class="s3d-search-result-detail-separator"><span> | </span></span>
@@ -198,7 +198,7 @@
                                 {/if}
                                 {if a.counts.contactsCount > 0}
                                     <a class="s3d-regular-light-links" href="/~${a.userid|safeURL}#l=contacts">
-                                        ${a.counts.contactsCount || 0} {if a.counts.contactsCount === 1} __MSG__CONTACT_LC__{else} __MSG__CONTACTS_LC__{/if}
+                                        ${a.counts.contactsCount || 0} {if a.counts.contactsCount === 1} REPLACED{else} REPLACED{/if}
                                     </a>
                                     {if a.counts.membershipsCount > 0}
                                         <span class="s3d-search-result-detail-separator"><span> | </span></span>
@@ -206,7 +206,7 @@
                                 {/if}
                                 {if a.counts.membershipsCount > 0}
                                     <a class="s3d-regular-light-links" href="/~${a.userid|safeURL}#l=memberships">
-                                        ${a.counts.membershipsCount || 0} {if a.counts.membershipsCount === 1} __MSG__MEMBERSHIP_LC__{else} __MSG__MEMBERSHIPS_LC__{/if}
+                                        ${a.counts.membershipsCount || 0} {if a.counts.membershipsCount === 1} REPLACED{else} REPLACED{/if}
                                     </a>
                                 {/if}
                             </div>
@@ -237,24 +237,24 @@
         <div class="s3d-no-results-container">
             <div class="s3d-no-results-arrow-up"></div>
             <div class="s3d-no-results-icon s3d-no-results-contacts less-margin"></div>
-            <p>{if searching}__MSG__NO_SEARCH_RESULTS_DESCRIPTION__{else}__MSG__NO_RESULTS_DESCRIPTION__{/if} <a class="s3d-regular-links" href="/search#l=people">__MSG__FIND_AND_ADD_PEOPLE__</a></p>
+            <p>{if searching}REPLACED{else}REPLACED{/if} <a class="s3d-regular-links" href="/search#l=people">REPLACED</a></p>
         </div>
     {else}
         <div class="s3d-no-results-container">
             <div class="s3d-no-results-arrow-up"></div>
             <div class="s3d-no-results-icon s3d-no-results-contacts less-margin"></div>
-            <p>{if searching}__MSG__NO_SEARCH_RESULTS_DESCRIPTION__{else}__MSG__NO_RESULTS_DESCRIPTION_NOT_ME__{/if}</p>
+            <p>{if searching}REPLACED{else}REPLACED{/if}</p>
         </div>
     {/if}
 --></div>
 
 <div class="s3d-dialog s3d-dialog-container" id="contacts_delete_contacts_dialog" style="display:none;">
     <div class="s3d-dialog-close jqmClose"></div>
-    <h1 class="s3d-dialog-header">__MSG__REMOVE_CONTACT__</h1>
-    <p>__MSG__ARE_YOU_SURE_YOU_WANT_TO_REMOVE__ <span id="contacts_contact_to_delete" class="s3d-bold"></span> __MSG__FROM_YOUR_CONTACTS__</p>
+    <h1 class="s3d-dialog-header">REPLACED</h1>
+    <p>REPLACED <span id="contacts_contact_to_delete" class="s3d-bold"></span> REPLACED</p>
     <div class="dialog_buttons fl-force-right">
-        <button type="button" class="s3d-link-button s3d-bold jqmClose">__MSG__CANCEL__</button>
-        <button type="button" class="s3d-button s3d-overlay-action-button" id="contacts_delete_contact_confirm" data-sakai-entityid="placeholder">__MSG__REMOVE_CONTACT__</button>
+        <button type="button" class="s3d-link-button s3d-bold jqmClose">REPLACED</button>
+        <button type="button" class="s3d-button s3d-overlay-action-button" id="contacts_delete_contact_confirm" data-sakai-entityid="placeholder">REPLACED</button>
     </div>
 </div>
 

@@ -1,7 +1,7 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="/devwidgets/versions/css/versions.css" />
 
-<span style="display:none;">__MSG__IE_PLACEHOLDER__</span>
+<span style="display:none;">REPLACED</span>
 
 <div class="versions_widget" style="display:none;">
     <div id="versions_container"><!----></div>
@@ -10,12 +10,12 @@
 <div id="versions_template"><!--
     {if data.length}
         <div class="versions_prev_next_container fl-force-right">
-            <button id="versions_older" class="versions_controls s3d-link-button" title="__MSG__VIEW_OLDER_VERSIONS__"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
-            <button id="versions_oldest" class="versions_controls s3d-link-button" title="__MSG__VIEW_OLDEST_VERSIONS__"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
+            <button id="versions_older" class="versions_controls s3d-link-button" title="REPLACED"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
+            <button id="versions_oldest" class="versions_controls s3d-link-button" title="REPLACED"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
         </div>
         <div class="versions_prev_next_container fl-force-left">
-            <button id="versions_newer" class="versions_controls s3d-link-button" title="__MSG__VIEW_NEWER_VERSIONS__"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
-            <button id="versions_newest" class="versions_controls s3d-link-button" title="__MSG__VIEW_NEWEST_VERSIONS__"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
+            <button id="versions_newer" class="versions_controls s3d-link-button" title="REPLACED"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
+            <button id="versions_newest" class="versions_controls s3d-link-button" title="REPLACED"{if data.length < itemsBeforeScroll} style="display:none"{/if}></button>
         </div>
     {/if}
     <div id="versions_carousel_container" class="jcarousel-skin-tango s3d-bold">
@@ -29,17 +29,17 @@
                         <span class="versions_date">${date[1]} ${date[2]}, ${date[4].substring(0,5)}</span>
                         <a href="/~${userid|safeURL}" class="s3d-regular-links versions_updater">${username}</a>
                         {if !sakai_global.content_profile || sakai_global.content_profile.content_data.data.mimeType == "x-sakai/document"}
-                            <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button versions_restore_version">__MSG__RESTORE__</button>
+                            <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button versions_restore_version">REPLACED</button>
                         {else}
                             <a href="${currentPage.pageSavePath|safeOutput}.version.,${version.versionId|safeOutput},{if version["sakai:pooled-content-file-name"]}/${version["sakai:pooled-content-file-name"]|safeOutput}{/if}" target="_blank" class="s3d-button s3d-header-button s3d-header-smaller-button">
-                                __MSG__DOWNLOAD__
+                                REPLACED
                             </a>
                         {/if}
                     </li>
                 {/for}
             </ul>
         {else}
-            <div id="versions_noversions">__MSG__NO_REVISIONS__</div>
+            <div id="versions_noversions">REPLACED</div>
         {/if}
     </div>
 --></div>

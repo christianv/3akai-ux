@@ -3,13 +3,13 @@
 <div id="dashboardactivity_widget">
     <div class="dashboardactivity_filter">
         <div class="s3d-button s3d-header-button s3d-header-smaller-button s3d-bar-options">
-            <button type="button" class="s3d-link-button selected" data-filter="all">__MSG__ALL__</button>
+            <button type="button" class="s3d-link-button selected" data-filter="all">REPLACED</button>
             <button type="button" class="s3d-link-button dashboardactivity_comments" data-filter="comments">
-                <div>&nbsp;</div>__MSG__COMMENTS__</button>
+                <div>&nbsp;</div>REPLACED</button>
             <button type="button" class="s3d-link-button dashboardactivity_activity" data-filter="updates">
-                <div>&nbsp;</div>__MSG__UPDATES__</button>
+                <div>&nbsp;</div>REPLACED</button>
             <button type="button" class="s3d-link-button dashboardactivity_sharing" data-filter="sharing">
-                <div>&nbsp;</div>__MSG__SHARING__</button>
+                <div>&nbsp;</div>REPLACED</button>
         </div>
         <hr class="fl-push fl-hidden"/>
     </div>
@@ -27,8 +27,8 @@
             {/if}
             <a href="/content#p=${activity['sakai:pooled-content-path']|safeURL}" class="s3d-bold">${activity['sakai:pooled-content-file-name']|safeOutput}</a> <span>${description}</span>
             <div>
-                <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary mylibrary_item_share_icon_icon savecontent_trigger" title="__MSG__ADD_TO__">__MSG__SAVE__</button>
-                <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-share mylibrary_item_share_icon share_trigger_click" title="__MSG__SHARE_CONTENT__">__MSG__SHARE__</button>
+                <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary mylibrary_item_share_icon_icon savecontent_trigger" title="REPLACED">REPLACED</button>
+                <button data-entityid="${activity['sakai:pooled-content-path']}" class="s3d-link-button s3d-action-icon s3d-actions-share mylibrary_item_share_icon share_trigger_click" title="REPLACED">REPLACED</button>
             </div>
         {/macro}
 
@@ -36,7 +36,7 @@
             {if activity['sakai:activity-nonactor'] === userid}
                 <span class="s3d-bold fl-force-left dashboardactivity_activity_message_reversed">${activity.translatedActivityMessageAction}</span>
             {/if}
-            <a href="${activity.users[userid].homePath}" class="s3d-bold fl-force-left dashboardactivity_activity_item_name" title="__MSG__VIEW_USERS_PROFILE__">${sakai.api.User.getDisplayName(activity.users[userid])}</a>
+            <a href="${activity.users[userid].homePath}" class="s3d-bold fl-force-left dashboardactivity_activity_item_name" title="REPLACED">${sakai.api.User.getDisplayName(activity.users[userid])}</a>
             {if activity['sakai:activity-nonactor'] !== userid}
                 <span class="s3d-bold">${activity.translatedActivityMessage}</span>
             {/if}
@@ -94,7 +94,7 @@
                 <div class="dashboard_activity_comment">
                     <img src="${sakai.api.User.getProfilePicture(activity.users[activity['sakai:activity-actor']])}" class="s3d-icon-40 dashboardactivity_activity_item_image fl-force-left" alt="${activity['sakai:activity-actor']}"/>
                     <div>
-                        <a href="/~${activity['sakai:activity-actor']}" class="s3d-bold" title="__MSG__VIEW_ACTORS_PROFILE__">${sakai.api.User.getDisplayName(activity.users[activity['sakai:activity-actor']])}</a> <span class="dashboardactivity_activity_item_timeago">${$.timeago(new Date(activity._lastModified))}</span>
+                        <a href="/~${activity['sakai:activity-actor']}" class="s3d-bold" title="REPLACED">${sakai.api.User.getDisplayName(activity.users[activity['sakai:activity-actor']])}</a> <span class="dashboardactivity_activity_item_timeago">${$.timeago(new Date(activity._lastModified))}</span>
                         <span>${activity['sakai:comment-body']}</span>
                     </div>
                 </div>
@@ -135,29 +135,29 @@
             {/for}
             </div>
             {if data.length > 5}
-                <button type="button" class="s3d-button s3d-header-button" id="dashboardactivity_show_more">__MSG__SHOW_MORE__</button>
+                <button type="button" class="s3d-button s3d-header-button" id="dashboardactivity_show_more">REPLACED</button>
             {/if}
         </div>
     --></div>
 
     <div id="dashboardactivity_no_activity_template"><!--
         <div id="dashboardactivity_no_activity_container">
-            <h1 id="dashboardactivity_no_activity_header">__MSG__WHO_IS_SHARING_BASED_ON_ALL_THE_CONTENT_YOU_HAVE__...</h1>
+            <h1 id="dashboardactivity_no_activity_header">REPLACED...</h1>
             <div class="dashboardactivity_no_activity_contentbox">
                 <div id="dashboardactivity_added" class="fl-force-left">
-                    <h2>...__MSG__ADDED__</h2>
+                    <h2>...REPLACED</h2>
                 </div>
                 <div id="dashboardactivity_added_button" class="fl-force-left">
-                    <button class="s3d-button s3d-overlay-button large sakai_add_content_overlay" type="button">__MSG__UPLOAD_OR_CREATE_CONTENT__</button>
+                    <button class="s3d-button s3d-overlay-button large sakai_add_content_overlay" type="button">REPLACED</button>
                 </div>
             </div>
             <hr class="fl-hidden fl-push"/>
             <div class="dashboardactivity_no_activity_contentbox">
                 <div id="dashboardactivity_saved" class="fl-force-left">
-                    <h2>...__MSG__SAVED__</h2>
+                    <h2>...REPLACED</h2>
                 </div>
                 <div id="dashboardactivity_saved_button" class="fl-force-left">
-                    <a class="s3d-button s3d-overlay-button large" href="/search#q=">__MSG__DISCOVER_CONTENT_OR_PEOPLE__</a>
+                    <a class="s3d-button s3d-overlay-button large" href="/search#q=">REPLACED</a>
                 </div>
             </div>
             <hr class="fl-hidden fl-push"/>
@@ -165,7 +165,7 @@
     --></div>
 
     <div id="dashboardactivity_activity_badrequest_template" style="display:none;"><!--
-        <div class="dashboardactivity_activity_badrequest"><p>__MSG__COULDNT_GET_THE_ACTIVITY_DATA__</p></div>
+        <div class="dashboardactivity_activity_badrequest"><p>REPLACED</p></div>
     --></div>
 
     <div class="dashboard_activity_item_container dashboard_activity_annotation_container" style="display:none"><!--

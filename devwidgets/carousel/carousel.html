@@ -1,14 +1,14 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="/devwidgets/carousel/css/carousel.css" />
 
-<div style="display:none">__MSG__IE_PLACEHOLDER__</div>
+<div style="display:none">REPLACED</div>
 
 <div id="carousel_container_tl"><div id="carousel_container_tr"></div></div>
 <div id="carousel_container" class="jcarousel-skin-tango"><!----></div>
 <div id="carousel_container_bl"><div id="carousel_container_br"></div></div>
 
 <div id="carousel_single_column_template" style="display:none;"><!--
-    <h1>__MSG__SUGGESTED__:</h1>
+    <h1>REPLACED:</h1>
     {macro tags(t)}
         {if t && t.length}
             <ul class="carousel_content_tags s3d-taglist">
@@ -23,12 +23,12 @@
 
     {macro contentButtons(id, uploader,title,type,canShare)}
         <span class="carousel_bottom_buttons s3d-draggable-hidden">
-            <fieldset><legend class="s3d-aural-text">__MSG__ACTIONS__ ${title|safeOutput}</legend>
+            <fieldset><legend class="s3d-aural-text">REPLACED ${title|safeOutput}</legend>
                 {if canShare}
-                    <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-share carousel_sharecontent share_trigger_click" data-entityid="${id}" title="__MSG__SHARE__ ${title|safeOutput}"></button>
+                    <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-share carousel_sharecontent share_trigger_click" data-entityid="${id}" title="REPLACED ${title|safeOutput}"></button>
                 {/if}
-                <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary carousel_savecontent savecontent_trigger" data-entityid="${id}" title="__MSG__SAVE__ ${title|safeOutput}"></button>
-                <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-author personinfo_trigger_click" data-userid="${uploader}" title="__MSG__VIEW_OWNER_INFO__ __MSG__FOR__ ${title|safeOutput}"></button>
+                <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary carousel_savecontent savecontent_trigger" data-entityid="${id}" title="REPLACED ${title|safeOutput}"></button>
+                <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-author personinfo_trigger_click" data-userid="${uploader}" title="REPLACED REPLACED ${title|safeOutput}"></button>
             </fieldset>
         </span>
     {/macro}
@@ -45,9 +45,9 @@
                                 <div class="carousel_three_column_left s3d-draggable-container" data-canshare="${canShare}" data-scope="content" data-entityid="${content0.id}" {if sakai.api.Content.Collections.isCollection(content0)} data-collection="true" {/if}>
                                     <a href="${content0.link}">
                                         {if content0.thumbnail}
-                                            <img class="carousel_item_preview_img carousel_item_large_preview" src="${content0.thumbnail}" alt="__MSG__CONTENT_PREVIEW__"/>
+                                            <img class="carousel_item_preview_img carousel_item_large_preview" src="${content0.thumbnail}" alt="REPLACED"/>
                                         {else}
-                                            <img class="carousel_item_preview_img carousel_item_large_mimetype" src="${content0.mimeTypeURL}" alt="__MSG__CONTENT_PREVIEW__"/>
+                                            <img class="carousel_item_preview_img carousel_item_large_mimetype" src="${content0.mimeTypeURL}" alt="REPLACED"/>
                                         {/if}
                                      </a>
                                     <h2>
@@ -64,9 +64,9 @@
                                 <div class="carousel_three_column_middle s3d-draggable-container" data-canshare="${canShare}" data-scope="content" data-entityid="${content1.id}" {if sakai.api.Content.Collections.isCollection(content1)} data-collection="true" {/if}>
                                     <a href="${content1.link}">
                                         {if content1.thumbnail}
-                                            <img class="carousel_item_preview_img carousel_item_medium_preview" src="${content1.thumbnail}" alt="__MSG__CONTENT_PREVIEW__"/>
+                                            <img class="carousel_item_preview_img carousel_item_medium_preview" src="${content1.thumbnail}" alt="REPLACED"/>
                                         {else}
-                                            <img class="carousel_item_preview_img carousel_item_medium_mimetype" src="${content1.mimeTypeURL}" alt="__MSG__CONTENT_PREVIEW__"/>
+                                            <img class="carousel_item_preview_img carousel_item_medium_mimetype" src="${content1.mimeTypeURL}" alt="REPLACED"/>
                                         {/if}
                                     </a>
                                     <h2>
@@ -109,30 +109,30 @@
                             {for user in item.suggestions}
                                 <div>
                                     {if user.picture}
-                                        <img src="/~${user.userid|safeURL}/public/profile/${user.picture.name}" alt="__MSG__PROFILE_PICTURE_FOR__ ${user.displayName|safeOutput}"/>
+                                        <img src="/~${user.userid|safeURL}/public/profile/${user.picture.name}" alt="REPLACED ${user.displayName|safeOutput}"/>
                                     {else}
-                                        <img src="/dev/images/default_User_icon_50x50.png" alt="__MSG__DEFAULT_PROFILE_PICTURE_FOR__ ${user.displayName|safeOutput}"/>
+                                        <img src="/dev/images/default_User_icon_50x50.png" alt="REPLACED ${user.displayName|safeOutput}"/>
                                     {/if}
                                     <h2><a href="/~${user.userid|safeURL}" class="carousel_item_title s3d-action carousel_apply_threedots threedots_allow_2">${user.displayName|safeOutput}</a></h2>
                                     <div class="carousel_counts">
                                         <ul>
                                             <li>
-                                                <a class="s3d-regular-light-links" href="/~${user.userid|safeURL}#l=library"><span class="s3d-aural-text">${user.displayName|safeOutput} __MSG__USER_GROUP_HAS__</span> ${user.counts.contentCount} __MSG__CONTENT_ITEMS__</a>
+                                                <a class="s3d-regular-light-links" href="/~${user.userid|safeURL}#l=library"><span class="s3d-aural-text">${user.displayName|safeOutput} REPLACED</span> ${user.counts.contentCount} REPLACED</a>
                                             </li>
                                             <li>
-                                                <a class="s3d-regular-light-links" href="/~${user.userid|safeURL}#l=contacts"><span class="s3d-aural-text">${user.displayName|safeOutput} __MSG__USER_GROUP_HAS__</span> ${user.counts.contactsCount} __MSG__CONTACTS__</a>
+                                                <a class="s3d-regular-light-links" href="/~${user.userid|safeURL}#l=contacts"><span class="s3d-aural-text">${user.displayName|safeOutput} REPLACED</span> ${user.counts.contactsCount} REPLACED</a>
                                             </li>
                                             <li>
-                                                <a class="s3d-regular-light-links" href="/~${user.userid|safeURL}#l=memberships"><span class="s3d-aural-text">${user.displayName|safeOutput} __MSG__USER_GROUP_HAS__</span> ${user.counts.membershipsCount} __MSG__MEMBERSHIPS__</a>
+                                                <a class="s3d-regular-light-links" href="/~${user.userid|safeURL}#l=memberships"><span class="s3d-aural-text">${user.displayName|safeOutput} REPLACED</span> ${user.counts.membershipsCount} REPLACED</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <span class="carousel_bottom_buttons">
-                                        <fieldset><legend class="s3d-aural-text">__MSG__ACTIONS__</legend>
+                                        <fieldset><legend class="s3d-aural-text">REPLACED</legend>
                                             {if !user.connected}
-                                                <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary sakai_addtocontacts_overlay" sakai-entityid="${user.userid}" sakai-entityname="${user.displayName|safeOutput}" title="__MSG__ADD_TO_CONTACTS1__ ${user.displayName|safeOutput} __MSG__ADD_TO_CONTACTS2__" sakai-entitypicture="${sakai.api.User.getProfilePicture(user)}"></button>
+                                                <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary sakai_addtocontacts_overlay" sakai-entityid="${user.userid}" sakai-entityname="${user.displayName|safeOutput}" title="REPLACED ${user.displayName|safeOutput} REPLACED" sakai-entitypicture="${sakai.api.User.getProfilePicture(user)}"></button>
                                             {/if}
-                                            <button type="button" class="s3d-actions-message s3d-link-button s3d-action-icon sakai_sendmessage_overlay" sakai-entityid="${user.userid}" sakai-entityname="${user.displayName|safeOutput}" sakai-entitytype="user" title="__MSG__SEND_A_MESSAGE_TO__ ${user.displayName|safeOutput}" sakai-entitypicture="${sakai.api.User.getProfilePicture(user)"></button>
+                                            <button type="button" class="s3d-actions-message s3d-link-button s3d-action-icon sakai_sendmessage_overlay" sakai-entityid="${user.userid}" sakai-entityname="${user.displayName|safeOutput}" sakai-entitytype="user" title="REPLACED ${user.displayName|safeOutput}" sakai-entitypicture="${sakai.api.User.getProfilePicture(user)"></button>
                                         </fieldset>
                                     </span>
                                 </div>
@@ -144,9 +144,9 @@
                                 {var tall = group_index < 2}
                                 <div class="carousel_4x2_{if tall}tall{else}short{/if}">
                                     {if group.picture}
-                                        <img src="${group.picture}" alt="__MSG__PROFILE_PICTURE_FOR__ ${group.title|safeOutput}"/>
+                                        <img src="${group.picture}" alt="REPLACED ${group.title|safeOutput}"/>
                                     {else}
-                                        <img src="/dev/images/group_avatar_icon_64x64_nob.png" alt="__MSG__DEFAULT_PROFILE_PICTURE_FOR__ ${group.title|safeOutput}"/>
+                                        <img src="/dev/images/group_avatar_icon_64x64_nob.png" alt="REPLACED ${group.title|safeOutput}"/>
                                     {/if}
                                     <h2>
                                         <a href="/~${group.groupid}" class="carousel_item_title s3d-action carousel_apply_threedots threedots_allow_2">
@@ -161,10 +161,10 @@
                                     <div class="carousel_counts">
                                         <ul>
                                             <li>
-                                                <a class="s3d-regular-light-links" href="/~${group.groupid}#l=library"><span class="s3d-aural-text">${group.title|safeOutput} __MSG__USER_GROUP_HAS__</span> ${group.counts.contentCount} __MSG__CONTENT_ITEMS__</a>
+                                                <a class="s3d-regular-light-links" href="/~${group.groupid}#l=library"><span class="s3d-aural-text">${group.title|safeOutput} REPLACED</span> ${group.counts.contentCount} REPLACED</a>
                                             </li>
                                             <li>
-                                                <a class="s3d-regular-light-links" href="/~${group.groupid}#l=participants"><span class="s3d-aural-text">${group.title|safeOutput} __MSG__USER_GROUP_HAS__</span> ${group.counts.membersCount} __MSG__PARTICIPANTS__</a>
+                                                <a class="s3d-regular-light-links" href="/~${group.groupid}#l=participants"><span class="s3d-aural-text">${group.title|safeOutput} REPLACED</span> ${group.counts.membersCount} REPLACED</a>
                                             </li>
 
                                         </ul>
@@ -173,9 +173,9 @@
                                         ${tags(group.tags)}
                                     {/if}
                                     <span class="carousel_bottom_buttons">
-                                        <fieldset><legend class="s3d-aural-text">__MSG__ACTIONS__</legend>
-                                            <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary sakai_joingroup_overlay" data-groupid="${group.groupid}" title="__MSG__JOIN_GROUP__ ${group.title|safeOutput}"></button>
-                                            <button type="button" class="s3d-actions-message s3d-link-button s3d-action-icon sakai_sendmessage_overlay" sakai-entityid="${group.groupid}" sakai-entityname="${group.title|safeOutput}" sakai-entitytype="group" title="__MSG__SEND_A_MESSAGE_TO__ ${group.title|safeOutput}"></button>
+                                        <fieldset><legend class="s3d-aural-text">REPLACED</legend>
+                                            <button type="button" class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary sakai_joingroup_overlay" data-groupid="${group.groupid}" title="REPLACED ${group.title|safeOutput}"></button>
+                                            <button type="button" class="s3d-actions-message s3d-link-button s3d-action-icon sakai_sendmessage_overlay" sakai-entityid="${group.groupid}" sakai-entityname="${group.title|safeOutput}" sakai-entitytype="group" title="REPLACED ${group.title|safeOutput}"></button>
                                         </fieldset>
                                     </span>
 
@@ -193,7 +193,7 @@
             {/for}
         </ul>
     {else}
-        <span>__MSG__NO_FEATURED_ITEMS__</span>
+        <span>REPLACED</span>
     {/if}
 --></div>
 

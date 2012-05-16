@@ -16,7 +16,7 @@
     </head>
     <body class="fl-centered show i18nable">
 
-        <div style="display:none">__MSG__IE_PLACEHOLDER__</div>
+        <div style="display:none">REPLACED</div>
 
         <!-- HEADER -->
         <div id="widget_branding" class="widget_inline"></div>
@@ -32,10 +32,10 @@
                     <!-- SEARCH BAR -->
                     <div class="s3d-search-bar">
                         <span id="form" class="s3d-search-container">
-                            <input type="text" maxlength="255" id="search_text" title="__MSG__SEARCH_FOR__" class="s3d-search-inputfield"/>
-                            <button type="button" class="s3d-button s3d-overlay-button s3d-search-button" title="__MSG__SUBMIT_SEARCH__">
+                            <input type="text" maxlength="255" id="search_text" title="REPLACED" class="s3d-search-inputfield"/>
+                            <button type="button" class="s3d-button s3d-overlay-button s3d-search-button" title="REPLACED">
                                 <span class="s3d-search-button-icon"></span>
-                                <span class="s3d-aural-text">__MSG__SUBMIT_SEARCH__</span>
+                                <span class="s3d-aural-text">REPLACED</span>
                             </button
                         </span>
                         <div class="s3d-search-activetags" id="search_tags_active_container"></div>
@@ -49,7 +49,7 @@
             {for t in tags}
                 <span class="s3d-search-tag">
                     <img src=/dev/images/search_tag_active.png" />
-                    <button class="search_tag_active_item" data-sakai-entityid="${t.original}" title="__MSG__REMOVE__ ${t.value} __MSG__FROM_SEARCH__">
+                    <button class="search_tag_active_item" data-sakai-entityid="${t.original}" title="REPLACED ${t.value} REPLACED">
                         ${sakai.api.Util.applyThreeDots(t.value, 345, null, null, true)}<img src=/dev/images/search_tag_remove.png" />
                     </button>
                 </span>
@@ -61,12 +61,12 @@
             {var tagsListed = false}
             {for t in tags}
                 {if t_index === "0"}
-                    <span class="s3d-search-refineby-title">__MSG__REFINE_YOUR_SEARCH_BY__</span>
+                    <span class="s3d-search-refineby-title">REPLACED</span>
                     <div class="s3d-search-refineby-list">
                     {var tagsListed = true}
                 {/if}
                 <span class="s3d-search-tag">
-                    <button class="search_tag_refine_item" data-sakai-entityid="${t.original}" title="__MSG__REFINE_SEARCH_TO__ ${t.value}">
+                    <button class="search_tag_refine_item" data-sakai-entityid="${t.original}" title="REPLACED ${t.value}">
                         <img src=/dev/images/search_tag_add.png" />
                         ${sakai.api.Util.applyThreeDots(t.value, 345, null, null, true)}
                     </button>
@@ -106,19 +106,19 @@
                     <span class="s3d-search-result-user-functions">
                         {if ! i.isMe && ! sakai.data.me.user.anon}
                             {if ! i.connected}
-                                <button title="__MSG__REQUEST_CONNECTION_WITH__ ${i.name|safeOutput}" class="s3d-link-button s3d-actions-addtolibrary searchpeople_result_left_filler sakai_addtocontacts_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" {if i.picture}sakai-entitypicture="${i.picture}"{/if}><span class="s3d-aural-text">__MSG__REQUEST_CONNECTION_WITH__ ${i.name|safeOutput}</span></button>
+                                <button title="REPLACED ${i.name|safeOutput}" class="s3d-link-button s3d-actions-addtolibrary searchpeople_result_left_filler sakai_addtocontacts_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" {if i.picture}sakai-entitypicture="${i.picture}"{/if}><span class="s3d-aural-text">REPLACED ${i.name|safeOutput}</span></button>
                                 <div class="searchpeople_result_left_filler" id="searchpeople_result_left_filler_${i.userid|safeOutput}" style="display:none;"></div>
-                                <button title="__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}</span></button>
+                                <button title="REPLACED ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">REPLACED ${i.name|safeOutput}</span></button>
                             {elseif i.invited}
-                                <button title="__MSG__ACCEPT_CONNECTION_WITH__ ${i.name|safeOutput}" class="s3d-link-button s3d-actions-addtolibrary searchpeople_result_left_filler link_accept_invitation" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" {if i.picture}sakai-entitypicture="${i.picture}"{/if}><span class="s3d-aural-text">__MSG__ACCEPT_CONNECTION_WITH__ ${i.name|safeOutput}</span></button>
-                                <button title="__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}</span></button>
-                                <div class="searchpeople_result_left_filler" id="search_result_contact_${i.userid|safeOutput}" style="display:none;"><img src="/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
+                                <button title="REPLACED ${i.name|safeOutput}" class="s3d-link-button s3d-actions-addtolibrary searchpeople_result_left_filler link_accept_invitation" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" {if i.picture}sakai-entitypicture="${i.picture}"{/if}><span class="s3d-aural-text">REPLACED ${i.name|safeOutput}</span></button>
+                                <button title="REPLACED ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">REPLACED ${i.name|safeOutput}</span></button>
+                                <div class="searchpeople_result_left_filler" id="search_result_contact_${i.userid|safeOutput}" style="display:none;"><img src="/dev/images/accept.png" alt="REPLACED" /></div>
                             {elseif i.pending}
                                 <div class="searchpeople_result_left_filler"></div>
-                                <button title="__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}</span></button>
+                                <button title="REPLACED ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">REPLACED ${i.name|safeOutput}</span></button>
                             {else}
-                                <div class="searchpeople_result_left_filler"><img src="/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
-                                <button title="__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}</span></button>
+                                <div class="searchpeople_result_left_filler"><img src="/dev/images/accept.png" alt="REPLACED" /></div>
+                                <button title="REPLACED ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">REPLACED ${i.name|safeOutput}</span></button>
                             {/if}
                         {else}
                             <div class="searchpeople_result_left_filler"></div>
@@ -126,12 +126,12 @@
                     </span>
                     <span class="s3d-search-result-anonuser"></span>
                     {if ! i.picture}
-                        <a href="/~${i.userid|safeURL}" class="fl-icon searchpeople_result_person_picture" title="__MSG__TO_SEE_THE_PERSON_PROFILE__"></a>
+                        <a href="/~${i.userid|safeURL}" class="fl-icon searchpeople_result_person_picture" title="REPLACED"></a>
                     {else}
-                        <a href="/~${i.userid|safeURL}" class="searchpeople_result_person_picture" title="__MSG__TO_SEE_THE_PERSON_PROFILE__">
-                            <img alt="__MSG__TO_SEE_THE_PERSON_PROFILE__" src="${i.picture}"/>
+                        <a href="/~${i.userid|safeURL}" class="searchpeople_result_person_picture" title="REPLACED">
+                            <img alt="REPLACED" src="${i.picture}"/>
                             {if i.pictureLarge}
-                                <img alt="__MSG__TO_SEE_THE_PERSON_PROFILE__" src="${i.pictureLarge}" class="s3d-search-result-avatar-large"/>
+                                <img alt="REPLACED" src="${i.pictureLarge}" class="s3d-search-result-avatar-large"/>
                             {/if}
                         </a>
                     {/if}
@@ -143,9 +143,9 @@
                         <div class="searchpeople_result_counts">
                             {if i.counts.contentCount > 0}
                                 <a class="s3d-regular-light-links" href="/~${i.userid|safeURL}#l=library">
-                                    <span class="s3d-search-result-name s3d-aural-text">${i.nameShort} __MSG__HAS__ </span>
-                                    <span class="s3d-search-result-name-grid s3d-aural-text">${i.nameShorter} __MSG__HAS__ </span>
-                                    ${i.counts.contentCount || 0} {if i.counts.contentCount === 1} __MSG__CONTENT_ITEM__{else} __MSG__CONTENT_ITEMS__{/if}
+                                    <span class="s3d-search-result-name s3d-aural-text">${i.nameShort} REPLACED </span>
+                                    <span class="s3d-search-result-name-grid s3d-aural-text">${i.nameShorter} REPLACED </span>
+                                    ${i.counts.contentCount || 0} {if i.counts.contentCount === 1} REPLACED{else} REPLACED{/if}
                                 </a>
                                 {if i.counts.contactsCount > 0 || i.counts.membershipsCount > 0}
                                     <span class="s3d-search-result-detail-separator"><span> | </span></span>
@@ -153,9 +153,9 @@
                             {/if}
                             {if i.counts.contactsCount > 0}
                                 <a class="s3d-regular-light-links" href="/~${i.userid|safeURL}#l=contacts">
-                                    <span class="s3d-search-result-name s3d-aural-text">${i.nameShort} __MSG__HAS__ </span>
-                                    <span class="s3d-search-result-name-grid s3d-aural-text">${i.nameShorter} __MSG__HAS__ </span>
-                                    ${i.counts.contactsCount || 0} {if i.counts.contactsCount === 1} __MSG__CONTACT_LC__{else} __MSG__CONTACTS_LC__{/if}
+                                    <span class="s3d-search-result-name s3d-aural-text">${i.nameShort} REPLACED </span>
+                                    <span class="s3d-search-result-name-grid s3d-aural-text">${i.nameShorter} REPLACED </span>
+                                    ${i.counts.contactsCount || 0} {if i.counts.contactsCount === 1} REPLACED{else} REPLACED{/if}
                                 </a>
                                 {if i.counts.membershipsCount > 0}
                                     <span class="s3d-search-result-detail-separator"><span> | </span></span>
@@ -163,9 +163,9 @@
                             {/if}
                             {if i.counts.membershipsCount > 0}
                                 <a class="s3d-regular-light-links" href="/~${i.userid|safeURL}#l=memberships">
-                                    <span class="s3d-search-result-name s3d-aural-text">${i.nameShort} __MSG__HAS__ </span>
-                                    <span class="s3d-search-result-name-grid s3d-aural-text">${i.nameShorter} __MSG__HAS__ </span>
-                                    ${i.counts.membershipsCount || 0} {if i.counts.membershipsCount === 1} __MSG__MEMBERSHIP_LC__{else} __MSG__MEMBERSHIPS_LC__{/if}
+                                    <span class="s3d-search-result-name s3d-aural-text">${i.nameShort} REPLACED </span>
+                                    <span class="s3d-search-result-name-grid s3d-aural-text">${i.nameShorter} REPLACED </span>
+                                    ${i.counts.membershipsCount || 0} {if i.counts.membershipsCount === 1} REPLACED{else} REPLACED{/if}
                                 </a>
                             {/if}
                         </div>
@@ -179,8 +179,8 @@
             {macro listGroup(i, sakai)}
                 <li id="${i.id}" class="fl-container fl-fix searchgroups_result s3d-search-result-group s3d-search-result{if i_index === "0"} s3d-search-result-first{/if}">
                     <span class="s3d-search-result-user-functions">
-                        <div class="{if !i.userMember && i["sakai:group-joinable"] !== "no"} s3d-action-icon s3d-actions-addtolibrary searchgroups_result_plus {/if} searchgroups_result_left_filler" data-group-joinable="${i["sakai:group-joinable"]}" data-groupid="${i['sakai:group-id']}"><img src="/dev/images/accept.png" alt="" class="searchgroups_memberimage_${i['sakai:group-id']}" {if !i.userMember}style="display:none;" {/if}>{if !i.userMember && i["sakai:group-joinable"] !== "no"}<span class="s3d-aural-text">__MSG__JOIN__ ${i['sakai:group-title']|safeOutput}</span>{/if}</div>
-                        <button title="__MSG__SEND_A_MESSAGE_TO__ ${i['sakai:group-title']|safeOutput}" class="s3d-link-button searchgroups_result_message_icon s3d-action-icon s3d-actions-message sakai_sendmessage_overlay" sakai-entityid="${i['sakai:group-id']|safeOutput}" sakai-entityname="${i['sakai:group-title']|safeOutput}" sakai-entitytype="group"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i['sakai:group-title']|safeOutput}</span></button>
+                        <div class="{if !i.userMember && i["sakai:group-joinable"] !== "no"} s3d-action-icon s3d-actions-addtolibrary searchgroups_result_plus {/if} searchgroups_result_left_filler" data-group-joinable="${i["sakai:group-joinable"]}" data-groupid="${i['sakai:group-id']}"><img src="/dev/images/accept.png" alt="" class="searchgroups_memberimage_${i['sakai:group-id']}" {if !i.userMember}style="display:none;" {/if}>{if !i.userMember && i["sakai:group-joinable"] !== "no"}<span class="s3d-aural-text">REPLACED ${i['sakai:group-title']|safeOutput}</span>{/if}</div>
+                        <button title="REPLACED ${i['sakai:group-title']|safeOutput}" class="s3d-link-button searchgroups_result_message_icon s3d-action-icon s3d-actions-message sakai_sendmessage_overlay" sakai-entityid="${i['sakai:group-id']|safeOutput}" sakai-entityname="${i['sakai:group-title']|safeOutput}" sakai-entitytype="group"><span class="s3d-aural-text">REPLACED ${i['sakai:group-title']|safeOutput}</span></button>
                     </span>
                     <span class="s3d-search-result-anonuser"></span>
                     <a href="${i.homePath}" title="${i['sakai:group-title']|safeOutput}">
@@ -200,17 +200,17 @@
                             {/if}
                         </div>
                         <div class="searchgroups_result_usedin">
-                            __MSG__CHANGED__ ${jQuery.timeago(new Date(i.lastModified))}
+                            REPLACED ${jQuery.timeago(new Date(i.lastModified))}
                             {var contentItemCount = i.counts.contentCount}
                             {if contentItemCount > 0}
                                 <span class="s3d-search-result-detail-separator"><span> | </span></span>
-                                <a class="s3d-regular-light-links" href="${i.homePath}#l=library">${contentItemCount} {if contentItemCount === 1} __MSG__CONTENT_ITEM__{else} __MSG__CONTENT_ITEMS__{/if}</a>
+                                <a class="s3d-regular-light-links" href="${i.homePath}#l=library">${contentItemCount} {if contentItemCount === 1} REPLACED{else} REPLACED{/if}</a>
                             {/if}
                             {var participantCount = i.counts.membersCount}
                             {if participantCount > 0}
                                 <span class="s3d-search-result-detail-separator"><span> | </span></span>
                                 <a class="s3d-regular-light-links" href="${i.homePath}#l=participants">
-                                    <span class="s3d-aural-text">${i['sakai:group-title']|safeOutput} __MSG__HAS__ </span><span id="searchgroups_result_participant_count_${i['sakai:group-id']|safeOutput}">${participantCount}</span> <span id="searchgroups_text_participant_${i['sakai:group-id']|safeOutput}">{if participantCount === 1}__MSG__PARTICIPANT__{else}__MSG__PARTICIPANTS__{/if}</span>
+                                    <span class="s3d-aural-text">${i['sakai:group-title']|safeOutput} REPLACED </span><span id="searchgroups_result_participant_count_${i['sakai:group-id']|safeOutput}">${participantCount}</span> <span id="searchgroups_text_participant_${i['sakai:group-id']|safeOutput}">{if participantCount === 1}REPLACED{else}REPLACED{/if}</span>
                                 </a>
                             {/if}
                         </div>

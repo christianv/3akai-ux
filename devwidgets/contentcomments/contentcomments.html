@@ -3,21 +3,21 @@
 
 <!-- MAIN VIEW -->
 <div id="contentcomments_mainContainer" class="s3d-widget-container" style="display:none;">
-    <h2 class="s3d-contentpage-title">__MSG__COMMENTS__</h2>
+    <h2 class="s3d-contentpage-title">REPLACED</h2>
 
     <div id="contentcomments_userCommentContainer">
     </div>
 
     <div id="contentcomments_userCommentContainer_template" style="display:none"><!--
         <div id="contentcomments_userProfileAvatar">
-            <img id="contentcomments_userProfileAvatarPicture" alt="__MSG__AVATAR__" class="contentcomments_avatar" src="${picture}" />
+            <img id="contentcomments_userProfileAvatarPicture" alt="REPLACED" class="contentcomments_avatar" src="${picture}" />
         </div>
         <div class="contentcomments_fillInCommentTopContainer s3d-form-field-wrapper">
             <form>
-                <label style="display:none" for="contentcomments_txtMessage">__MSG__ENTER_A_COMMENT__</label>
-                <textarea id="contentcomments_txtMessage" name="contentcomments_txtMessage" class="required s3d-error-calculate contentcomments_inputFields" cols="10" placeholder="__MSG__ENTER_A_COMMENT__" title="__MSG__ENTER_A_COMMENT__"></textarea>
+                <label style="display:none" for="contentcomments_txtMessage">REPLACED</label>
+                <textarea id="contentcomments_txtMessage" name="contentcomments_txtMessage" class="required s3d-error-calculate contentcomments_inputFields" cols="10" placeholder="REPLACED" title="REPLACED"></textarea>
                 <div class="dialog_buttons contentcomments_dialog_buttons right">
-                    <button id="contentcomments_postComment" type="submit" class="s3d-button s3d-overlay-button comment_postCommentTopBottom">__MSG__COMMENT__</button>
+                    <button id="contentcomments_postComment" type="submit" class="s3d-button s3d-overlay-button comment_postCommentTopBottom">REPLACED</button>
                 </div>
             </form>
         </div>
@@ -28,7 +28,7 @@
     </div>
 
     <div id="contentcomments_contentcommentsDisabled" style="display:none;">
-        <p>__MSG__COMMENTS_ARE_CURRENTLY_DISABLED__</p>
+        <p>REPLACED</p>
     </div>
 
     <div id="contentcomments_showComments">
@@ -41,22 +41,22 @@
         {for i in comments}
         <div class="contentcomments_comment {if comments.length == 1} last first {elseif i_index == comments.length - 1} first{elseif i_index == 0} last{/if}">
             <div class="contentcomments_leftCommentBar">
-                <img alt="__MSG__AVATAR__" class="contentcomments_avatar" src="${i.user.pictureUrl}" />
+                <img alt="REPLACED" class="contentcomments_avatar" src="${i.user.pictureUrl}" />
             </div>
             <div class="contentcomments_topCommentBar">
                 <div class="contentcomments_posterData s3d-regular-links">
                     {if i.user.fullName}
                         <span class="contentcomments_posterDataName s3d-regular-links"><a href="/~${i.user.uid}">${i.user.fullName}</a></span>
                     {else}
-                        <span class="contentcomments_posterDataName s3d-gray s3d-regular-links">__MSG__UNDISCLOSED_USER__</span>
+                        <span class="contentcomments_posterDataName s3d-gray s3d-regular-links">REPLACED</span>
                     {/if}
                     <span class="contentcomments_dateComment">${i.timeAgo}</span>
                 </div>
                 {if (i.canDelete && i.canDelete === true) || (i.userid === sakai.data.me.user.userid && !sakai.data.me.user.anon)}
                     {if i["sakai:deleted"] && i["sakai:deleted"] === true}
-                        <button type="button" class="s3d-button contentcomments_undelete s3d-regular-links s3d-link-button" id="contentcomments_undelete_${i['sakai:id']}">__MSG__UNDELETE__</button>
+                        <button type="button" class="s3d-button contentcomments_undelete s3d-regular-links s3d-link-button" id="contentcomments_undelete_${i['sakai:id']}">REPLACED</button>
                     {else}
-                        <button type="button" class="s3d-button contentcomments_delete s3d-regular-links s3d-link-button" id="contentcomments_delete_${i['sakai:id']}">__MSG__DELETE__</button>
+                        <button type="button" class="s3d-button contentcomments_delete s3d-regular-links s3d-link-button" id="contentcomments_delete_${i['sakai:id']}">REPLACED</button>
                     {/if}
                 {/if}
                 <div class="contentcomments_commentMessage">
@@ -66,7 +66,7 @@
                                 <ul>
                                     <span class="dialog_buttons right">
                                         <li><button type="button" class="s3d-button s3d-button-link-2-state contentcomments_edit" id="contentcomments_edit_${i['sakai:id']}">
-                                                <span class="s3d-button-inner s3d-button-link-2-state-inner s3d-button-link-2-state-inner-secondary">__MSG__EDIT__</span>
+                                                <span class="s3d-button-inner s3d-button-link-2-state-inner s3d-button-link-2-state-inner-secondary">REPLACED</span>
                                             </button>
                                         </li>
                                     </span>
@@ -85,10 +85,10 @@
                         <p>${i.message}</p>
                     </div>
                     <div id="contentcomments_message_editContainer_${i['sakai:id']}" style="display:none;">
-                        <textarea class="contentcomments_txtMessage" id="contentcomments_editComment_txt_${i['sakai:id']}" rows="7" cols="50" title="__MSG__EDIT_COMMENT__">${i.messageTxt}</textarea><br />
+                        <textarea class="contentcomments_txtMessage" id="contentcomments_editComment_txt_${i['sakai:id']}" rows="7" cols="50" title="REPLACED">${i.messageTxt}</textarea><br />
                         <div class="dialog_buttons right">
-                            <button type="button" class="s3d-button s3d-button-primary contentcomments_editComment_save" id="contentcomments_editComment_save${i['sakai:id']}"><span class="s3d-button-inner">__MSG__EDIT_COMMENT__</span></button>
-                            <button type="button" class="s3d-button contentcomments_editComment_cancel" id="contentcomments_editComment_cancel${i['sakai:id']}"><span class="s3d-button-inner">__MSG__CANCEL__</span></button>
+                            <button type="button" class="s3d-button s3d-button-primary contentcomments_editComment_save" id="contentcomments_editComment_save${i['sakai:id']}"><span class="s3d-button-inner">REPLACED</span></button>
+                            <button type="button" class="s3d-button contentcomments_editComment_cancel" id="contentcomments_editComment_cancel${i['sakai:id']}"><span class="s3d-button-inner">REPLACED</span></button>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                 <div class="s3d-no-results-container contentcomments_no_results">
                     <div class="s3d-no-results-arrow-up"></div>
                     <div class="s3d-no-results-icon s3d-no-results-search-content"></div>
-                    <h1>__MSG__NO_RESULTS_DESCRIPTION__</h1>
+                    <h1>REPLACED</h1>
                 </div>
             {/if}
         {/for}
@@ -109,7 +109,7 @@
     </div>
     --></div>
     <div class="contentcomments_nextButtons">
-        <button type="button" class="s3d-button" id="contentcomments_prevPage"><span class="s3d-button-inner">__MSG__PREVIOUS_PAGE__</span></button><br />
+        <button type="button" class="s3d-button" id="contentcomments_prevPage"><span class="s3d-button-inner">REPLACED</span></button><br />
         <div class="jq_pager contentcomments_jqpager" style="display:none;"><!-- In this container the pager will be shown (bottom) --></div>
     </div>
 </div>

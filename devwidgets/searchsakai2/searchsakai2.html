@@ -3,14 +3,14 @@
 
 <div class="searchsakai2_widget" id="searchsakai2_widget">
     <div id="mylibrary_title_container">
-        <h1 class="s3d-contentpage-title">__MSG__MY_SAKAI2_SITES__</h1>
+        <h1 class="s3d-contentpage-title">REPLACED</h1>
     </div>
     <div class="searchsakai2_content_main">
         <div class="fl-left fl-container searchsakai2_result_title" id="results_header">
             <div class="s3d-search-container">
-                <input type="text" tabindex_none="40" id="searchsakai2_text" title="__MSG__SEARCH_YOUR_SAKAI2_SITES__" class="s3d-search-inputfield"/>
+                <input type="text" tabindex_none="40" id="searchsakai2_text" title="REPLACED" class="s3d-search-inputfield"/>
                 <button type="button" class="s3d-button s3d-overlay-button s3d-search-button" id="searchsakai2_button">
-                    <img src="/dev/images/search_icon.png" alt="__MSG__SEARCH_YOUR_SAKAI2_SITES__"/>
+                    <img src="/dev/images/search_icon.png" alt="REPLACED"/>
                 </button>
             </div>
             <div class="searchsakai2_selects">
@@ -21,11 +21,11 @@
         <!-- TEMPORARY SEARCH TEXT -->
         <div id="result_temp" style="display:none;">
             <div class="padded_content">
-                <b>__MSG__SEARCHING__ ...</b>
+                <b>REPLACED ...</b>
             </div>
         </div>
         <div class="searchsakai2_results_faceted">
-            <span id="searchsakai2_result_title" style="display:none;">__MSG__REFINE_YOUR_SEARCH__</span>
+            <span id="searchsakai2_result_title" style="display:none;">REPLACED</span>
         </div>
         <div id="searchsakai2_results" class="fl-container searchsakai2_results">
             <!-- SEARCH RESULTS -->
@@ -33,10 +33,10 @@
                 <!-- CONTENT -->
                 <div class="fl-container fl-fix results_part">
                     <div id="result_results_tagged_under" style="display:none;">
-                        <span style="font-weight:normal">__MSG__RESULTS_TAGGED_UNDER__</span>
+                        <span style="font-weight:normal">REPLACED</span>
                     </div>
                     <div id="result_results_located_in" style="display:none;">
-                        <span style="font-weight:normal">__MSG__RESULTS_LOCATED_IN__</span>
+                        <span style="font-weight:normal">REPLACED</span>
                     </div>
                     <!-- CONTAINER FOR THE RESULTS -->
                     <div id="sakai2search_error_container" style="display:none;">
@@ -44,14 +44,14 @@
                             <div class="s3d-no-results-arrow-up"></div>
                                 <div class="s3d-no-results-icon s3d-no-results-sakai2sites"></div>
                                 <h1>
-                                    __MSG__AN_ERROR_HAS_OCCURED_TRY_LATER__
+                                    REPLACED
                                 </h1>
                             </div>
                         </div>
                     <div>
                     <div id="searchsakai2_results_container"></div>
                     <div class="searchsakai2_results_end"></div>
-                    <!-- EXCEED SEARCH RESULT --><span id="result_exceed" style="display:none;">__MSG__MORE_THAN_100__</span>
+                    <!-- EXCEED SEARCH RESULT --><span id="result_exceed" style="display:none;">REPLACED</span>
                     <!-- CONTAINER FOR THE PAGER -->
                     <div class="jq_pager"><!-- --></div>
                 </div>
@@ -60,14 +60,14 @@
                     {for i in sites}
                     <div class="fl-container fl-fix searchsakai2_result {if i_index === "0"} searchsakai2_result_first {/if}">
                         <a href="s2site?id=${i.url}">
-                            <img src="/dev/images/sakai2sites.png" alt="__MSG__SAKAI2_SEARCH_ICON_ALT__" />
+                            <img src="/dev/images/sakai2sites.png" alt="REPLACED" />
                         </a>
                         <div class="searchsakai2_result_right">
                             <div>
                                 <a class="s3d-bold s3d-regular-light-links" href="s2site?id=${i.url}" title="${i.title}">
                                     ${i.title}                                
                                 </a>                          
-                                <span class="searchsakai2_result_mimetype">__MSG__SAKAI2_SITE__</span>
+                                <span class="searchsakai2_result_mimetype">REPLACED</span>
                             </div>
                             {if i.description}<div class="searchsakai2_itemby">${i.description}</div>
                             {/if}
@@ -79,9 +79,9 @@
                             <div class="s3d-no-results-icon s3d-no-results-sakai2sites"></div>
                             <h1>
                                 {if query === "" || query === "*"}
-                                    __MSG__NOT_A_MEMBER_OF_ANY_SAKAI2_SITES__
+                                    REPLACED
                                 {else}
-                                    __MSG__NO_SAKAI2_SITES_HAVE_BEEN_FOUND__
+                                    REPLACED
                                 {/if}
                             </h1>
                         </div>

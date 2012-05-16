@@ -8,7 +8,7 @@
                 <div class="s3d-no-results-container">
                     <div class="s3d-no-results-arrow-up"></div>
                     <div class="s3d-no-results-icon s3d-no-results-content-small"></div>
-                    <p>__MSG__NO_RESULTS_DESCRIPTION__ <a id="mylibrary_addcontent" class="s3d-regular-links sakai_add_content_overlay" href="#">__MSG__ADD_CONTENT__</a></p>
+                    <p>REPLACED <a id="mylibrary_addcontent" class="s3d-regular-links sakai_add_content_overlay" href="#">REPLACED</a></p>
                 </div>
             </div>
         </div>
@@ -38,17 +38,17 @@
                                 <span class="recentchangedcontent_mimetype_desc">${item.mimeTypeDescription}</span>
                             </p>
                             {if item.usedin > 0}
-                                <p class="recentchangedcontent_item_meta">__MSG__USED_IN__ ${item.usedin}{if item.usedin === 1} __MSG__PLACE__{else} __MSG__PLACES__{/if}</p>
+                                <p class="recentchangedcontent_item_meta">REPLACED ${item.usedin}{if item.usedin === 1} REPLACED{else} REPLACED{/if}</p>
                             {/if}
                             {if item.totalcomment > 0}
-                                <p class="recentchangedcontent_item_meta">${item.totalcomment}{if item.totalcomment === 1} __MSG__COMMENT__{else} __MSG__COMMENTS__{/if}</p>
+                                <p class="recentchangedcontent_item_meta">${item.totalcomment}{if item.totalcomment === 1} REPLACED{else} REPLACED{/if}</p>
                             {/if}
                         </div>
                     </div>
 
                     {if item.comment}
                     <div class="recentchangedcontent_item_related_info">
-                        <p class="recentchangedcontent_item_meta_data">__MSG__LAST_COMMENT_FOR__ <span class="s3d-bold">${item.nameShorter}</span></p>
+                        <p class="recentchangedcontent_item_meta_data">REPLACED <span class="s3d-bold">${item.nameShorter}</span></p>
                         <div class="fl-force-left">
                             <span id="recentchangedcontent_item_comment_author_picture" style="display:none;">
                                 <img class="s3d-icon-32" src="/dev/images/accept.png" />
@@ -64,7 +64,7 @@
 
                     {if item.relatedContent}
                     <div class="recentchangedcontent_item_related_info s3d-draggable-container" data-canshare="${item.relatedContent.canShare}" data-scope="content" data-entityid="${item.relatedContent["_path"]}" {if sakai.api.Content.Collections.isCollection(item.relatedContent)} data-collection="true" {/if}>
-                        <p class="recentchangedcontent_item_meta_data">__MSG__RELATED_CONTENT_TO__ <span class="s3d-bold">${item.nameShort}</span></p>
+                        <p class="recentchangedcontent_item_meta_data">REPLACED <span class="s3d-bold">${item.nameShort}</span></p>
                         <div class="fl-force-left">
                         <a href="/content#p=${item.relatedContent['_path']|safeURL}/${item.relatedContent.filename|safeURL}" title="${item.relatedContent.name|safeOutput}">
                             <span>
@@ -83,7 +83,7 @@
                                 ${item.relatedContent.nameRelatedShort|safeOutput}
                             </a>
                             <span class="recentchangedcontent_mimetype_desc">${item.relatedContent.mimeTypeDescription}</span>
-                            <div>__MSG__BY__
+                            <div>REPLACED
                                 <span id="recentchangedcontent_related_content_author"></span>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
     --></div>
 
     <div class="s3d-widget-footer">
-        <a class="recentchangedcontent_item_link s3d-widget-links" href="/me#l=library">__MSG__SEE_ALL_MY_CONTENT__</a>
+        <a class="recentchangedcontent_item_link s3d-widget-links" href="/me#l=library">REPLACED</a>
     </div>
 
 </div>

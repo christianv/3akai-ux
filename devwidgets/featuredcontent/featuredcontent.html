@@ -1,7 +1,7 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="/devwidgets/featuredcontent/css/featuredcontent.css" />
 
-<div style="display:none">__MSG__IE_PLACEHOLDER__</div>
+<div style="display:none">REPLACED</div>
 
 <div class="featuredcontent_widget">
     <div id="featuredcontent_content_container"><!----></div>
@@ -18,14 +18,14 @@
 
     {macro actionbuttons(item, sakai)}
         <fieldset class="featuredcontent_content_actions s3d-draggable-hidden">
-        <legend class="s3d-aural-text">__MSG__ACTIONS_ON_ITEM__</legend>
+        <legend class="s3d-aural-text">REPLACED</legend>
             {if item.canShare}
-                <div class="s3d-action-icon s3d-actions-share featuredcontent_content_actions_share share_trigger_click" data-entityid="${item["_path"]}" title="__MSG__SHARE_CONTENT__"></div>
+                <div class="s3d-action-icon s3d-actions-share featuredcontent_content_actions_share share_trigger_click" data-entityid="${item["_path"]}" title="REPLACED"></div>
             {/if}
             {if !sakai.data.me.user.anon}
-                <div class="s3d-action-icon s3d-actions-addtolibrary featuredcontent_content_actions_addtolibrary savecontent_trigger" data-entityid="${item["_path"]}" title="__MSG__SAVE_CONTENT__"></div>
+                <div class="s3d-action-icon s3d-actions-addtolibrary featuredcontent_content_actions_addtolibrary savecontent_trigger" data-entityid="${item["_path"]}" title="REPLACED"></div>
             {/if}
-            <div class="s3d-action-icon s3d-actions-author personinfo_trigger_click featuredcontent_content_actions_authorinfo" data-userid="${item["sakai:pool-content-created-for"]}" title="__MSG__VIEW_OWNER_INFO__"></div>
+            <div class="s3d-action-icon s3d-actions-author personinfo_trigger_click featuredcontent_content_actions_authorinfo" data-userid="${item["sakai:pool-content-created-for"]}" title="REPLACED"></div>
        </fieldset>
     {/macro}
     {macro displayTags(item, sakai)}
@@ -53,12 +53,12 @@
         <a href="/content#p=${item["_path"]|safeURL}/${item["sakai:pooled-content-file-name"]|safeURL}" title="${item["sakai:pooled-content-file-name"]|safeOutput}" class="s3d-bold s3d-regular-links featuredcontent_content_title featuredcontent_content_tworow_title">${sakai.api.Util.applyThreeDots(item["sakai:pooled-content-file-name"], length, params)}</a>
     {/macro}
     {macro showMetadata(item, sakai)}
-        {if item.usedin}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_usedin_icon featuredcontent_content_icon"></span>__MSG__USED_IN__ ${item.usedin} {if item.usedin == 1} __MSG__PLACE__{else} __MSG__PLACES__{/if}</span>{/if}
-        {if item.commentcount}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_comments_icon featuredcontent_content_icon"></span><a href="/content#p=${item["_path"]|safeURL}/${item["sakai:pooled-content-file-name"]|safeURL}" class="s3d-bold s3d-regular-links">${item.commentcount} {if item.commentcount == 1} __MSG__COMMENT__{else} __MSG__COMMENTS__{/if}</a></span>{/if}
+        {if item.usedin}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_usedin_icon featuredcontent_content_icon"></span>REPLACED ${item.usedin} {if item.usedin == 1} REPLACED{else} REPLACED{/if}</span>{/if}
+        {if item.commentcount}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_comments_icon featuredcontent_content_icon"></span><a href="/content#p=${item["_path"]|safeURL}/${item["sakai:pooled-content-file-name"]|safeURL}" class="s3d-bold s3d-regular-links">${item.commentcount} {if item.commentcount == 1} REPLACED{else} REPLACED{/if}</a></span>{/if}
     {/macro}
 
     {if results && results.length}
-        <h2 class="s3d-contentpage-title">{if sakai.config.enableCategories}__MSG__FEATURED_CONTENT__{else}__MSG__SUGGESTED__{/if}</h2>
+        <h2 class="s3d-contentpage-title">{if sakai.config.enableCategories}REPLACED{else}REPLACED{/if}</h2>
         <div id="featuredcontent_content_offset_container">
         {for item in results}
             {if item_index === "0"}
@@ -105,7 +105,7 @@
         </div>
         <div id="featuredcontent_show_more_container">
             <a class="s3d-button s3d-large-button" href="{if sakai.config.enableCategories}/categories{else}/search{/if}">
-                <span class="s3d-button-inner s3d-button-link-2-state-inner">__MSG__SHOW_MORE__</span>
+                <span class="s3d-button-inner s3d-button-link-2-state-inner">REPLACED</span>
             </a>
         </div>
     {elseif item}
@@ -125,7 +125,7 @@
     {else}
         <div class="s3d-no-results-container">
             <div class="s3d-no-results-arrow-up"></div>
-            <div class="s3d-no-results-icon s3d-no-results-content"></div><p>__MSG__NO_RESULTS_DESCRIPTION__ {if !sakai.data.me.user.anon} <a href="/create" class="s3d-regular-links">__MSG__ADD_REAL_CONTENT__</a>{/if}</p>
+            <div class="s3d-no-results-icon s3d-no-results-content"></div><p>REPLACED {if !sakai.data.me.user.anon} <a href="/create" class="s3d-regular-links">REPLACED</a>{/if}</p>
         </div>
     {/if}
     <div class="footer_bg s3d-contentpage-title"></div>
@@ -140,10 +140,10 @@
 
 <div id="featuredcontent_category_other_template"><!--
     <div class="s3d-widget-container">
-        <h2 class="s3d-contentpage-title s3d-contentpage-title-notdraggable">__MSG__CONTENT__
+        <h2 class="s3d-contentpage-title s3d-contentpage-title-notdraggable">REPLACED
             <span class="s3d-counts-outer">
                 <span class="s3d-counts-inner">${total}</span>
-                {if showSeeAll}<a id="featuredcontent_showall" href="/search#l=content&refine=directory/${category.replace("-", "/")}" title="__MSG__VIEW_ALL_CONTENT__" class="s3d-bold s3d-regular-links">__MSG__SEE_ALL__</a>{/if}
+                {if showSeeAll}<a id="featuredcontent_showall" href="/search#l=content&refine=directory/${category.replace("-", "/")}" title="REPLACED" class="s3d-bold s3d-regular-links">REPLACED</a>{/if}
             </span>
         </h2>
         {var count = 0}
@@ -152,14 +152,14 @@
             {if count <= 6}
                 <div class="featuredcontent_content featuredcontent_content_small s3d-draggable-container" data-canshare="${item.canShare}" data-scope="content" data-entityid="${item["_path"]}" {if sakai.api.Content.Collections.isCollection(item)} data-collection="true" {/if}>
                     <fieldset class="featuredcontent_content_actions s3d-draggable-hidden">
-                        <legend class="s3d-aural-text">__MSG__ACTIONS_ON_ITEM__</legend>
+                        <legend class="s3d-aural-text">REPLACED</legend>
                         {if item.canShare}
-                            <div class="s3d-action-icon s3d-actions-share featuredcontent_content_actions_share share_trigger_click" data-entityid="${item["_path"]}" title="__MSG__SHARE_CONTENT__"></div>
+                            <div class="s3d-action-icon s3d-actions-share featuredcontent_content_actions_share share_trigger_click" data-entityid="${item["_path"]}" title="REPLACED"></div>
                         {/if}
                         {if !sakai.data.me.user.anon}
-                            <div class="s3d-action-icon s3d-actions-addtolibrary featuredcontent_content_actions_addtolibrary savecontent_trigger" data-entityid="${item["_path"]}" title="__MSG__SAVE_CONTENT__"></div>
+                            <div class="s3d-action-icon s3d-actions-addtolibrary featuredcontent_content_actions_addtolibrary savecontent_trigger" data-entityid="${item["_path"]}" title="REPLACED"></div>
                         {/if}
-                        <div class="s3d-action-icon s3d-actions-author personinfo_trigger_click featuredcontent_content_actions_authorinfo" data-userid="${item["sakai:pool-content-created-for"]}" title="__MSG__VIEW_OWNER_INFO__"></div>
+                        <div class="s3d-action-icon s3d-actions-author personinfo_trigger_click featuredcontent_content_actions_authorinfo" data-userid="${item["sakai:pool-content-created-for"]}" title="REPLACED"></div>
                     </fieldset>
                     {if item.thumbnail}
                         <img src="${item.thumbnail}" class="featuredcontent_thumbnail_image" alt="${item["sakai:pooled-content-file-name"]|safeOutput}"/>
@@ -167,8 +167,8 @@
                         <img src="${sakai.api.Content.getMimeTypeData(item["_mimeType"]).URL}" class="featuredcontent_thumbnail_image" alt="${item["sakai:pooled-content-file-name"]}"/>
                     {/if}
                     <a href="/content#p=${item["_path"]|safeURL}/${item["sakai:pooled-content-file-name"]|safeURL}" title="${item["sakai:pooled-content-file-name"]|safeOutput}" class="s3d-bold s3d-regular-links featuredcontent_content_title">${sakai.api.Util.applyThreeDots(item["sakai:pooled-content-file-name"], 76)}</a>
-                    {if item.usedin}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_usedin_icon featuredcontent_content_icon"></span>__MSG__USED_IN__ ${item.usedin} {if item.usedin == 1} __MSG__PLACE__{else} __MSG__PLACES__{/if}</span>{/if}
-                    {if item.commentcount}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_comments_icon featuredcontent_content_icon"></span><a href="/content#p=${item["_path"]|safeURL}/${item["sakai:pooled-content-file-name"]|safeURL}" class="s3d-bold s3d-regular-links">${item.commentcount} {if item.commentcount == 1} __MSG__COMMENT__{else} __MSG__COMMENTS__{/if}</a></span>{/if}
+                    {if item.usedin}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_usedin_icon featuredcontent_content_icon"></span>REPLACED ${item.usedin} {if item.usedin == 1} REPLACED{else} REPLACED{/if}</span>{/if}
+                    {if item.commentcount}<span class="featuredcontent_content_category_description"><span class="featuredcontent_content_comments_icon featuredcontent_content_icon"></span><a href="/content#p=${item["_path"]|safeURL}/${item["sakai:pooled-content-file-name"]|safeURL}" class="s3d-bold s3d-regular-links">${item.commentcount} {if item.commentcount == 1} REPLACED{else} REPLACED{/if}</a></span>{/if}
                 </div>
                 {if item_index == 2 && results.length > 3}
                     <hr class="s3d-split-line fl-push ">
@@ -177,7 +177,7 @@
         {forelse}
             <div class="s3d-no-results-container">
                 <div class="s3d-no-results-arrow-up"></div>
-                <div class="s3d-no-results-icon s3d-no-results-content"></div><p>__MSG__NO_RESULTS_DESCRIPTION__ {if !sakai.data.me.user.anon} <button class="s3d-link-button sakai_add_content_overlay">__MSG__ADD_REAL_CONTENT__</button>{/if}</p>
+                <div class="s3d-no-results-icon s3d-no-results-content"></div><p>REPLACED {if !sakai.data.me.user.anon} <button class="s3d-link-button sakai_add_content_overlay">REPLACED</button>{/if}</p>
             </div>
         {/for}
         <hr class="fl-push fl-hidden"/>

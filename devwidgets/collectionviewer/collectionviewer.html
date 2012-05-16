@@ -3,9 +3,9 @@
 
 <div class="collectionviewer_widget" style="display:none">
     <div id="collectionviewer_header_container">
-        <button class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-left sakai_add_content_overlay" id="collectionviewer_add_content_button" type="button" style="display:none;"><div class="s3d-button s3d-button-in-button-lighter">0</div>__MSG__ADD_CONTENT__</button>
-        <button class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-left" id="collectionviewer_edit_collection_button" type="button" style="display:none;" data-liststyle="edit">__MSG__EDIT_COLLECTION__</button>
-        <button class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-left" id="collectionviewer_finish_editing_collection_button" type="button" style="display:none;">__MSG__FINISH_EDITING__</button>
+        <button class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-left sakai_add_content_overlay" id="collectionviewer_add_content_button" type="button" style="display:none;"><div class="s3d-button s3d-button-in-button-lighter">0</div>REPLACED</button>
+        <button class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-left" id="collectionviewer_edit_collection_button" type="button" style="display:none;" data-liststyle="edit">REPLACED</button>
+        <button class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-left" id="collectionviewer_finish_editing_collection_button" type="button" style="display:none;">REPLACED</button>
         <div class="s3d-button s3d-header-button s3d-header-smaller-button s3d-listview-options">
             <div class="s3d-listview-grid" id="collectionviewer_grid_view" data-liststyle="grid">
                 <div class="s3d-action-icon s3d-search-results-gridview"></div>
@@ -19,15 +19,15 @@
         </div>
 
         <div id="collectionviewer_sortarea" class="s3d-margin-top-5 fl-force-right">
-            <label for="collectionviewer_sortby">__MSG__SORT_BY__:</label>
+            <label for="collectionviewer_sortby">REPLACED:</label>
             <select id="collectionviewer_sortby" name="collectionviewer_sortby">
-                <option value="modified">__MSG__RECENTLY_CHANGED__</option>
-                <option value="asc"> __MSG__A_Z__</option>
-                <option value="desc">__MSG__Z_A__</option>
+                <option value="modified">REPLACED</option>
+                <option value="asc"> REPLACED</option>
+                <option value="desc">REPLACED</option>
             </select>
         </div>
     </div>
-    <div id="collectionviewer_carousel_loading" style="display:none;"><img src="/dev/images/ajax-loader-gray.gif" alt="__MSG__LOADING__"></div>
+    <div id="collectionviewer_carousel_loading" style="display:none;"><img src="/dev/images/ajax-loader-gray.gif" alt="REPLACED"></div>
     <div id="collectionviewer_carousel_container" style="display:none;"></div>
     <div id="collectionviewer_expanded_content_container" style="display:none;"></div>
     <div id="collectionviewer_grid_list_container" style="display:none;"></div>
@@ -40,10 +40,10 @@
                 <input type="checkbox" id="collectionviewer_select_all"/>
                 <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button savecontent_trigger" id="collections_savecontent_button" disabled="true" data-entityname="" data-entityid="">
                     <span class="s3d-page-header-add-to-icon"></span>
-                    __MSG__ADD_TO__...
+                    REPLACED...
                 </button>
                 <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button" id="collections_remove_button" disabled="true" data-entityname="" data-entityid="">
-                    __MSG__REMOVE__
+                    REPLACED
                 </button>
                 <hr class="fl-push fl-hidden"/>
             </div>
@@ -55,18 +55,18 @@
                 {if !editMode}
                     <span class="s3d-search-result-user-functions s3d-draggable-hidden">
                         {if !sakai.data.me.user.anon}
-                            <button class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary searchcontent_result_left_filler savecontent_trigger" data-entityid="${i['_path']}" title="__MSG__SAVE__{if i['sakai:pooled-content-file-name']} ${i['sakai:pooled-content-file-name']|safeOutput}{elseif i['_path']} ${i['_path']}{/if}"></button>
+                            <button class="s3d-link-button s3d-action-icon s3d-actions-addtolibrary searchcontent_result_left_filler savecontent_trigger" data-entityid="${i['_path']}" title="REPLACED{if i['sakai:pooled-content-file-name']} ${i['sakai:pooled-content-file-name']|safeOutput}{elseif i['_path']} ${i['_path']}{/if}"></button>
                         {/if}
-                        <button class="s3d-link-button s3d-action-icon s3d-actions-author searchcontent_result_author_icon personinfo_trigger_click" data-userid="${i['sakai:pool-content-created-for']|safeOutput}" title="__MSG__VIEW_OWNER_INFO_FOR__{if i['sakai:pooled-content-file-name']} ${i['sakai:pooled-content-file-name']|safeOutput}{elseif i['_path']} ${i['_path']}{/if}"></button>
+                        <button class="s3d-link-button s3d-action-icon s3d-actions-author searchcontent_result_author_icon personinfo_trigger_click" data-userid="${i['sakai:pool-content-created-for']|safeOutput}" title="REPLACED{if i['sakai:pooled-content-file-name']} ${i['sakai:pooled-content-file-name']|safeOutput}{elseif i['_path']} ${i['_path']}{/if}"></button>
                         {if canShare}
-                            <button class="s3d-link-button s3d-action-icon s3d-actions-share searchcontent_result_share_icon share_trigger_click" data-entityid="${i['_path']}" title="__MSG__SHARE__{if i['sakai:pooled-content-file-name']} ${i['sakai:pooled-content-file-name']|safeOutput}{elseif i['_path']} ${i['_path']}{/if}"></button>
+                            <button class="s3d-link-button s3d-action-icon s3d-actions-share searchcontent_result_share_icon share_trigger_click" data-entityid="${i['_path']}" title="REPLACED{if i['sakai:pooled-content-file-name']} ${i['sakai:pooled-content-file-name']|safeOutput}{elseif i['_path']} ${i['_path']}{/if}"></button>
                         {/if}
                     </span>
                 {else}
                     <span class="s3d-search-result-user-functions fl-force-left collectionviewer_remove_actions">
                         <input class="collectionviewer_check s3d-draggable-select" id="collectionviewer_check_${i.id}" type="checkbox" data-entityid="${i.id}" data-entityname="${i['sakai:pooled-content-file-name']|safeOutput}" data-canshare="${canShare}"/>
-                        <label for="collectionviewer_check_${i.id}" class="s3d-aural-text">__MSG__SELECT__ ${i['sakai:pooled-content-file-name']|safeOutput} __MSG__TO_REMOVE__</label>
-                        <button class="s3d-link-button s3d-action-icon s3d-actions-delete collectionviewer_remove_icon" type="button" title="__MSG__REMOVE__" data-entityid="${i.id}"></button>
+                        <label for="collectionviewer_check_${i.id}" class="s3d-aural-text">REPLACED ${i['sakai:pooled-content-file-name']|safeOutput} REPLACED</label>
+                        <button class="s3d-link-button s3d-action-icon s3d-actions-delete collectionviewer_remove_icon" type="button" title="REPLACED" data-entityid="${i.id}"></button>
                     </span>
                 {/if}
                 <span class="s3d-search-result-anonuser"></span>
@@ -95,14 +95,14 @@
                     </div>
                     <div class="searchcontent_result_by">
                         {if i.ownerDisplayNameShort}
-                        __MSG__BY__
+                        REPLACED
                         <a class="s3d-regular-light-links searchcontent_result_username" href="/~${i['sakai:pool-content-created-for']|safeURL}">
                             <span class="searchcontent_result_by_name">${i.ownerDisplayNameShort}</span>
                             <span class="searchcontent_result_by_name_grid">${i.ownerDisplayNameShorter}</span>
                         </a>
                         <span class="s3d-search-result-detail-separator"><span> | </span></span>
                         {/if}
-                        __MSG__CHANGED__ ${jQuery.timeago(new Date(i._lastModified))}
+                        REPLACED ${jQuery.timeago(new Date(i._lastModified))}
                     </div>
                     {if i["sakai:description"]}
                         <span class="searchcontent_result_description">${i["sakai:description"]|safeOutput}</span>
@@ -124,14 +124,14 @@
                         {var placeCount = sakai.api.Content.getPlaceCount(i)}
                         {if placeCount > 0}
                             <span class="searchcontent_result_icon searchcontent_result_usedin_icon"></span>
-                            __MSG__USED_IN__ ${placeCount} {if placeCount === 1} __MSG__PLACE__{else} __MSG__PLACES__{/if}
+                            REPLACED ${placeCount} {if placeCount === 1} REPLACED{else} REPLACED{/if}
                         {/if}
                     </div>
                     {var commentCount = i.numComments || sakai.api.Content.getCommentCount(i)}
                     {if commentCount > 0}
                         <br/>
                         <span class="searchcontent_result_icon searchcontent_result_comments_icon"></span>
-                        ${commentCount} {if commentCount === 1} __MSG__COMMENT__{else} __MSG__COMMENTS__{/if}
+                        ${commentCount} {if commentCount === 1} REPLACED{else} REPLACED{/if}
                     {/if}
                 </div>
             </li>
@@ -149,7 +149,7 @@
         <div class="s3d-no-results-container">
             <div class="s3d-no-results-arrow-up"></div>
             <div class="s3d-no-results-icon s3d-no-results-content"></div>
-            <h1>__MSG__THIS_COLLECTION_IS_EMPTY__ {if isEditor} __MSG__WHY_NOT__ <button type="button" class="s3d-link-button sakai_add_content_overlay">__MSG__ADD_SOME_ITEMS__</button> __MSG__TO_THIS_COLLECTION__{/if}</h1>
+            <h1>REPLACED {if isEditor} REPLACED <button type="button" class="s3d-link-button sakai_add_content_overlay">REPLACED</button> REPLACED{/if}</h1>
         </div>
     {/if}
 --></div>
@@ -166,12 +166,12 @@
     {/macro}
 
     <div class="collectionviewer_prev_next_container fl-force-right">
-        <button id="collectionviewer_older" class="collectionviewer_controls s3d-link-button" title="__MSG__PREVIOUS_PAGE__"></button>
-        <button id="collectionviewer_oldest" class="collectionviewer_controls s3d-link-button" title="__MSG__FIRST_PAGE__"></button>
+        <button id="collectionviewer_older" class="collectionviewer_controls s3d-link-button" title="REPLACED"></button>
+        <button id="collectionviewer_oldest" class="collectionviewer_controls s3d-link-button" title="REPLACED"></button>
     </div>
     <div class="collectionviewer_prev_next_container fl-force-left">
-        <button id="collectionviewer_newer" class="collectionviewer_controls s3d-link-button" title="__MSG__NEXT_PAGE__"></button>
-        <button id="collectionviewer_newest" class="collectionviewer_controls s3d-link-button" title="__MSG__LAST_PAGE__"></button>
+        <button id="collectionviewer_newer" class="collectionviewer_controls s3d-link-button" title="REPLACED"></button>
+        <button id="collectionviewer_newest" class="collectionviewer_controls s3d-link-button" title="REPLACED"></button>
     </div>
 
     <div id="collectionviewer_carousel" class="jcarousel-skin-tango s3d-bold">
@@ -203,7 +203,7 @@
                 {/for}
             </ul>
         {else}
-            <div id="collectionviewer_no_content">__MSG__THIS_COLLECTION_IS_EMPTY__ {if !sakai.data.me.user.anon && isEditor} __MSG__WHY_NOT__ <button type="button" class="s3d-link-button sakai_add_content_overlay">__MSG__ADD_SOME_ITEMS__</button> __MSG__TO_THIS_COLLECTION__{/if}</div>
+            <div id="collectionviewer_no_content">REPLACED {if !sakai.data.me.user.anon && isEditor} REPLACED <button type="button" class="s3d-link-button sakai_add_content_overlay">REPLACED</button> REPLACED{/if}</div>
         {/if}
     </div>
 --></div>
@@ -226,24 +226,24 @@
             <div class="collectionviewer_item_actions s3d-draggable-hidden">
                 {if !sakai.data.me.user.anon && canShare}
                     <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right savecontent_trigger" data-entityid="${data["_path"]}">
-                        __MSG__ADD_TO__...
+                        REPLACED...
                         <span class="s3d-page-header-add-to-icon"></span>
                     </button>
                 {/if}
                 {if canShare}
                     <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right share_trigger_click" data-entityname="${data['sakai:pooled-content-file-name']|safeOutput}" data-entityid="${data["_path"]}">
-                        __MSG__SHARE__
+                        REPLACED
                         <span class="s3d-page-header-add-to-icon"></span>
                     </button>
                 {/if}
                 {if data["_mimeType"] !== "x-sakai/document"}
                     <a target="_blank" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right collectionviewer_download_button" href="/p/${path}">
-                        __MSG__DOWNLOAD__<span class="entity_download_content"></span>
+                        REPLACED<span class="entity_download_content"></span>
                     </a>
                 {else}
                     {var imspath = "/imscp/" + data._path +"/" + sakai.api.Util.safeURL(data["sakai:pooled-content-file-name"]) +".zip"}
                     <a  target="_blank" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right collectionviewer_download_button" href="${imspath}">
-                        __MSG__DOWNLOAD__<span class="entity_download_content"></span>
+                        REPLACED<span class="entity_download_content"></span>
                     </a>
                 {/if}
             </div>
@@ -271,18 +271,18 @@
                 </div>
                 <div class="collectionviewer_result_by">
                     {if data.ownerDisplayNameShort}
-                    __MSG__BY__ <a class="s3d-regular-light-links searchcontent_result_username" href="/~${data['sakai:pool-content-created-for']|safeURL}">${data.ownerDisplayNameShort}</a> 
+                    REPLACED <a class="s3d-regular-light-links searchcontent_result_username" href="/~${data['sakai:pool-content-created-for']|safeURL}">${data.ownerDisplayNameShort}</a> 
                     <span class="s3d-search-result-detail-separator">
                         <span> | </span>
                     </span>
                     {/if}
-                    __MSG__CHANGED__ ${jQuery.timeago(new Date(data["_lastModified"]))}
+                    REPLACED ${jQuery.timeago(new Date(data["_lastModified"]))}
                 </div>
                <div class="collectionviewer_result_usedin">
                    {var placeCount = sakai.api.Content.getPlaceCount(data)}
                    {if placeCount > 0}
                        <span class="searchcontent_result_icon searchcontent_result_usedin_icon"></span>
-                       __MSG__USED_IN__ ${placeCount} {if placeCount === 1} __MSG__PLACE__{else} __MSG__PLACES__{/if}
+                       REPLACED ${placeCount} {if placeCount === 1} REPLACED{else} REPLACED{/if}
                    {/if}
                </div>
             </div>
@@ -314,24 +314,24 @@
                             <div class="collectionviewer_item_actions">
                                 {if !sakai.data.me.user.anon && canShare}
                                     <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right savecontent_trigger" data-entityid="${item["_path"]}">
-                                        __MSG__ADD_TO__...
+                                        REPLACED...
                                         <span class="s3d-page-header-add-to-icon"></span>
                                     </button>
                                 {/if}
                                 {if canShare}
                                     <button type="button" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right share_trigger_click" data-entityname="${item['sakai:pooled-content-file-name']|safeOutput}" data-entityid="${item["_path"]}">
-                                        __MSG__SHARE__
+                                        REPLACED
                                         <span class="s3d-page-header-add-to-icon"></span>
                                     </button>
                                 {/if}
                                 {if item["_mimeType"] !== "x-sakai/document"}
                                     <a target="_blank" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right collectionviewer_download_button" href="/p/${path}">
-                                        __MSG__DOWNLOAD__<span class="entity_download_content"></span>
+                                        REPLACED<span class="entity_download_content"></span>
                                     </a>
                                 {else}
                                     {var imspath = "/imscp/" + item._path +"/" + sakai.api.Util.safeURL(item["sakai:pooled-content-file-name"]) +".zip"}
                                     <a  target="_blank" class="s3d-button s3d-header-button s3d-header-smaller-button fl-force-right collectionviewer_download_button" href="${imspath}">
-                                        __MSG__DOWNLOAD__<span class="entity_download_content"></span>
+                                        REPLACED<span class="entity_download_content"></span>
                                     </a>
                                 {/if}
                             </div>
@@ -358,23 +358,23 @@
                                 </div>
                                 <div class="collectionviewer_result_by">
                                     {if item.ownerDisplayNameShort}
-                                    __MSG__BY__ <a class="s3d-regular-light-links searchcontent_result_username" href="/~${item['sakai:pool-content-created-for']|safeURL}">${item.ownerDisplayNameShort}</a> 
+                                    REPLACED <a class="s3d-regular-light-links searchcontent_result_username" href="/~${item['sakai:pool-content-created-for']|safeURL}">${item.ownerDisplayNameShort}</a> 
                                     <span class="s3d-search-result-detail-separator">
                                         <span> | </span>
                                     </span>
                                     {/if}
-                                    __MSG__CHANGED__ ${jQuery.timeago(new Date(item["_lastModified"]))}
+                                    REPLACED ${jQuery.timeago(new Date(item["_lastModified"]))}
                                 </div>
                                <div class="collectionviewer_result_usedin">
                                    {var placeCount = sakai.api.Content.getPlaceCount(item)}
                                    {if placeCount > 0}
                                        <span class="searchcontent_result_icon searchcontent_result_usedin_icon"></span>
-                                       __MSG__USED_IN__ ${placeCount} {if placeCount === 1} __MSG__PLACE__{else} __MSG__PLACES__{/if}
+                                       REPLACED ${placeCount} {if placeCount === 1} REPLACED{else} REPLACED{/if}
                                    {/if}
                                    {var commentCount = item.numComments || sakai.api.Content.getCommentCount(item)}
                                    {if commentCount > 0}
                                        <span class="searchcontent_result_icon searchcontent_result_comments_icon"></span>
-                                       ${commentCount} {if commentCount === 1} __MSG__COMMENT__{else} __MSG__COMMENTS__{/if}
+                                       ${commentCount} {if commentCount === 1} REPLACED{else} REPLACED{/if}
                                    {/if}
                                </div>
                             </div>
@@ -386,7 +386,7 @@
                 <div class="s3d-no-results-container">
                     <div class="s3d-no-results-arrow-up"></div>
                     <div class="s3d-no-results-icon s3d-no-results-content"></div>
-                    <h1>__MSG__THIS_COLLECTION_IS_EMPTY__</h1>
+                    <h1>REPLACED</h1>
                 </div>
             {/if}
         {/if}

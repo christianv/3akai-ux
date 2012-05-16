@@ -17,15 +17,15 @@
 
     <body id="root" class="fl-centered fl-container i18nable widgets-container">
 
-        <span id="admin_widgets_notication" style="display:none;">__MSG__WIDGET_ADMIN__</span>
-        <span id="admin_widgets_notication_disable_success" style="display:none;">__MSG__WIDGET_DISABLED_SUCCESS__</span>
-        <span id="admin_widgets_notication_disable_error" style="display:none;">__MSG__WIDGET_DISABLED_ERROR__</span>
-        <span id="admin_widgets_notication_enable_success" style="display:none;">__MSG__WIDGET_ENABLED_SUCCESS__</span>
-        <span id="admin_widgets_notication_enable_error" style="display:none;">__MSG__WIDGET_ENABLED_ERROR__</span>
-        <span id="admin_widgets_notication_delete_success" style="display:none;">__MSG__WIDGET_DELETED_SUCCESS__</span>
-        <span id="admin_widgets_notication_delete_error" style="display:none;">__MSG__WIDGET_DELETED_ERROR__</span>
-        <span id="admin_widgets_notication_install_success" style="display:none;">__MSG__WIDGET_INSTALL_SUCCESS__</span>
-        <span id="admin_widgets_notication_install_error" style="display:none;">__MSG__WIDGET_INSTALL_ERROR__</span>
+        <span id="admin_widgets_notication" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_disable_success" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_disable_error" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_enable_success" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_enable_error" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_delete_success" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_delete_error" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_install_success" style="display:none;">REPLACED</span>
+        <span id="admin_widgets_notication_install_error" style="display:none;">REPLACED</span>
 
         <!-- TOP BANNER -->
         <div id="top_banner"><!-- --></div>
@@ -44,7 +44,7 @@
                 </div>
                 <!-- TITLE BAR  -->
                 <div class="s3d-site-heading">
-                    <h1>__MSG__WIDGET_ADMIN__</h1>
+                    <h1>REPLACED</h1>
                 </div>
                 <!-- CONTENT -->
                 <div class="fl-fix fl-centered main-container">
@@ -62,18 +62,18 @@
                     </div>
                     <div id="admin_widgets_add_widget">
                         <div id="admin_widgets_jumpbox">
-                            <h2 id="admin_widgets_header">__MSG__INSTALL_A_WIDGET__</h2>
+                            <h2 id="admin_widgets_header">REPLACED</h2>
                             <div class="admin_widgets_jumpbox_box">
                                 <div class="admin_widgets_upload_section">
-                                    __MSG__INSTALL_FROM_URL__
-                                    <p>__MSG__ENTER_OR_PASTE_WIDGET_WEB_ADDRESS__:</p>
+                                    REPLACED
+                                    <p>REPLACED:</p>
                                     <input id="admin_widgets_install_url" type="text" name="admin_widgets_install_url"/>
                                     <p>
-                                        <button class="s3d-button" id="admin_widgets_install_url_submit"><span class="s3d-button-inner">__MSG__INSTALL_WIDGET__</span></button>
+                                        <button class="s3d-button" id="admin_widgets_install_url_submit"><span class="s3d-button-inner">REPLACED</span></button>
                                     </p>
                                 </div>
                                 <div class="admin_widgets_upload_section">
-                                    <a href="javascript:;" id="admin_widgets_upload_link" class="admin_widgets_upload_link">__MSG__UPLOAD_A_WIDGET__</a>
+                                    <a href="javascript:;" id="admin_widgets_upload_link" class="admin_widgets_upload_link">REPLACED</a>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
         <!-- TEMPLATES -->
         <div id="admin_widgets_core_template" style="display:none;"><!--
         <div id="admin_widgets_jumpbox">
-            <h2 id="admin_widgets_header">__MSG__CORE_WIDGETS__</h2>
+            <h2 id="admin_widgets_header">REPLACED</h2>
             <div class="admin_widgets_jumpbox_box">
                 {for i in items}
                     <div class="admin_widgets_jumpbox_box_widget admin_widgets_widget_${i.id}">
@@ -99,7 +99,7 @@
                         {/if}
                         <div class="dialog_buttons">
                             {if !i.enabled}
-                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}"><span class="s3d-button-inner">__MSG__ENABLE_WIDGET__</span></button>
+                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}"><span class="s3d-button-inner">REPLACED</span></button>
                             {/if}
                         </div>
                     </div>
@@ -113,7 +113,7 @@
 
         <div id="admin_widgets_sakai_template" style="display:none;"><!--
         <div id="admin_widgets_jumpbox">
-            <h2 id="admin_widgets_header">__MSG__SAKAI_WIDGETS__</h2>
+            <h2 id="admin_widgets_header">REPLACED</h2>
             <div class="admin_widgets_jumpbox_box">
                 {for i in items}
                     <div class="admin_widgets_jumpbox_box_widget admin_widgets_widget_${i.id}">
@@ -127,11 +127,11 @@
                         {/if}
                         <div class="dialog_buttons">
                             {if i.enabled}
-                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}"><span class="s3d-button-inner">__MSG__DISABLE_WIDGET__</span></button>
-                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}" style="display:none;"><span class="s3d-button-inner">__MSG__ENABLE_WIDGET__</span></button>
+                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}"><span class="s3d-button-inner">REPLACED</span></button>
+                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}" style="display:none;"><span class="s3d-button-inner">REPLACED</span></button>
                             {else}
-                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}" style="display:none;"><span class="s3d-button-inner">__MSG__DISABLE_WIDGET__</span></button>
-                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}"><span class="s3d-button-inner">__MSG__ENABLE_WIDGET__</span></button>
+                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}" style="display:none;"><span class="s3d-button-inner">REPLACED</span></button>
+                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}"><span class="s3d-button-inner">REPLACED</span></button>
                             {/if}
                         </div>
                     </div>
@@ -145,7 +145,7 @@
 
         <div id="admin_widgets_contrib_template" style="display:none;"><!--
         <div id="admin_widgets_jumpbox">
-            <h2 id="admin_widgets_header">__MSG__CONTRIB_WIDGETS__</h2>
+            <h2 id="admin_widgets_header">REPLACED</h2>
             <div class="admin_widgets_jumpbox_box">
                 {for i in items}
                     <div class="admin_widgets_contrib admin_widgets_jumpbox_box_widget admin_widgets_widget_${i.id}">
@@ -159,13 +159,13 @@
                         {/if}
                             <div class="dialog_buttons">
                             {if i.enabled}
-                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}"><span class="s3d-button-inner">__MSG__DISABLE_WIDGET__</span></button>
-                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}" style="display:none;"><span class="s3d-button-inner">__MSG__ENABLE_WIDGET__</span></button>
+                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}"><span class="s3d-button-inner">REPLACED</span></button>
+                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}" style="display:none;"><span class="s3d-button-inner">REPLACED</span></button>
                             {else}
-                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}" style="display:none;"><span class="s3d-button-inner">__MSG__DISABLE_WIDGET__</span></button>
-                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}"><span class="s3d-button-inner">__MSG__ENABLE_WIDGET__</span></button>
+                                <button class="s3d-button admin_widgets_button_disable" id="admin_widgets_disable_${i.id}" style="display:none;"><span class="s3d-button-inner">REPLACED</span></button>
+                                <button class="s3d-button admin_widgets_button_enable" id="admin_widgets_enable_${i.id}"><span class="s3d-button-inner">REPLACED</span></button>
                             {/if}
-                            <button class="s3d-button admin_widgets_button_delete" id="admin_widgets_delete_${i.id}"><span class="s3d-button-inner">__MSG__DELETE_WIDGET__</span></button>
+                            <button class="s3d-button admin_widgets_button_delete" id="admin_widgets_delete_${i.id}"><span class="s3d-button-inner">REPLACED</span></button>
                         </div>
                     </div>
                 {forelse}
@@ -180,15 +180,15 @@
         <div id="admin_widgets_disable_dialog" class="dialog admin_widgets_dialog" style="width:400px; margin-left: -200px">
             <div class="dialog_header">
                 <div class="dialog_header_inner">
-                <h1>__MSG__DISABLE_WIDGET__</h1>
-                <a href="javascript:;" class="jqmClose dialog_close_image">__MSG__CLOSE_DIALOG__</a>
+                <h1>REPLACED</h1>
+                <a href="javascript:;" class="jqmClose dialog_close_image">REPLACED</a>
                 </div>
             </div>
             <div class="dialog_content">
-                <h4>__MSG__ARE_YOU_SURE_YOU_WANT_TO_DISABLE_THE_WIDGET__: <span id="admin_widgets_disable_confirm_widget_title"></span>?</h4>
+                <h4>REPLACED: <span id="admin_widgets_disable_confirm_widget_title"></span>?</h4>
                 <div class="dialog_buttons disable_page_buttons">
-                    <button type="button" class="s3d-button jqmClose"><span class="s3d-button-inner">__MSG__NO__</span></button>
-                    <button type="button" class="s3d-button s3d-button-primary admin_widgets_button_disable_confirm"><span class="s3d-button-inner">__MSG__YES__</span></button>
+                    <button type="button" class="s3d-button jqmClose"><span class="s3d-button-inner">REPLACED</span></button>
+                    <button type="button" class="s3d-button s3d-button-primary admin_widgets_button_disable_confirm"><span class="s3d-button-inner">REPLACED</span></button>
                 </div>
             </div>
             <!-- DIALOG FOOTER -->
@@ -201,15 +201,15 @@
         <div id="admin_widgets_enable_dialog" class="dialog admin_widgets_dialog" style="width:400px; margin-left: -200px">
             <div class="dialog_header">
                 <div class="dialog_header_inner">
-                <h1>__MSG__ENABLE_WIDGET__</h1>
-                <a href="javascript:;" class="jqmClose dialog_close_image">__MSG__CLOSE_DIALOG__</a>
+                <h1>REPLACED</h1>
+                <a href="javascript:;" class="jqmClose dialog_close_image">REPLACED</a>
                 </div>
             </div>
             <div class="dialog_content">
-                <h4>__MSG__ARE_YOU_SURE_YOU_WANT_TO_ENABLE_THE_WIDGET__: <span id="admin_widgets_enable_confirm_widget_title"></span>?</h4>
+                <h4>REPLACED: <span id="admin_widgets_enable_confirm_widget_title"></span>?</h4>
                 <div class="dialog_buttons enable_page_buttons">
-                    <button type="button" class="s3d-button jqmClose"><span class="s3d-button-inner">__MSG__NO__</span></button>
-                    <button type="button" class="s3d-button s3d-button-primary admin_widgets_button_enable_confirm"><span class="s3d-button-inner">__MSG__YES__</span></button>
+                    <button type="button" class="s3d-button jqmClose"><span class="s3d-button-inner">REPLACED</span></button>
+                    <button type="button" class="s3d-button s3d-button-primary admin_widgets_button_enable_confirm"><span class="s3d-button-inner">REPLACED</span></button>
                 </div>
             </div>
             <!-- DIALOG FOOTER -->
@@ -222,16 +222,16 @@
         <div id="admin_widgets_delete_dialog" class="dialog admin_widgets_dialog" style="width:400px; margin-left: -200px">
             <div class="dialog_header">
                 <div class="dialog_header_inner">
-                <h1>__MSG__DELETE_WIDGET__</h1>
-                <a href="javascript:;" class="jqmClose dialog_close_image">__MSG__CLOSE_DIALOG__</a>
+                <h1>REPLACED</h1>
+                <a href="javascript:;" class="jqmClose dialog_close_image">REPLACED</a>
                 </div>
             </div>
             <div class="dialog_content">
-                <h4>__MSG__ARE_YOU_SURE_YOU_WANT_TO_DELETE_THE_WIDGET__: <span id="admin_widgets_delete_confirm_widget_title"></span>?</h4>
-                <p class="admin_widgets_delete_widgets_text">__MSG__THIS_WILL_DELETE_THE_WIDGET__</p>
+                <h4>REPLACED: <span id="admin_widgets_delete_confirm_widget_title"></span>?</h4>
+                <p class="admin_widgets_delete_widgets_text">REPLACED</p>
                 <div class="dialog_buttons delete_page_buttons">
-                    <button type="button" class="s3d-button jqmClose"><span class="s3d-button-inner">__MSG__NO__</span></button>
-                    <button type="button" class="s3d-button s3d-button-primary admin_widgets_button_delete_confirm"><span class="s3d-button-inner">__MSG__YES__</span></button>
+                    <button type="button" class="s3d-button jqmClose"><span class="s3d-button-inner">REPLACED</span></button>
+                    <button type="button" class="s3d-button s3d-button-primary admin_widgets_button_delete_confirm"><span class="s3d-button-inner">REPLACED</span></button>
                 </div>
             </div>
             <!-- DIALOG FOOTER -->

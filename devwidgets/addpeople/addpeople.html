@@ -5,19 +5,19 @@
 <div id="addpeople_container" class="s3d-dialog s3d-dialog-container">
     <div class="s3d-dialog-close jqmClose"></div>
     <h1 class="s3d-dialog-header">
-        <span class="addpeople_newgroup">__MSG__ADD_PEOPLE__</span>
-        <span class="addpeople_existinggroup" style="display:none;">__MSG__MANAGE_PARTICIPANTS__</span>
+        <span class="addpeople_newgroup">REPLACED</span>
+        <span class="addpeople_existinggroup" style="display:none;">REPLACED</span>
     </h1>
     <div id="addpeople_members_container">
         <div id="addpeople_members_autosuggest" style="display:none;">
             <div id="addpeople_members_autosuggest_search_icon"><!----></div>
-            <label>__MSG__SEARCH__</label>
+            <label>REPLACED</label>
             <input id="addpeople_members_autosuggest_field"/>
         </div>
-        <div class="addpeople_tab">__MSG__MEMBERS__</div>
+        <div class="addpeople_tab">REPLACED</div>
         <div class="addpeople_top_actions">
             <input type="checkbox" id="addpeople_select_all_selected_contacts">
-            <button type="button" id="" class="s3d-button s3d-header-button s3d-header-smaller-button addpeople_remove_selected" disabled="disabled">__MSG__REMOVE_SELECTED__</button>
+            <button type="button" id="" class="s3d-button s3d-header-button s3d-header-smaller-button addpeople_remove_selected" disabled="disabled">REPLACED</button>
             <select id="addpeople_selected_all_permissions"></select>
             <div id="addpeople_selected_permissions_template"><!--
                 {for role in roles}
@@ -30,7 +30,7 @@
 
     <div id="addpeople_my_contacts">
         <div id="addpeople_my_contacts_raquo_container"><!----></div>
-        <div class="addpeople_tab">__MSG__MY_PEOPLE_AND_GROUPS__</div>
+        <div class="addpeople_tab">REPLACED</div>
         <div class="addpeople_top_actions">
             <input type="checkbox" id="addpeople_select_all_contacts">
         </div>
@@ -39,12 +39,12 @@
 
     <div id="addpeople_actions">
         <button type="button" class="s3d-link-button jqmClose s3d-bold">
-            <span class="addpeople_newgroup">__MSG__CANCEL__</span>
-            <span class="addpeople_existinggroup" style="display:none;">__MSG__DONT_APPLY__</span>
+            <span class="addpeople_newgroup">REPLACED</span>
+            <span class="addpeople_existinggroup" style="display:none;">REPLACED</span>
         </button>
         <button type="button" class="s3d-button s3d-overlay-action-button addpeople_finish_adding">
-            <span class="addpeople_newgroup">__MSG__DONE_APPLY_SETTINGS__</span>
-            <span class="addpeople_existinggroup" style="display:none;">__MSG__APPLY_AND_SAVE__</span>
+            <span class="addpeople_newgroup">REPLACED</span>
+            <span class="addpeople_existinggroup" style="display:none;">REPLACED</span>
         </button>
     </div>
 </div>
@@ -64,8 +64,8 @@
                     {var managesUser = false}
                 {/if}
                 <input type="checkbox" class="addpeople_selected_checkbox" id="${contact.userid|safeOutput}_chkselected" data-userid="${contact.userid|safeOutput}"{if !managesUser} disabled="disabled"{/if}/>
-                <label for="${contact.userid}_chkselected"><img class="s3d-list-entity-picture" src="${contact.picture}" alt="__MSG__PROFILE_PICTURE__"/></label>
-                <a href="/~${contact.userid|safeURL}" target="_blank" title="${contact.name|safeOutput}'s __MSG__PROFILE__" class="s3d-entity-displayname s3d-regular-links s3d-bold">${contact.dottedname}</a>
+                <label for="${contact.userid}_chkselected"><img class="s3d-list-entity-picture" src="${contact.picture}" alt="REPLACED"/></label>
+                <a href="/~${contact.userid|safeURL}" target="_blank" title="${contact.name|safeOutput}'s REPLACED" class="s3d-entity-displayname s3d-regular-links s3d-bold">${contact.dottedname}</a>
                 <select class="addpeople_selected_permissions" data-userid="${contact.userid|safeOutput}"{if !managesUser} disabled="disabled"{/if}>
                     {for role in roles}
                         <option value="${role.id}"
@@ -93,8 +93,8 @@
                 ${total++|eat}
                 <li class="s3d-list-item">
                     <input type="checkbox" class="addpeople_checkbox" id="${contact.profile.userid|safeOutput}_chk" data-userid="${contact.profile.userid|safeOutput}" data-user-firstname="${sakai.api.User.getFirstName(contact.profile)|safeOutput}"/>
-                    <label for="${contact.profile.userid|safeOutput}_chk"><img class="s3d-list-entity-picture" src="${sakai.api.User.getProfilePicture(contact.profile)}" alt="__MSG__PROFILE_PICTURE__"/></label>
-                    <a href="/~${contact.profile.userid|safeURL}" target="_blank" title="${sakai.api.User.getDisplayName(contact.profile)|safeOutput}'s __MSG__PROFILE__" class="s3d-entity-displayname s3d-regular-links s3d-bold">${sakai.api.Util.applyThreeDots(sakai.api.User.getDisplayName(contact.profile), 90, null, null, true)}</a>
+                    <label for="${contact.profile.userid|safeOutput}_chk"><img class="s3d-list-entity-picture" src="${sakai.api.User.getProfilePicture(contact.profile)}" alt="REPLACED"/></label>
+                    <a href="/~${contact.profile.userid|safeURL}" target="_blank" title="${sakai.api.User.getDisplayName(contact.profile)|safeOutput}'s REPLACED" class="s3d-entity-displayname s3d-regular-links s3d-bold">${sakai.api.Util.applyThreeDots(sakai.api.User.getDisplayName(contact.profile), 90, null, null, true)}</a>
                 </li>
                 <hr/>
             {/if}
@@ -103,23 +103,23 @@
             ${total++|eat}
             <li class="s3d-list-item">
                 <input type="checkbox" class="addpeople_checkbox" id="${group["sakai:group-id"]|safeOutput}_chk" data-userid="${group["sakai:group-id"]|safeOutput}"/>
-                <label for="${group["sakai:group-id"]|safeOutput}_chk"><img class="s3d-list-entity-picture" src="${sakai.api.Groups.getProfilePicture(group)}" alt="__MSG__PROFILE_PICTURE__"/></label>
-                <a href="/~${group["sakai:group-id"]|safeOutput}" target="_blank" title="${group["sakai:group-title"]|safeOutput}'s __MSG__PROFILE__" class="s3d-entity-displayname s3d-regular-links s3d-bold">${sakai.api.Util.applyThreeDots(group["sakai:group-title"], 90)}</a>
+                <label for="${group["sakai:group-id"]|safeOutput}_chk"><img class="s3d-list-entity-picture" src="${sakai.api.Groups.getProfilePicture(group)}" alt="REPLACED"/></label>
+                <a href="/~${group["sakai:group-id"]|safeOutput}" target="_blank" title="${group["sakai:group-title"]|safeOutput}'s REPLACED" class="s3d-entity-displayname s3d-regular-links s3d-bold">${sakai.api.Util.applyThreeDots(group["sakai:group-title"], 90)}</a>
             </li>
             <hr/>
         {/for}
         {if total == 0}
-            <span class="addpeople_nocontacts_nomemberships">__MSG__NO_CONTACTS_MEMBERSHIPS__</span>
+            <span class="addpeople_nocontacts_nomemberships">REPLACED</span>
         {/if}
     </ul>
 --></div>
 
     <div id="addpeople_message_template" style="display:none;">
- __MSG__HI__
+ REPLACED
 
- __MSG__USER_HAS_ADDED_YOU_AS_A_ROLE_TO_THE_GROUP_GROUPNAME__
+ REPLACED
 
- __MSG__YOU_CAN_FIND_IT_HERE_URL__
+ REPLACED
     </div>
 
 <!-- JAVASCRIPT -->
