@@ -62,14 +62,14 @@
     border-right: 15px solid transparent;
 }
 .personinfo_loading {
-    background: #fff url(/dev/images/ajax_load.gif) center 8px no-repeat;
+    background: #fff url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/ajax_load.gif) center 8px no-repeat;
     min-height: 40px;
 }
 .personinfo_close {
     float: right
 }
 #personinfo_close {
-    background: url(/dev/images/tour_sprite.png) no-repeat scroll -389px -79px transparent;
+    background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll -389px -79px transparent;
     height: 16px;
     width: 16px;
 }

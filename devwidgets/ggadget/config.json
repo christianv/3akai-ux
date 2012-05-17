@@ -12,7 +12,7 @@
             "description":"Embed Google Gadgets in your page or dashboard"
         }
     },
-    "img":"/devwidgets/ggadget/images/ggadget.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/ggadget/images/ggadget.png",
     "hasSettings": true,
     "type":"sakai",
     "enabled":true,

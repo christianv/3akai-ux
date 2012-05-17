@@ -103,14 +103,14 @@ blockquote {
 	background-color: #FFF;
 }
 .s3d-header .fixed-container .decor_left {
-	background: url("/dev/images/dashboard_sprite.png") no-repeat scroll left -10px transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png") no-repeat scroll left -10px transparent;
 	float: left;
 	height: 5px;
 	margin-left: -20px;
 	width: 5px;
 }
 .s3d-header .fixed-container .decor {
-	background: url("/dev/images/dashboard_sprite.png") no-repeat scroll right -10px transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png") no-repeat scroll right -10px transparent;
 	height: 5px;
 	margin-right: -20px;
 }
@@ -177,7 +177,7 @@ blockquote {
 	color: #999;
 }
 .s3d-dropdown-list .s3d-dropdown-list-arrow-up {
-	background: url("/dev/images/dropdown_list_arrow_up.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dropdown_list_arrow_up.png") no-repeat scroll left top transparent;
 	height: 20px;
 	margin-top: -20px;
 	position: absolute;
@@ -185,7 +185,7 @@ blockquote {
 	width: 25px;
 }
 .s3d-dropdown-list .s3d-dropdown-hassubnav {
-	background: url("/dev/images/arrow_right.png") no-repeat right 7px transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/arrow_right.png") no-repeat right 7px transparent;
 	padding-right: 12px;
 }
 .s3d-dropdown-list .s3d-dropdown-hassubnav:hover ul {
@@ -584,7 +584,7 @@ a:hover {
 	color: #39C;
 	font-size: 13px;
 	font-weight: bold;
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll left -21px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll left -21px transparent;
 	float: left;
 	width: 16px;
 	height: 16px;
@@ -668,7 +668,7 @@ a.s3d-widget-links, span.s3d-widget-links, .s3d-widget-links a, button.s3d-widge
 	float: left;
 }
 .s3d-page-header-bottom-row .s3d-button .s3d-page-header-add-to-icon {
-	background: url("/dev/images/savecontent_button_icon_16x16.png") no-repeat scroll left center transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/savecontent_button_icon_16x16.png") no-repeat scroll left center transparent;
 	display: block;
 	float: right;
 	height: 18px;
@@ -676,10 +676,10 @@ a.s3d-widget-links, span.s3d-widget-links, .s3d-widget-links a, button.s3d-widge
 	width: 16px;
 }
 .s3d-page-header-bottom-row .s3d-button:hover .s3d-page-header-add-to-icon {
-    background: url("/dev/images/savecontent_button_icon_16x16_hover.png") no-repeat scroll left center transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/savecontent_button_icon_16x16_hover.png") no-repeat scroll left center transparent;
 }
 .s3d-page-header-bottom-row .s3d-button[disabled]:hover .s3d-page-header-add-to-icon {
-    background: url("/dev/images/savecontent_button_icon_16x16.png") no-repeat scroll left center transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/savecontent_button_icon_16x16.png") no-repeat scroll left center transparent;
 }
 
 /* LIST VIEW OPTIONS */
@@ -743,7 +743,7 @@ a.s3d-widget-links, span.s3d-widget-links, .s3d-widget-links a, button.s3d-widge
 }
 
 .s3d-bar-options > button.selected {
-    background: url("/dev/images/button_header_hover.png") repeat-x scroll left -1px transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_header_hover.png") repeat-x scroll left -1px transparent;
     border: 1px solid #E0E3E5;
     box-shadow: none;
     margin-top: -1px;
@@ -805,7 +805,7 @@ a.s3d-widget-links, span.s3d-widget-links, .s3d-widget-links a, button.s3d-widge
 	border-bottom: 0;
 }
 .s3d-sprites-buttons .more_link {
-	background: transparent url("/dev/images/more_bg_18.png") top left no-repeat;
+	background: transparent url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/more_bg_18.png") top left no-repeat;
 	padding: 1px 21px 2px 12px;
 }
 
@@ -868,7 +868,7 @@ a.s3d-button {
 	border: 1px solid #e0e3e5;
 }
 .s3d-button.s3d-header-button:hover, .s3d-button.s3d-header-button.selected {
-	background: url("/dev/images/button_header_hover.png") repeat-x scroll left -1px transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_header_hover.png") repeat-x scroll left -1px transparent;
 	border: 1px solid #E0E3E5;
 	box-shadow: none;
 }
@@ -889,7 +889,7 @@ a.s3d-button.s3d-header-button {
 
 /* Left pop out buttons */
 .s3d-popout-button-shadow {
-	background: url("/dev/images/button_popout_border_shadow.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_popout_border_shadow.png") no-repeat scroll left top transparent;
 	float: left;
 	height: 56px;
 	margin-left: -10px;
@@ -946,7 +946,7 @@ a.s3d-button.s3d-header-button.s3d-header-smaller-button {
 
 /* Regular in-page buttons */
 .s3d-button.s3d-regular-button {
-	background: url("/dev/images/button_regular_default.png") repeat-x scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_regular_default.png") repeat-x scroll left top transparent;
 	height: 24px;
 	padding: 0 7px;
 	border: 1px solid #e0e3e5;
@@ -955,7 +955,7 @@ a.s3d-button.s3d-header-button.s3d-header-smaller-button {
 	text-shadow: 0 2px 3px #fff;
 }
 .s3d-button.s3d-regular-button:hover {
-	background: url("/dev/images/button_regular_hover.png") repeat-x scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_regular_hover.png") repeat-x scroll left top transparent;
 }
 a.s3d-button.s3d-regular-button {
 	height: 24px;
@@ -1027,7 +1027,7 @@ a.s3d-button.s3d-large-button {
 	color: #ccc;
 }
 .s3d-button.s3d-overlay-button:disabled:hover {
-    background: url("/dev/images/button_overlay_default.png") repeat-x scroll left top transparent !important;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_overlay_default.png") repeat-x scroll left top transparent !important;
 	cursor: auto;
 }
 a.s3d-button.s3d-overlay-button {
@@ -1037,11 +1037,11 @@ a.s3d-button.s3d-overlay-button {
 }
 
 .s3d-button.s3d-overlay-button.large {
-    background: url("/dev/images/button_overlay_large_default.png") repeat-x scroll left top #DFDFDF;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_overlay_large_default.png") repeat-x scroll left top #DFDFDF;
 }
 
 .s3d-button.s3d-overlay-button.large:hover {
-    background: url("/dev/images/button_overlay_large_hover.png") repeat-x scroll left top #e2e5e7;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_overlay_large_hover.png") repeat-x scroll left top #e2e5e7;
 }
 
 /* Overlay Action buttons */
@@ -1136,12 +1136,12 @@ a.s3d-button.s3d-overlay-button {
  * WIDGET LAYOUT
  */
 .s3d-widget-titlebar {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -473px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -473px transparent;
 	padding: 0 10px 0 0;
 	min-height: 49px;
 }
 .s3d-widget-titlebar-inner {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -570px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -570px transparent;
 	padding: 0 0 0 5px;
 	min-height: 50px;
 }
@@ -1152,7 +1152,7 @@ a.s3d-button.s3d-overlay-button {
 	border-right: 3px solid #D4DADE;
 }
 .s3d-widget .s3d-widget-options-footer-left {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -70px -436px #D5DBDF;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -70px -436px #D5DBDF;
 	height: 12px;
 }
 .s3d-widget-small-content {
@@ -1162,29 +1162,29 @@ a.s3d-button.s3d-overlay-button {
 	margin-bottom: 7px;
 }
 .fl-widget .fl-widget-options-footer-top {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -528px #D5DBDF;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -528px #D5DBDF;
 	height: 16px;
 }
 .fl-widget .fl-widget-options .fl-widget-options-top-right {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -432px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -432px transparent;
 	float: right;
 	height: 16px;
 	padding: 0 0 7px 14px;
 	width: 16px;
 }
 .s3d-widget .s3d-widget-options-footer-right {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -456px #D5DBDF;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -456px #D5DBDF;
 	float: right;
 	height: 12px;
 	width: 16px;
 }
 .s3d-widget .s3d-widget-no-options, .s3d-no-options {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1453px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1453px transparent;
 	padding: 0 5px 0 0;
 	margin: 0;
 }
 .s3d-widget .s3d-widget-no-options-inner, .s3d-no-options-inner {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1433px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1433px transparent;
 	margin: 0;
 	height: 6px;
 }
@@ -1280,7 +1280,7 @@ a.s3d-button.s3d-overlay-button {
 	display: block;
 	width: 16px;
 	height: 19px;
-	background: url("/dev/images/search_icon.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_icon.png") no-repeat top left transparent;
 }
 .s3d-search-container .s3d-search-result-count {
     color: #666666;
@@ -1292,7 +1292,7 @@ a.s3d-button.s3d-overlay-button {
  * NO RESULTS VIEW (When a widget feed doesn't return any results)
  */
 .s3d-no-results-container {
-	background: url("/dev/images/noresults_bg.png") repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/noresults_bg.png") repeat scroll left top transparent;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	padding: 20px;
@@ -1300,7 +1300,7 @@ a.s3d-button.s3d-overlay-button {
 	list-style: none
 }
 .s3d-no-results-container .s3d-no-results-arrow-up {
-	background: url("/dev/images/noresults_arrow_up.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/noresults_arrow_up.png") no-repeat top left transparent;
 	position: absolute;
 	margin-top: -44px;
 	width: 36px;
@@ -1328,67 +1328,67 @@ a.s3d-button.s3d-overlay-button {
 	margin: -8px 12px 0 0;
 }
 .s3d-no-results-container .s3d-no-results-magnifier {
-	background: url("/dev/images/magnifier_icon_55x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/magnifier_icon_55x55.png") no-repeat top left transparent;
 }
 .s3d-no-results-container .s3d-no-results-world {
-	background: url("/dev/images/world_icon_55x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/world_icon_55x55.png") no-repeat top left transparent;
 }
 .s3d-no-results-container .s3d-no-results-people {
-	background: url("/dev/images/person_icon_55x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/person_icon_55x55.png") no-repeat top left transparent;
 }
 .s3d-no-results-container .s3d-no-results-content {
-	background: url("/dev/images/content_icon_55x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/content_icon_55x55.png") no-repeat top left transparent;
 }
 .s3d-no-results-container .s3d-no-results-content-small {
-	background: url("/dev/images/content_icon_42x46.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/content_icon_42x46.png") no-repeat top left transparent;
 	width: 46px;
 	height: 42px;
 }
 .s3d-no-results-container .s3d-no-results-memberships {
-	background: url("/dev/images/memberships_icon_60x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/memberships_icon_60x55.png") no-repeat top left transparent;
 	width: 60px;
 }
 .s3d-no-results-container .s3d-no-results-memberships-small {
-	background: url("/dev/images/memberships_icon_42x46.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/memberships_icon_42x46.png") no-repeat top left transparent;
 	width: 46px;
 	height: 42px;
 }
 .s3d-no-results-container .s3d-no-results-contacts {
-	background: url("/dev/images/contacts_icon_60x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/contacts_icon_60x55.png") no-repeat top left transparent;
 	width: 60px;
 }
 .s3d-no-results-container .s3d-no-results-contacts-small {
-	background: url("/dev/images/contacts_icon_42x46.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/contacts_icon_42x46.png") no-repeat top left transparent;
 	width: 46px;
 	height: 42px;
 }
 .s3d-no-results-container .s3d-no-results-replied {
-	background: url("/dev/images/replied_icon_55x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/replied_icon_55x55.png") no-repeat top left transparent;
 }
 .s3d-no-results-container .s3d-no-results-trash {
-	background: url("/dev/images/trash_icon_55x55.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/trash_icon_55x55.png") no-repeat top left transparent;
 }
 .s3d-no-results-container .s3d-no-results-upload {
-	background: url("/dev/images/upload_icon_42x46.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/upload_icon_42x46.png") no-repeat top left transparent;
 	width: 46px;
 	height: 42px;
 }
 .s3d-no-results-container .s3d-no-results-search-messages {
-	background: url("/dev/images/no-messages-found-icon.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/no-messages-found-icon.png") no-repeat top left transparent;
 	width: 46px;
 	height: 42px;
 }
 .s3d-no-results-container .s3d-no-results-search-world {
-	background: url("/dev/images/world_search_icon_55x55.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/world_search_icon_55x55.png") no-repeat scroll left top transparent;
 }
 .s3d-no-results-container .s3d-no-results-search-people {
-	background: url("/dev/images/people_search_icon_55x55.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/people_search_icon_55x55.png") no-repeat scroll left top transparent;
 }
 .s3d-no-results-container .s3d-no-results-search-content {
-	background: url("/dev/images/content_search_icon_55x55.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/content_search_icon_55x55.png") no-repeat scroll left top transparent;
 }
 .s3d-no-results-container .s3d-no-results-sakai2sites {
-	background: url("/dev/images/sakai2_icon_43x40.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/sakai2_icon_43x40.png") no-repeat top left transparent;
 	width: 46px;
 	height: 45px;
 }
@@ -1408,60 +1408,60 @@ a.s3d-button.s3d-overlay-button {
 	display: none;
 }
 .s3d-actions-delete {
-	background: url("/dev/images/delete_icon_default.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/delete_icon_default.png") no-repeat top left transparent;
 }
 .s3d-actions-delete:hover {
-	background: url("/dev/images/delete_icon_hover.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/delete_icon_hover.png") no-repeat top left transparent;
 }
 .s3d-actions-addtolibrary {
-	background: url("/dev/images/addtolibrary_icon_default.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/addtolibrary_icon_default.png") no-repeat top left transparent;
 	width: 17px;
 	height: 25px;
 }
 .s3d-actions-addtolibrary:hover {
-	background: url("/dev/images/addtolibrary_icon_hover.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/addtolibrary_icon_hover.png") no-repeat top left transparent;
 }
 .s3d-actions-author {
-	background: url("/dev/images/author_icon_default.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/author_icon_default.png") no-repeat scroll left top transparent;
 	width: 32px !important;
 }
 .s3d-actions-author:hover {
-	background: url("/dev/images/author_icon_hover.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/author_icon_hover.png") no-repeat scroll left top transparent;
 }
 .s3d-actions-share {
-	background: url("/dev/images/share_icon_default.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/share_icon_default.png") no-repeat scroll left top transparent;
 	width: 23px !important;
 }
 .s3d-actions-share:hover {
-	background: url("/dev/images/share_icon_hover.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/share_icon_hover.png") no-repeat scroll left top transparent;
 }
 .s3d-actions-message {
-	background: url("/dev/images/message_icon_default.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/message_icon_default.png") no-repeat scroll left top transparent;
 }
 .s3d-actions-message:hover {
-	background: url("/dev/images/message_icon_hover.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/message_icon_hover.png") no-repeat scroll left top transparent;
 }
 .s3d-button:hover .s3d-actions-message {
-	background: url("/dev/images/message_icon_hover.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/message_icon_hover.png") no-repeat scroll left top transparent;
 }
 .s3d-button:disabled:hover .s3d-actions-message {
-	background: url("/dev/images/message_icon_default.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/message_icon_default.png") no-repeat scroll left top transparent;
 }
 .s3d-black-check-icon {
-	background: url("/dev/images/black_check_icon.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/black_check_icon.png") no-repeat scroll left top transparent;
 }
 .s3d-above-icon {
-	background: url("/dev/images/above_icon_16x16.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/above_icon_16x16.png") no-repeat scroll left top transparent;
 }
 .s3d-below-icon {
-	background: url("/dev/images/below_icon_16x16.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/below_icon_16x16.png") no-repeat scroll left top transparent;
 }
 
 /*
  * CONTENT LAYOUT
  */
 .s3d-header .s3d-fixed-container .s3d-decor-left {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll 0 -10px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll 0 -10px transparent;
 	float: left;
 	height: 5px;
 	margin-left: -20px;
@@ -1469,7 +1469,7 @@ a.s3d-button.s3d-overlay-button {
 	width: 5px;
 }
 .s3d-header .s3d-fixed-container .s3d-decor {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -10px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -10px transparent;
 	float: right;
 	height: 5px;
 	margin-right: -20px;
@@ -1535,7 +1535,7 @@ a.s3d-action-seeall {
 }
 .s3d-search-button .s3d-button-icon-right {
 	padding-right: 22px;
-	background-image: url(/dev/images/dashboard_sprite.png);
+	background-image: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png);
 	background-position: 42px -394px;
 	display: inline;
 }
@@ -1580,7 +1580,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], text
  * CONTENT AREA TOP TABS
  */
 .s3d-primary-tabs {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1622px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1622px transparent;
 }
 .s3d-primary-tabs, .s3d-primary-tabs-inner {
 	height: 25px;
@@ -1593,7 +1593,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], text
 	padding: 0;
 	margin: 0;
 	float: right;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll left -1592px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll left -1592px transparent;
 	padding-left: 20px;
 }
 .s3d-primary-tabs .fl-tabs-right li {
@@ -1627,7 +1627,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], text
 }
 .s3d-primary-tabs ul li.fl-tabs-active, .s3d-primary-tabs ul li.fl-tabs-active a {
 	background-color: #FFF;
-	background-image: url(/dev/images/dashboard_sprite.png);
+	background-image: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png);
 	background-attachment: scroll;
 	height: 30px;
 	bottom: 0 !important;
@@ -1659,7 +1659,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], text
 	border: 1px solid #a9a9a9;
 }
 ul.as-selections.loading {
-	background: #fff url(../../../dev/images/ajax_load.gif) center center no-repeat;
+	background: #fff url(../../..http://d3b0luyqtvsx4y.cloudfront.net/dev/images/ajax_load.gif) center center no-repeat;
 }
 ul.as-selections li.as-original input {
 	border: 0;
@@ -1710,11 +1710,11 @@ ul.as-selections textarea.as-input {
 
 /* Dialog header */
 .dialog_header {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -641px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -641px transparent;
 	padding: 0 8px 0 0;
 }
 .dialog_header_inner {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -819px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -819px transparent;
 }
 .dialog_header h1 {
 	color: #fff;
@@ -1724,7 +1724,7 @@ ul.as-selections textarea.as-input {
 	padding: 15px 20px;
 }
 .dialog_header .dialog_close_image {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -40px -641px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -40px -641px transparent;
 	cursor: pointer;
 	display: block;
 	height: 15px;
@@ -1765,27 +1765,27 @@ ul.as-selections textarea.as-input {
 
 /* Dialog footer */
 .dialog_footer {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -957px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -957px transparent;
 	padding: 0 8px 0 0;
 }
 .dialog_footer_inner {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -937px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -937px transparent;
 	height: 6px;
 }
 
 /* Dialog tooltip header */
 .dialog_tooltip_header_arrow {
-	background: url(/dev/images/tour_sprite.png) no-repeat scroll -254px -76px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll -254px -76px transparent;
 	height: 18px;
 	margin: 0 0 0 20px;
 	width: 35px;
 }
 .dialog_tooltip_header {
-	background: url(/dev/images/tour_sprite.png) no-repeat scroll right -20px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll right -20px transparent;
 	padding: 0 22px 0 0;
 }
 .dialog_tooltip_header_inner {
-	background: url(/dev/images/tour_sprite.png) no-repeat scroll left top transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll left top transparent;
 	height: 14px;
 }
 
@@ -1794,7 +1794,7 @@ ul.as-selections textarea.as-input {
 	float: right;
 }
 .dialog_tooltip_content {
-	background: url(/dev/images/tour_sprite.png) no-repeat scroll left -80px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll left -80px transparent;
 	padding: 7px 20px 0;
 }
 .dialog_tooltip_content h2 {
@@ -1814,15 +1814,15 @@ ul.as-selections textarea.as-input {
 
 /* Dialog tooltip footer */
 .dialog_tooltip_footer {
-	background: url(/dev/images/tour_sprite.png) no-repeat scroll right -60px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll right -60px transparent;
 	padding: 0 22px 0 0;
 }
 .dialog_tooltip_footer_inner {
-	background: url(/dev/images/tour_sprite.png) no-repeat scroll left -40px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll left -40px transparent;
 	height: 14px;
 }
 .dialog_tooltip_footer_arrow {
-	background: url(/dev/images/tour_sprite.png) no-repeat scroll -217px -80px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/tour_sprite.png) no-repeat scroll -217px -80px transparent;
 	width: 35px;
 	height: 18px;
 	margin: 0 0 0 20px;
@@ -1853,7 +1853,7 @@ ul.as-selections textarea.as-input {
 	font-size: 12px;
 }
 .s3d-dialog-container .s3d-dialog-close {
-	background: url("/dev/images/dialog_close.png") no-repeat top left transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dialog_close.png") no-repeat top left transparent;
 	width: 19px;
 	height: 17px;
 	float: right;
@@ -1861,7 +1861,7 @@ ul.as-selections textarea.as-input {
 	margin: -2px -15px 0 0;
 }
 .s3d-dialog-container .s3d-dialog-close:hover {
-	background: url("/dev/images/dialog_close.png") no-repeat left -19px transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dialog_close.png") no-repeat left -19px transparent;
 }
 .s3d-dialog-container h1.s3d-dialog-header {
 	border-bottom: 1px dotted #d4d4d4;
@@ -1940,7 +1940,7 @@ ul li.s3d-list-item:hover {
 	font-size: 11px;
 }
 .s3d-dropdownlistone-text .dropdownlistone_arrow {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -149px -394px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -149px -394px transparent;
 	padding-right: 17px;
 	padding-left: 8px;
 }
@@ -1986,14 +1986,14 @@ ul li.s3d-list-item:hover {
 	float: left;
 }
 .s3d-dropdownlisttwo-text .s3d-dropdownlisttwo-arrow-down {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -128px -400px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -128px -400px transparent;
 	float: left;
 	height: 10px;
 	margin: 6px 0 0 6px;
 	width: 10px;
 }
 .s3d-dropdownlisttwo-text .s3d-dropdownlisttwo-arrow-up {
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -218px -400px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -218px -400px transparent;
 	float: left;
 	height: 10px;
 	margin: 6px 0 0 6px;
@@ -2045,7 +2045,7 @@ ul li.s3d-list-item:hover {
 	word-wrap: break-word;
 }
 .s3d-popover-arrowup {
-	background: url("/dev/images/popover_arrowup.png") no-repeat scroll left top transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/popover_arrowup.png") no-repeat scroll left top transparent;
 	height: 13px;
 	margin-left: 110px;
 	position: relative;
@@ -2097,46 +2097,46 @@ ul li.s3d-list-item:hover {
 .s3d-highlight_area_background_tl {
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1037px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1037px transparent;
 }
 .s3d-highlight_area_background_tinner {
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1047px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1047px transparent;
 }
 .s3d-highlight_area_background_bl {
 	clear: both;
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1057px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1057px transparent;
 }
 .s3d-highlight_area_background_binner {
 	clear: both;
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1067px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1067px transparent;
 }
 .s3d-highlight_area_background_white_content_tl {
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1198px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1198px transparent;
 }
 .s3d-highlight_area_background_white_content_tinner {
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1208px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1208px transparent;
 }
 .s3d-highlight_area_background_white_content_bl {
 	clear: both;
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1217px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1217px transparent;
 }
 .s3d-highlight_area_background_white_content_binner {
 	clear: both;
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1227px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1227px transparent;
 }
 .s3d-highlight_area_background_darker1 {
 	background-color: #d5dbdf;
@@ -2146,44 +2146,44 @@ ul li.s3d-list-item:hover {
 .s3d-highlight_area_background_darker1_tl {
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1077px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1077px transparent;
 }
 .s3d-highlight_area_background_darker1_tinner {
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1087px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1087px transparent;
 }
 .s3d-highlight_area_background_darker1_bl {
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1097px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1097px transparent;
 }
 .s3d-highlight_area_background_darker1_binner {
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1107px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1107px transparent;
 }
 .s3d-highlight_area_background_darker1_white_content_tl {
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1117px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1117px transparent;
 }
 .s3d-highlight_area_background_darker1_white_content_tinner {
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1127px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1127px transparent;
 }
 .s3d-highlight_area_background_darker1_white_content_bl {
 	clear: both;
 	height: 7px;
 	margin-left: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1137px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1137px transparent;
 }
 .s3d-highlight_area_background_darker1_white_content_binner {
 	clear: both;
 	height: 7px;
 	margin-right: -10px;
-	background: url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1147px transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1147px transparent;
 }
 
 /*
@@ -2595,7 +2595,7 @@ ul li.s3d-list-item:hover {
 	padding: 3px 4px 2px;
 }
 .s3d-search-listview-options > div.selected, .s3d-search-listview-options > div:hover {
-	background: url("/dev/images/button_header_hover.png") repeat-x scroll left -1px transparent;
+	background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/button_header_hover.png") repeat-x scroll left -1px transparent;
 	box-shadow: 0 0 4px -2px #A8A8A8 inset;
 }
 .s3d-search-listview-options .search_view_list {
@@ -2610,42 +2610,42 @@ ul li.s3d-list-item:hover {
 
 /* Search icons */
 .s3d-search-results-gridview {
-	background: url('/dev/images/search_grid_16x16.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_grid_16x16.png') no-repeat top left transparent;
 }
 .s3d-search-results-gridview:hover {
-	background: url('/dev/images/search_grid_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_grid_16x16_hover.png') no-repeat top left transparent;
 }
 .s3d-search-results-gridview.selected {
-	background: url('/dev/images/search_grid_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_grid_16x16_hover.png') no-repeat top left transparent;
 }
 .s3d-search-results-listview {
-	background: url('/dev/images/search_list_16x16.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_list_16x16.png') no-repeat top left transparent;
 }
 .s3d-search-results-listview:hover {
-	background: url('/dev/images/search_list_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_list_16x16_hover.png') no-repeat top left transparent;
 }
 .s3d-search-results-listview.selected {
-	background: url('/dev/images/search_list_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_list_16x16_hover.png') no-repeat top left transparent;
 }
 .s3d-search-results-carouselview {
-	background: url('/dev/images/search_carousel_16x16.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_carousel_16x16.png') no-repeat top left transparent;
 	margin-top: -2px;
 }
 .s3d-search-results-carouselview:hover {
-	background: url('/dev/images/search_carousel_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_carousel_16x16_hover.png') no-repeat top left transparent;
 }
 .s3d-search-results-carouselview.selected {
-	background: url('/dev/images/search_carousel_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_carousel_16x16_hover.png') no-repeat top left transparent;
 }
 .s3d-search-results-blogview {
-	background: url('/dev/images/search_blog_16x16.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_blog_16x16.png') no-repeat top left transparent;
 	margin-top: -1px;
 }
 .s3d-search-results-blogview:hover {
-	background: url('/dev/images/search_blog_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_blog_16x16_hover.png') no-repeat top left transparent;
 }
 .s3d-search-results-blogview.selected {
-	background: url('/dev/images/search_blog_16x16_hover.png') no-repeat top left transparent;
+	background: url('http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_blog_16x16_hover.png') no-repeat top left transparent;
 }
 
 /*
@@ -2701,55 +2701,55 @@ ul li.s3d-list-item:hover {
 	height: 128px;
 }
 .icon-audio-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -958px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -958px 0 transparent;
 }
 .icon-doc-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -112px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -112px 0 transparent;
 }
 .icon-pdf-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -750px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -750px 0 transparent;
 }
 .icon-pps-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -463px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -463px 0 transparent;
 }
 .icon-swf-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -1040px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -1040px 0 transparent;
 }
 .icon-zip-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -1056px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -1056px 0 transparent;
 }
 .icon-spreadsheet-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -560px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -560px 0 transparent;
 }
 .icon-txt-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -1086px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -1086px 0 transparent;
 }
 .icon-image-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -320px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -320px 0 transparent;
 }
 .icon-html-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -302px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -302px 0 transparent;
 }
 .icon-video-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -1118px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -1118px 0 transparent;
 }
 .icon-sound-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -622px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -622px 0 transparent;
 }
 .icon-kmultiple-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -430px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -430px 0 transparent;
 }
 .icon-url-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -304px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -304px 0 transparent;
 }
 .icon-sakaidoc-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -1185px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -1185px 0 transparent;
 }
 .icon-unknown-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -143px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -143px 0 transparent;
 }
 .icon-collection-sprite {
-	background: url(/dev/images/icons_sprite.png) no-repeat scroll -430px 0 transparent;
+	background: url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -430px 0 transparent;
 }
 
 /*

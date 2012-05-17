@@ -1,6 +1,6 @@
 {
     "id":"poll",
-    "img":"/devwidgets/poll/images/poll.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/poll/images/poll.png",
     "i18n": {
         "default": {
             "bundle": "/devwidgets/poll/bundles/default.properties",

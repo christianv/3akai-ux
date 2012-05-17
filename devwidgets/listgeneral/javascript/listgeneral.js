@@ -264,7 +264,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                         result.space.picture = $.parseJSON(result.space.picture);
                         result.listgeneral.avatar = result.space["_path"] + "/" + result.space.picture.name;
                     } else {
-                        result.listgeneral.avatar = "/dev/images/mimetypes/html.png";
+                        result.listgeneral.avatar = "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/html.png";
                     }
 
                 }
@@ -280,7 +280,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                         result.listgeneral.avatar = sakai.config.MimeTypes[result["_mimeType"]].URL;
                         result.listgeneral.mimeTypeDescripton = sakai.api.i18n.getValueForKey(sakai.config.MimeTypes[result["_mimeType"]].description);
                     } else {
-                        result.listgeneral.avatar = "/dev/images/mimetypes/empty.png";
+                        result.listgeneral.avatar = "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/empty.png";
                         result.listgeneral.mimeTypeDescripton = sakai.api.i18n.getValueForKey(sakai.config.MimeTypes.other.description);
                     }
 

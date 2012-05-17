@@ -11,7 +11,7 @@
         }
     },
     "id": "navigation",
-    "img": "/devwidgets/navigation/images/icon.png",
+    "img": "http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/navigation/images/icon.png",
     "showinsidebar": true,
     "type":"core",
     "enabled":true,

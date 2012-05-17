@@ -15,7 +15,7 @@
         }
     },
     "id":"remotecontent",
-    "img":"/devwidgets/remotecontent/images/remotecontent.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/remotecontent/images/remotecontent.png",
     "hasSettings": true,
     "type":"sakai",
     "enabled":true,

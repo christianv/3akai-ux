@@ -22,9 +22,9 @@
 #permission_error ul,#page_not_found_error ul,#internal_user_error ul{margin:2px 0 14px 12px;}
 #permission_error .login-container,#page_not_found_error .login-container,#internal_user_error .login-container{width:310px;}
 #permission_error a,#page_not_found_error a,#internal_user_error a{text-decoration:none;}
-#permission_error #error_title{background:url(/dev/images/403_slash.png) no-repeat;}
-#page_not_found_error #error_title{background:url(/dev/images/404_exclamation.png) no-repeat;}
-#internal_user_error #error_title{background:url(/dev/images/500_exclamation.png) no-repeat;}
+#permission_error #error_title{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/403_slash.png) no-repeat;}
+#page_not_found_error #error_title{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/404_exclamation.png) no-repeat;}
+#internal_user_error #error_title{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/500_exclamation.png) no-repeat;}
 .decor{padding-bottom:14px;}
 .error_page_bringdown{padding-top:12px;}
 /* .header .fixed-container{height:300px;} */

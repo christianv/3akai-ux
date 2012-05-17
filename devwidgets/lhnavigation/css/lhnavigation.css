@@ -31,9 +31,9 @@
     cursor:         hand;
 }
 #lhnavigation_container ul li .lhnavigation_selected_subsubmenu {margin-left: 124px;}
-#lhnavigation_container ul li .lhnavigation_private {background:url("/devwidgets/lhnavigation/images/lhnav_padlock.png") no-repeat center left transparent;height:16px;margin-left:136px;margin-top:-22px;position:absolute;width:11px;}
-#lhnavigation_container ul li .lhnavigation_has_subnav{background: url("/dev/images/icons_sprite.png") no-repeat scroll -863px -21px transparent;height: 10px;margin-left: -15px;margin-top:7px;position: absolute;width: 12px;}
-#lhnavigation_container ul li .lhnavigation_has_subnav_opened{background: url("/dev/images/icons_sprite.png") no-repeat scroll -882px -22px transparent !important;}
+#lhnavigation_container ul li .lhnavigation_private {background:url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/lhnavigation/images/lhnav_padlock.png") no-repeat center left transparent;height:16px;margin-left:136px;margin-top:-22px;position:absolute;width:11px;}
+#lhnavigation_container ul li .lhnavigation_has_subnav{background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png") no-repeat scroll -863px -21px transparent;height: 10px;margin-left: -15px;margin-top:7px;position: absolute;width: 12px;}
+#lhnavigation_container ul li .lhnavigation_has_subnav_opened{background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png") no-repeat scroll -882px -22px transparent !important;}
 #lhnavigation_container ul li .lhnavigation_levelcount, #lhnavigation_container ul li .lhnavigation_sublevelcount {
     background: #C9C9C9;
     background: -moz-linear-gradient(top, #c5c5c5 0%, #c9c7c8 31%, #c7c7c7 38%, #cccacb 46%, #cecdcb 92%, #cacaca 100%);
@@ -83,7 +83,7 @@
     margin: 0;
 }
 .lhnavigation_selected_submenu_image.clicked, .lhnavigation_selected_submenu_image:hover, .lhnavigation_selected_submenu_image:focus {
-    background: url("/devwidgets/lhnavigation/images/lhnav_selected_item_bg.png") repeat-x scroll left -10px transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/lhnavigation/images/lhnav_selected_item_bg.png") repeat-x scroll left -10px transparent;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -100,15 +100,15 @@
     background: linear-gradient(top,  #d9e9f1 0%,#89d9fb 1%,#83d6f9 10%,#60c2ec 39%,#4fbef1 48%,#4dc0f1 100%);
     color:#fff;
 }
-#lhnavigation_container ul li.lhnavigation_selected_item .lhnavigation_private{background:url("/devwidgets/lhnavigation/images/lhnav_padlock.png") no-repeat center left transparent;}
-#lhnavigation_container ul li .lhnavigation_selected_item_arrow{background: url("/devwidgets/lhnavigation/images/lhnav_selected_item_arrow.png") no-repeat scroll left top transparent;height: 34px;margin-left: 145px;margin-top:-23px;position: absolute;width: 20px;}
+#lhnavigation_container ul li.lhnavigation_selected_item .lhnavigation_private{background:url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/lhnavigation/images/lhnav_padlock.png") no-repeat center left transparent;}
+#lhnavigation_container ul li .lhnavigation_selected_item_arrow{background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/lhnavigation/images/lhnav_selected_item_arrow.png") no-repeat scroll left top transparent;height: 34px;margin-left: 145px;margin-top:-23px;position: absolute;width: 20px;}
 #lhnavigation_container ul li .lhnavigation_selected_item_arrow_sub{margin-left:133px;}
 #lhnavigation_container ul li.lhnavigation_selected_item a {color:#fff; text-decoration:none;font-weight:bold;}
 #lhnavigation_container ul li a{display:block;padding:5px 0 7px;word-wrap:break-word;}
 #lhnavigation_container ul li.lhnavigation_hassubnav{cursor:pointer;}
 
 #lhnavigation_container ul .lhnavigation_hoverable_item:hover{color:#1e5b85;cursor:pointer;}
-#lhnavigation_container ul .lhnavigation_hoverable_item:hover .lhnavigation_has_subnav{background: url("/dev/images/icons_sprite.png") no-repeat scroll -843px -21px transparent;}
+#lhnavigation_container ul .lhnavigation_hoverable_item:hover .lhnavigation_has_subnav{background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png") no-repeat scroll -843px -21px transparent;}
 #lhnavigation_container ul li ul {margin:0;}
 #lhnavigation_container .lhnavigation_subnav{margin:5px 0px;}
 #lhnavigation_container .lhnavigation_subnav li div.lhnavigation_subnav_item_content{padding-left:40px;}

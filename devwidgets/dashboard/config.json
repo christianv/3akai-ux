@@ -12,7 +12,7 @@
             "bundle": "/devwidgets/dashboard/bundles/es_ES.properties"
         }
     },
-    "img":"/devwidgets/comments/images/comments.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/comments/images/comments.png",
     "type":"core",
     "enabled":true,
     "url":"/devwidgets/dashboard/dashboard.html"

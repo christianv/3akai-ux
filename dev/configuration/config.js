@@ -20,8 +20,8 @@ define(function(){
         URL: {
             // Static URLs
             GATEWAY_URL: "/",
-            GROUP_DEFAULT_ICON_URL: "/dev/images/group_avatar_icon_64x64_nob.png",
-            GROUP_DEFAULT_ICON_URL_LARGE: "/dev/images/group_avatar_icon_100x100_nob.png",
+            GROUP_DEFAULT_ICON_URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/group_avatar_icon_64x64_nob.png",
+            GROUP_DEFAULT_ICON_URL_LARGE: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/group_avatar_icon_100x100_nob.png",
             I10N_BUNDLE_URL: "/dev/lib/misc/l10n/cultures/globalize.culture.__CODE__.js",
             I18N_BUNDLE_ROOT: "/dev/bundle/",
             INBOX_URL: "/me#l=messages/inbox",
@@ -29,9 +29,9 @@ define(function(){
             MY_DASHBOARD_URL: "/me#l=dashboard",
             SEARCH_ACTIVITY_ALL_URL: "/var/search/activity/all.json",
             SEARCH_URL: "/search",
-            USER_DEFAULT_ICON_URL: "/dev/images/default_User_icon_50x50.png",
-            USER_DEFAULT_ICON_URL_LARGE: "/dev/images/default_User_icon_100x100.png",
-            INFINITE_LOADING_ICON: "/dev/images/Infinite_Scrolling_Loader_v01.gif",
+            USER_DEFAULT_ICON_URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/default_User_icon_50x50.png",
+            USER_DEFAULT_ICON_URL_LARGE: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/default_User_icon_100x100.png",
+            INFINITE_LOADING_ICON: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/Infinite_Scrolling_Loader_v01.gif",
             I18N_CUSTOM_BUNDLE: '/dev/configuration/custom.properties',
 
             // Services
@@ -639,198 +639,198 @@ define(function(){
         MimeTypes: {
             "application/doc": {
                 cssClass: "icon-doc-sprite",
-                URL: "/dev/images/mimetypes/doc.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/doc.png",
                 description: "WORD_DOCUMENT"
             },
             "application/msword": {
                 cssClass: "icon-doc-sprite",
-                URL: "/dev/images/mimetypes/doc.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/doc.png",
                 description: "WORD_DOCUMENT"
             },
             "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
                 cssClass: "icon-doc-sprite",
-                URL: "/dev/images/mimetypes/doc.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/doc.png",
                 description: "WORD_DOCUMENT"
             },
             "application/pdf": {
                 cssClass: "icon-pdf-sprite",
-                URL: "/dev/images/mimetypes/pdf.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/pdf.png",
                 description: "PDF_DOCUMENT"
             },
             "application/x-download": {
                 cssClass: "icon-pdf-sprite",
-                URL: "/dev/images/mimetypes/pdf.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/pdf.png",
                 description: "PDF_DOCUMENT"
             },
             "application/x-pdf": {
                 cssClass: "icon-pdf-sprite",
-                URL: "/dev/images/mimetypes/pdf.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/pdf.png",
                 description: "PDF_DOCUMENT"
             },
             "application/vnd.ms-powerpoint": {
                 cssClass: "icon-pps-sprite",
-                URL: "/dev/images/mimetypes/pps.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/pps.png",
                 description: "POWERPOINT_DOCUMENT"
             },
             "application/vnd.openxmlformats-officedocument.presentationml.presentation": {
                 cssClass: "icon-pps-sprite",
-                URL: "/dev/images/mimetypes/pps.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/pps.png",
                 description: "POWERPOINT_DOCUMENT"
             },
             "application/vnd.oasis.opendocument.text": {
                 cssClass: "icon-doc-sprite",
-                URL: "/dev/images/mimetypes/doc.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/doc.png",
                 description: "OPEN_OFFICE_DOCUMENT"
             },
             "application/vnd.oasis.opendocument.presentation": {
                 cssClass: "icon-pps-sprite",
-                URL: "/dev/images/mimetypes/pps.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/pps.png",
                 description: "OPEN_OFFICE_PRESENTATION"
             },
             "application/vnd.oasis.opendocument.spreadsheet": {
                 cssClass: "icon-pps-sprite",
-                URL: "/dev/images/mimetypes/spreadsheet.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/spreadsheet.png",
                 description: "OPEN_OFFICE_SPREADSHEET"
             },
 
             "application/x-shockwave-flash": {
                 cssClass: "icon-swf-sprite",
-                URL: "/dev/images/mimetypes/swf.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/swf.png",
                 description: "FLASH_PLAYER_FILE"
             },
             "application/zip": {
                 cssClass: "icon-zip-sprite",
-                URL: "/dev/images/mimetypes/zip.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/zip.png",
                 description: "ARCHIVE_FILE"
             },
             "application/x-zip-compressed": {
                 cssClass: "icon-zip-sprite",
-                URL: "/dev/images/mimetypes/zip.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/zip.png",
                 description: "ARCHIVE_FILE"
             },
             "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {
                 cssClass: "icon-spreadsheet-sprite",
-                URL: "/dev/images/mimetypes/spreadsheet.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/spreadsheet.png",
                 description: "SPREADSHEET_DOCUMENT"
             },
             "application/vnd.ms-excel": {
                 cssClass: "icon-spreadsheet-sprite",
-                URL: "/dev/images/mimetypes/spreadsheet.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/spreadsheet.png",
                 description: "SPREADSHEET_DOCUMENT"
             },
             "audio/x-wav": {
                 cssClass: "icon-audio-sprite",
-                URL: "/dev/images/mimetypes/sound.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/sound.png",
                 description: "SOUND_FILE"
             },
             "audio/mpeg": {
                 cssClass: "icon-audio-sprite",
-                URL: "/dev/images/mimetypes/sound.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/sound.png",
                 description: "SOUND_FILE"
             },
             "text/plain": {
                 cssClass: "icon-txt-sprite",
-                URL: "/dev/images/mimetypes/txt.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/txt.png",
                 description: "TEXT_DOCUMENT"
             },
             "text/rtf": {
                 cssClass: "icon-txt-sprite",
-                URL: "/dev/images/mimetypes/txt.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/txt.png",
                 description: "TEXT_DOCUMENT"
             },
             "image/png": {
                 cssClass: "icon-image-sprite",
-                URL: "/dev/images/mimetypes/images.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/images.png",
                 description: "PNG_IMAGE"
             },
             "image/bmp": {
                 cssClass: "icon-image-sprite",
-                URL: "/dev/images/mimetypes/images.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/images.png",
                 description: "BMP_IMAGE"
             },
             "image/gif": {
                 cssClass: "icon-image-sprite",
-                URL: "/dev/images/mimetypes/images.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/images.png",
                 description: "GIF_IMAGE"
             },
             "image/jp2": {
                 cssClass: "icon-image-sprite",
-                URL: "/dev/images/mimetypes/images.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/images.png",
                 description: "JPG2000_IMAGE"
             },
             "image/jpeg": {
                 cssClass: "icon-image-sprite",
-                URL: "/dev/images/mimetypes/images.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/images.png",
                 description: "JPG_IMAGE"
             },
             "image/pjpeg": {
                 cssClass: "icon-image-sprite",
-                URL: "/dev/images/mimetypes/images.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/images.png",
                 description: "JPG_IMAGE"
             },
             "image/tiff": {
                 cssClass: "icon-image-sprite",
-                URL: "/dev/images/mimetypes/images.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/images.png",
                 description: "TIFF_IMAGE"
             },
             "text/html": {
                 cssClass: "icon-html-sprite",
-                URL: "/dev/images/mimetypes/html.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/html.png",
                 description: "HTML_DOCUMENT"
             },
             "video/x-msvideo": {
                 cssClass: "icon-video-sprite",
-                URL: "/dev/images/mimetypes/video.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/video.png",
                 description: "VIDEO_FILE"
             },
             "video/mp4": {
                 cssClass: "icon-video-sprite",
-                URL: "/dev/images/mimetypes/video.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/video.png",
                 description: "VIDEO_FILE"
             },
             "video/quicktime": {
                 cssClass: "icon-video-sprite",
-                URL: "/dev/images/mimetypes/video.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/video.png",
                 description: "VIDEO_FILE"
             },
             "video/x-ms-wmv": {
                 cssClass: "icon-video-sprite",
-                URL: "/dev/images/mimetypes/video.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/video.png",
                 description: "VIDEO_FILE"
             },
             "folder": {
                 cssClass: "icon-kmultiple-sprite",
-                URL: "/dev/images/mimetypes/kmultiple.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/kmultiple.png",
                 description: "FOLDER"
             },
             "x-sakai/link": {
                 cssClass: "icon-url-sprite",
-                URL: "/dev/images/mimetypes/html.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/html.png",
                 description: "URL_LINK"
             },
             "x-sakai/document": {
                 cssClass: "icon-sakaidoc-sprite",
-                URL: "/dev/images/mimetypes/sakaidoc.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/sakaidoc.png",
                 description: "DOCUMENT"
             },
             "x-sakai/collection": {
                 cssClass: "icon-collection-sprite",
-                URL: "/dev/images/mimetypes/collection.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/collection.png",
                 description: "COLLECTION"
             },
             "kaltura/video": {
                 cssClass: "icon-video-sprite",
-                URL: "/dev/images/mimetypes/video.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/video.png",
                 description: "VIDEO_FILE"
             },
             "kaltura/audio": {
                 cssClass: "icon-sound-sprite",
-                URL: "/dev/images/mimetypes/sound.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/sound.png",
                 description: "SOUND_FILE"
             },
             "other": {
                 cssClass: "icon-unknown-sprite",
-                URL: "/dev/images/mimetypes/unknown.png",
+                URL: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/unknown.png",
                 description: "OTHER_DOCUMENT"
             }
         },
@@ -852,11 +852,11 @@ define(function(){
         notification: {
             type: {
                 ERROR: {
-                    image: "/dev/images/notifications_exclamation_icon.png",
+                    image: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/notifications_exclamation_icon.png",
                     time: 10000
                 },
                 INFORMATION: {
-                    image: "/dev/images/notifications_info_icon.png",
+                    image: "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/notifications_info_icon.png",
                     time: 5000
                 }
             }

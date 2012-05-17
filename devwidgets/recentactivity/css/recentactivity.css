@@ -24,13 +24,13 @@
 
 /* Icons for types of activities */
 .recentactivity_widget .recentactivity_activity_icon {width:16px;height:16px;float:right;}
-.recentactivity_widget .recentactivity_activity_upload {background:url("/devwidgets/recentactivity/images/recentactivity_upload_icon.png") no-repeat top left transparent;}
-.recentactivity_widget .recentactivity_activity_comment {background:url("/devwidgets/recentactivity/images/recentactivity_comment_icon.png") no-repeat top left transparent;}
-.recentactivity_widget .recentactivity_activity_new {background:url("/devwidgets/recentactivity/images/recentactivity_refresh_icon.png") no-repeat top left transparent;}
+.recentactivity_widget .recentactivity_activity_upload {background:url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/recentactivity/images/recentactivity_upload_icon.png") no-repeat top left transparent;}
+.recentactivity_widget .recentactivity_activity_comment {background:url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/recentactivity/images/recentactivity_comment_icon.png") no-repeat top left transparent;}
+.recentactivity_widget .recentactivity_activity_new {background:url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/recentactivity/images/recentactivity_refresh_icon.png") no-repeat top left transparent;}
 
 /* No Results */
 .recentactivity_widget .s3d-no-results-container {margin:30px 20px 10px;}
 .recentactivity_widget .s3d-no-results-container .s3d-regular-links {display:block;}
 .recentactivity_widget .s3d-no-results-container .s3d-no-results-icon {float:none;clear:both;}
-.recentactivity_widget #recentactivity_noresults_example {background:url("/devwidgets/recentactivity/images/recentactivity_noresults_example.png") no-repeat top left transparent;width:146px;height:113px;margin:10px 0 0 12px;}
+.recentactivity_widget #recentactivity_noresults_example {background:url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/recentactivity/images/recentactivity_noresults_example.png") no-repeat top left transparent;width:146px;height:113px;margin:10px 0 0 12px;}
 .recentactivity_widget .s3d-no-results-container .s3d-split-line {margin:0 -20px;}

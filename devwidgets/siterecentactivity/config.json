@@ -9,7 +9,7 @@
     },
     "hasSettings": false,
     "id":"siterecentactivity",
-    "img":"/devwidgets/siterecentactivity/images/icon.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/siterecentactivity/images/icon.png",
     "showinsidebar":true,
     "type":"core",
     "enabled":true,

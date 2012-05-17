@@ -28,8 +28,8 @@
 .search_add_content_button,.search_add_group_button{float:right;}
 .search_content_wrapper{padding:0;margin:0 0 20px;}
 .search_content_main{margin:0;padding:10px;min-height:350px;}
-.search_tab_content_top{background:url(/dev/images/dashboard_sprite.png) no-repeat scroll right -1567px transparent;padding:0 5px 0 0;margin:0;}
-.search_tab_content_top_inner{background:url(/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1393px transparent;margin:0;height:6px;}
+.search_tab_content_top{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -1567px transparent;padding:0 5px 0 0;margin:0;}
+.search_tab_content_top_inner{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -10px -1393px transparent;margin:0;height:6px;}
 .search_bar{padding:5px 10px 10px 0px; float:right;}
 .search_bar #introduction_text h4{font-weight:normal;font-size:1.1em;color:#999;padding:0;margin:0 0 10px;}
 .search_content_main .search_bar{width:auto;}

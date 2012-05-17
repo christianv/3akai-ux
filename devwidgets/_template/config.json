@@ -37,7 +37,7 @@
     "enabled":            false,
     "hasSettings":        false,
     "url":                "/devwidgets/WIDGET_ID/WIDGET_ID.html",
-    "img":                "/devwidgets/WIDGET_ID/images/WIDGET_ID.png",
+    "img":                "http://d3b0luyqtvsx4y.cloudfront.nethttp://d3b0luyqtvsx4y.cloudfront.net/devwidgets/WIDGET_ID/images/WIDGET_ID.png",
     "i18n": {
         "default": {
             "bundle":     "/devwidgets/WIDGET_ID/bundles/default.properties",

@@ -32,4 +32,4 @@ p.joinrequests_request_age,p.joinrequests_actions{font-size:.85em;color:#666;}
 a.joinrequests_username_link{font-weight:bold;color:#000;}
 
 /* IMAGES */
-p.joinrequests_loading{height:10px;margin-top:12px;background:url(/dev/images/ajax_load.gif) no-repeat scroll 0 0 transparent;}
+p.joinrequests_loading{height:10px;margin-top:12px;background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/ajax_load.gif) no-repeat scroll 0 0 transparent;}

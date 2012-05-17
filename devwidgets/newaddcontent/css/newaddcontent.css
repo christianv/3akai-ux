@@ -64,13 +64,13 @@
     margin: 0 12px 0 0;
 }
 #newaddcontent_container #newaddcontent_container_lhchoice .newaddcontent_container_lhchoice_item ul li #newaddcontent_my_library_icon {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_shared_icon.png") no-repeat top left transparent
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_shared_icon.png") no-repeat top left transparent
 }
 #newaddcontent_container #newaddcontent_container_lhchoice .newaddcontent_container_lhchoice_item ul li #newaddcontent_my_content_icon {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_my_content_icon.png") no-repeat top left transparent
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_my_content_icon.png") no-repeat top left transparent
 }
 #newaddcontent_container #newaddcontent_container_lhchoice .newaddcontent_container_lhchoice_item ul li #newaddcontent_everything_icon {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_everything_icon.png") no-repeat top left transparent
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_everything_icon.png") no-repeat top left transparent
 }
 #newaddcontent_container #newaddcontent_container_lhchoice .newaddcontent_container_lhchoice_selected_item {
     -moz-border-radius: 5px 0 0 5px;
@@ -86,7 +86,7 @@
     color: #424242
 }
 #newaddcontent_container #newaddcontent_container_lhchoice .newaddcontent_container_lhchoice_selected_item .newaddcontent_container_lhchoice_selected_subitem {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_selected_item_bg.png") repeat-x scroll 0 0 transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_selected_item_bg.png") repeat-x scroll 0 0 transparent;
     font-weight: bold;
 }
 #newaddcontent_container #newaddcontent_container_lhchoice .newaddcontent_container_lhchoice_selected_item .newaddcontent_container_lhchoice_selected_subitem span,
@@ -103,16 +103,16 @@
     width: 20px;
 }
 #newaddcontent_container #newaddcontent_container_lhchoice #newaddcontent_upload_content_icon {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_upload_icon.png") no-repeat scroll 0 0 transparent
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_upload_icon.png") no-repeat scroll 0 0 transparent
 }
 #newaddcontent_container #newaddcontent_container_lhchoice #newaddcontent_add_new_document_icon {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_new_document_icon.png") no-repeat scroll 0 0 transparent
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_new_document_icon.png") no-repeat scroll 0 0 transparent
 }
 #newaddcontent_container #newaddcontent_container_lhchoice #newaddcontent_add_existing_content_icon {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_existing_content_icon.png") no-repeat scroll 0 0 transparent
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_existing_content_icon.png") no-repeat scroll 0 0 transparent
 }
 #newaddcontent_container #newaddcontent_container_lhchoice #newaddcontent_add_link_icon {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_add_link_icon.png") no-repeat scroll 0 0 transparent
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_add_link_icon.png") no-repeat scroll 0 0 transparent
 }
 
 /* Middle item */
@@ -132,7 +132,7 @@
     border-radius: 5px !important;
 }
 #newaddcontent_container #newaddcontent_container_newitem #newaddcontent_container_newitem_raquo_right {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_raquo_right.png") no-repeat scroll left top transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_raquo_right.png") no-repeat scroll left top transparent;
     height: 34px;
     position: absolute;
     left: 738px;
@@ -238,7 +238,7 @@
 }
 #newaddcontent_container #newaddcontent_container_selecteditems ul li .newaddcontent_selecteditems_remove,
 #newaddcontent_container .newaddcontent_selecteditems_edit_data_close {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_remove_icon.png") no-repeat top left transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_remove_icon.png") no-repeat top left transparent;
     width: 13px;
     height: 13px;
     float: right;
@@ -374,7 +374,7 @@
     color: #424242;
 }
 #newaddcontent_add_document_description_container #newaddcontent_add_document_description_image {
-    background: url("/devwidgets/newaddcontent/images/newaddcontent_sakaidoc_example.png") no-repeat top left transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/newaddcontent/images/newaddcontent_sakaidoc_example.png") no-repeat top left transparent;
     width: 143px;
     height: 185px;
     margin-bottom: 10px;

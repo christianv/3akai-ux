@@ -16,8 +16,8 @@
  * specific language governing permissions and limitations under the License.
  */
 /* General */
-.footer_main{color:#454a4f;margin:0 auto;padding:0 0 10px;width:960px;background:transparent url(/devwidgets/footer/images/footer_shadow.png) 50% 0 no-repeat;}
-#footer_logo{background:url(/devwidgets/footer/images/footer_logo.png) no-repeat scroll 0 0 transparent;width:43px;height:28px;float:left;margin-right:15px;}
+.footer_main{color:#454a4f;margin:0 auto;padding:0 0 10px;width:960px;background:transparent url(http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/footer/images/footer_shadow.png) 50% 0 no-repeat;}
+#footer_logo{background:url(http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/footer/images/footer_logo.png) no-repeat scroll 0 0 transparent;width:43px;height:28px;float:left;margin-right:15px;}
 #footer_logo_button{float:left;margin-left:-2px;padding-left:2px;}
 .footer_main #footer_debug_info{margin:5px 0 0 0;}
 .footer_main .footer_clickable{cursor:pointer;}
@@ -36,10 +36,10 @@
 .footer_main .fixed-container a.toplink{margin-left:26px;font-weight:bold;}
 .footer_main .fixed-container button.back-top{color:#fff;display:block;float:right;font-size:13px;font-weight:bold;padding-right:4px;margin-top:-3px;}
 .footer_main .fixed-container button.s3d-link-button{font-size:11px; margin-right: 0px;}
-.footer_main .fixed-container div.back-top{background:url(/dev/images/dashboard_sprite.png) no-repeat scroll -102px -640px transparent;height:13px;width:10px;float:right;cursor:pointer; margin-top:-1px;}
-#footer_main_br{width:100%;height:9px;background:url(/dev/images/dashboard_sprite.png) no-repeat scroll right -763px transparent;float:left;}
-#footer_main_bl{width:16px;height:9px;background:url(/dev/images/dashboard_sprite.png) no-repeat scroll -11px -763px transparent;float:left;}
-#footer_main_footer{background:url(/dev/images/body_bg_sprite.png) repeat-x scroll left -42px transparent;height:9px;margin:0 16px;}
+.footer_main .fixed-container div.back-top{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -102px -640px transparent;height:13px;width:10px;float:right;cursor:pointer; margin-top:-1px;}
+#footer_main_br{width:100%;height:9px;background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll right -763px transparent;float:left;}
+#footer_main_bl{width:16px;height:9px;background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/dashboard_sprite.png) no-repeat scroll -11px -763px transparent;float:left;}
+#footer_main_footer{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/body_bg_sprite.png) repeat-x scroll left -42px transparent;height:9px;margin:0 16px;}
 .footer_main .fixed-container.bottom p.footer_langloc span{margin-left:26px;}
 .footer_main .fixed-container.bottom p.footer_langloc a{margin-right:0;}
 

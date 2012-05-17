@@ -5,7 +5,7 @@
     "groupdashboard": true,
     "hasSettings":true,
     "id":"video",
-    "img":"/devwidgets/video/images/video.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/video/images/video.png",
     "type":"sakai",
     "enabled":true,
     "url":"/devwidgets/video/video.html",

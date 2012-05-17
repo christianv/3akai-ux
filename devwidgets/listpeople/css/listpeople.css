@@ -38,4 +38,4 @@
 .listpeople_container .listpeople_content .listpeople_page .listpeople_subnameinfo{color:#999;font-size:11px;position:relative;top:1px;left:7px;}
 .listpeople_container .listpeople_content .listpeople_page .listpeople_selected .listpeople_name{color:#FFF;}
 .listpeople_container .listpeople_content .listpeople_page .listpeople_selected .listpeople_subnameinfo{color:#FFF;}
-.loadinganim{background:#fff url(/dev/images/ajax_load.gif) center 8px no-repeat;min-height:50px;}
+.loadinganim{background:#fff url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/ajax_load.gif) center 8px no-repeat;min-height:50px;}

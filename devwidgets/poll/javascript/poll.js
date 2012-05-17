@@ -1035,7 +1035,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
             $(pollStartdate, rootel).datepicker({
                 showOn: 'both',
                 showAnim: 'slideDown',
-                buttonImage: "/devwidgets/poll/images/poll_drop_down.gif",
+                buttonImage: "http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/poll/images/poll_drop_down.gif",
                 buttonImageOnly: true,
                 buttonText: "Please select a start date",
                 dateFormat: 'dd/mm/yy',
@@ -1046,7 +1046,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
             $(pollStopdate, rootel).datepicker({
                 showOn: 'both',
                 showAnim: 'slideDown',
-                buttonImage: "/devwidgets/poll/images/poll_drop_down.gif",
+                buttonImage: "http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/poll/images/poll_drop_down.gif",
                 buttonImageOnly: true,
                 buttonText: "Please select a stop date",
                 dateFormat: 'dd/mm/yy',

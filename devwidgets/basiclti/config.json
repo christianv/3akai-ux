@@ -10,7 +10,7 @@
             "description":"Basic LTI widget"
         }
     },
-    "img":"/devwidgets/basiclti/images/basiclti.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/basiclti/images/basiclti.png",
     "type":"sakai",
     "enabled":true,
     "url":"/devwidgets/basiclti/basiclti.html",

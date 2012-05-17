@@ -12,8 +12,8 @@
             "description":"Comments"
         }
     },
-    "img":"/devwidgets/comments/images/comments.png",
-    "imghover": "/devwidgets/comments/images/comments_hover.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/comments/images/comments.png",
+    "imghover": "http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/comments/images/comments_hover.png",
     "type":"sakai",
     "enabled":true,
     "sakaidocs": true,

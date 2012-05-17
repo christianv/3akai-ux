@@ -55,7 +55,7 @@
                     {if i.picture}
                         <img src="/~${i["rep:userId"]|safeURL}/public/profile/${i.picture.name|safeURL}" alt="__MSG__PROFILE_PICTURE_FOR__ ${sakai.api.User.getDisplayName(i}" class="pickeruser_ppicture"/>
                     {else}
-                        <img src="/dev/images/person_icon.jpg" alt="__MSG__DEFAULT_PROFILE_PICTURE__" class="pickeruser_ppicture"/>
+                        <img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/person_icon.jpg" alt="__MSG__DEFAULT_PROFILE_PICTURE__" class="pickeruser_ppicture"/>
                     {/if}
                     <a class="pickeruser_name" href="/~${i['rep:userId']|safeURL}">${sakai.api.User.getDisplayName(i)}</a>
                     <br />

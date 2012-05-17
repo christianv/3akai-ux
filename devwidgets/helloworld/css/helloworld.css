@@ -18,4 +18,4 @@
 /* Widget Container CSS */
 .helloworld_widget {padding:0 12px;}
 /* Dashboard Widget Icon */
-.helloworld.s3d-widget .s3d-widget-titlebar .widget_title{background:url(/devwidgets/helloworld/images/helloworld_icon.png) 17px 18px no-repeat;}
+.helloworld.s3d-widget .s3d-widget-titlebar .widget_title{background:url(http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/helloworld/images/helloworld_icon.png) 17px 18px no-repeat;}

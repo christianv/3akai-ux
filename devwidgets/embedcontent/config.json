@@ -18,7 +18,7 @@
         "showDetails": false,
         "showDownload": false
     },
-    "img":"/devwidgets/embedcontent/images/content.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/embedcontent/images/content.png",
     "type":"core",
     "enabled":true,
     "url":"/devwidgets/embedcontent/embedcontent.html",

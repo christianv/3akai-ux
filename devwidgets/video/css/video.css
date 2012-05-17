@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations under the License.
  */
 /* Video Widget Icon */
-.video.fl-widget .fl-widget-titlebar .widget_title{background:url(/devwidgets/video/images/video_icon.png) no-repeat scroll 14px 16px transparent;}
+.video.fl-widget .fl-widget-titlebar .widget_title{background:url(http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/video/images/video_icon.png) no-repeat scroll 14px 16px transparent;}
 
 /* TYPOGRAPHY */
 #video_maincontainer p.video_info_msg{padding:0;margin:10px;font-style:italic;}

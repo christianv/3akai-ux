@@ -15,7 +15,7 @@
             "bundle": "/devwidgets/contentcomments/bundles/es_ES.properties"
         }
     },
-    "img":"/devwidgets/contentcomments/images/comments.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/contentcomments/images/comments.png",
     "type":"core",
     "enabled":true,
     "url":"/devwidgets/contentcomments/contentcomments.html"

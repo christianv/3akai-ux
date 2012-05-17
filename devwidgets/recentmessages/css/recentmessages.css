@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations under the License.
  */
 /* Widget title icon */
-.recentmessages .widget_title_icon{background:url(/dev/images/icons_sprite.png) no-repeat scroll -420px -19px transparent;}
+.recentmessages .widget_title_icon{background:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/icons_sprite.png) no-repeat scroll -420px -19px transparent;}
 
 /* Error messages */
 .recentmessages_error{padding:0 0 0 15px;}

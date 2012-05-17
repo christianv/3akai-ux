@@ -37,10 +37,10 @@
     display: inline-block;
     height: 16px;
     width: 16px;
-    background: url("/devwidgets/searchpeople/images/searchpeople_message_icon.png") no-repeat scroll left top transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/searchpeople/images/searchpeople_message_icon.png") no-repeat scroll left top transparent;
 }
 .participants_widget #participants_list_container .participants_plus{margin-left: -1px; margin-top: 3px;}
-.participants_widget #participants_list_container ul li .participants_message_icon:hover{cursor:pointer;background: url("/devwidgets/searchpeople/images/searchpeople_message_icon_active.png") no-repeat scroll left top transparent;}
+.participants_widget #participants_list_container ul li .participants_message_icon:hover{cursor:pointer;background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/searchpeople/images/searchpeople_message_icon_active.png") no-repeat scroll left top transparent;}
 .participants_widget #participants_list_container ul li .participants_plus:hover{cursor:pointer;color:#42a2dc;text-decoration:none;}
 .participants_selectall{float:left;width:20px;height:20px;margin-left:10px;}
 .participants_selectall input{margin-top:4px;}

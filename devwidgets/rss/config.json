@@ -6,7 +6,7 @@
     "groupdashboard": true,
     "hasSettings":true,
     "id":"rss",
-    "img":"/devwidgets/rss/images/rss.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/rss/images/rss.png",
     "type":"sakai",
     "enabled":true,
     "url":"/devwidgets/rss/rss.html",

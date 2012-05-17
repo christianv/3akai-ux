@@ -42,7 +42,7 @@
     border-bottom: 1px dotted #ddd;
 }
 .pageviewer_widget #pageviewer_lhnav_container ul li.selected {
-    background: url("/devwidgets/lhnavigation/images/lhnav_selected_item_bg.png") repeat-x scroll left top #22AAE7;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/lhnavigation/images/lhnav_selected_item_bg.png") repeat-x scroll left top #22AAE7;
     color: #FFFFFF;
 }
 .pageviewer_widget #pageviewer_lhnav_container ul li.selected button {

@@ -78,14 +78,14 @@
     margin-bottom: 10px;
 }
 .s3d-fixed-container .s3d-container-shadow-left, .s3d-container-shadow-right {
-    background: url("/dev/images/container_shadow_left.png") no-repeat scroll 0 0 transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/container_shadow_left.png") no-repeat scroll 0 0 transparent;
     height: 346px;
     position: absolute;
     width: 5px;
     margin-left: -5px;
 }
 .s3d-container-shadow-right {
-    background: url("/dev/images/container_shadow_right.png") no-repeat scroll 0 0 transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/container_shadow_right.png") no-repeat scroll 0 0 transparent;
     float: right;
     margin-left: 960px;
 }
@@ -107,7 +107,7 @@ a {
     background-color: #fff;
 }
 .requireUser, .requireAnon {
-    background: url("/dev/images/grey_bg.png") repeat-x scroll left -91px #f2f2f2 !important;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/grey_bg.png") repeat-x scroll left -91px #f2f2f2 !important;
 }
 .s3d-header .fixed-container {
     padding: 0 !important;
@@ -120,10 +120,10 @@ a {
     margin-right: 0;
 }
 .s3d-header .s3d-fixed-container .s3d-decor-left {
-    background: url("/dev/images/pageHeader_tl.png") no-repeat scroll 0 0 transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/pageHeader_tl.png") no-repeat scroll 0 0 transparent;
 }
 .s3d-header .s3d-fixed-container .s3d-decor {
-    background: url("/dev/images/pageHeader_tr.png") no-repeat scroll 0 0 transparent;
+    background: url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/pageHeader_tr.png") no-repeat scroll 0 0 transparent;
 }
 .s3d-header .s3d-navigation-container {
     min-width: 960px;

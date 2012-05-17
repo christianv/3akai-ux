@@ -25,7 +25,7 @@
 
 /* One result page */
 .listgeneral_resultpage{min-height:200px;overflow:hidden;}
-.loadinganim{background:#fff url(/dev/images/ajax_load.gif) center 40px no-repeat;}
+.loadinganim{background:#fff url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images/ajax_load.gif) center 40px no-repeat;}
 
 /* Sites results */
 /* List view */

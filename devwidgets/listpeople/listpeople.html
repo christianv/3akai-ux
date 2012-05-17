@@ -32,7 +32,7 @@
                 {if i.pictureUrl}
                     <a href="/~${i.groupid}" target="_blank"><img src="${i.pictureUrl}" alt="__MSG__GROUP_PICTURE_FOR__ ${i['sakai:group-title']}" class="listpeople_ppicture"/></a>
                 {else}
-                    <a href="/~${i.groupid}" target="_blank"><img src="/dev/images/group_avatar_icon_32x32.png" alt="__MSG__DEFAULT_GROUP_PICTURE__" class="listpeople_ppicture"/></a>
+                    <a href="/~${i.groupid}" target="_blank"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/group_avatar_icon_32x32.png" alt="__MSG__DEFAULT_GROUP_PICTURE__" class="listpeople_ppicture"/></a>
                 {/if}
                 <a class="listpeople_name s3d-regular-links s3d-bold" href="/~${i.groupid}" target="_blank">${i['sakai:group-title']}</a>
                 <br />
@@ -50,7 +50,7 @@
                 {if i.pictureUrl}
                     <a href="/~${i['sakai:group-id']}" target="_blank"><img src="${i.pictureUrl}" alt="__MSG__GROUP_PICTURE_FOR__ ${i['sakai:group-title']}" class="listpeople_ppicture"/></a>
                 {else}
-                    <a href="/~${i['sakai:group-id']}" target="_blank"><img src="/dev/images/group_avatar_icon_32x32.png" alt="__MSG__DEFAULT_GROUP_PICTURE__" class="listpeople_ppicture"/></a>
+                    <a href="/~${i['sakai:group-id']}" target="_blank"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/group_avatar_icon_32x32.png" alt="__MSG__DEFAULT_GROUP_PICTURE__" class="listpeople_ppicture"/></a>
                 {/if}
                 <a class="listpeople_name s3d-regular-links s3d-bold" href="/~${i['sakai:group-id']}" target="_blank">${i['sakai:group-title']}</a>
                 <br />
@@ -68,7 +68,7 @@
                 {if i.pictureUrl}
                     <a href="/~${i.userid|safeURL}" target="_blank"><img src="${i.pictureUrl}" alt="__MSG__PROFILE_PICTURE_FOR__ ${i.displayName}" class="listpeople_ppicture"/></a>
                 {else}
-                    <a href="/~${i.userid|safeURL}" target="_blank"><img src="/dev/images/user_avatar_icon_32x32.png" alt="__MSG__DEFAULT_PROFILE_PICTURE__" class="listpeople_ppicture"/></a>
+                    <a href="/~${i.userid|safeURL}" target="_blank"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/user_avatar_icon_32x32.png" alt="__MSG__DEFAULT_PROFILE_PICTURE__" class="listpeople_ppicture"/></a>
                 {/if}
                 <a class="listpeople_name s3d-regular-links s3d-bold" href="/~${i.userid|safeURL}" target="_blank">${i.displayName}</a>
                 <br />
@@ -86,7 +86,7 @@
                 {if i.pictureUrl}
                     <a href="/~${i['rep:userId']|safeURL}" target="_blank"><img src="${i.pictureUrl}" alt="__MSG__PROFILE_PICTURE_FOR__ ${i.displayName}" class="listpeople_ppicture"/></a>
                 {else}
-                    <a href="/~${i['rep:userId']|safeURL}" target="_blank"><img src="/dev/images/user_avatar_icon_32x32.png" alt="__MSG__DEFAULT_PROFILE_PICTURE__" class="listpeople_ppicture"/></a>
+                    <a href="/~${i['rep:userId']|safeURL}" target="_blank"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/user_avatar_icon_32x32.png" alt="__MSG__DEFAULT_PROFILE_PICTURE__" class="listpeople_ppicture"/></a>
                 {/if}
                 <a class="listpeople_name s3d-regular-links s3d-bold" href="/~${i['rep:userId']|safeURL}" target="_blank">${i.displayName}</a>
                 <br />

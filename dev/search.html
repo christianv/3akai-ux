@@ -48,9 +48,9 @@
         <div id="search_tags_active_template"><!--
             {for t in tags}
                 <span class="s3d-search-tag">
-                    <img src=/dev/images/search_tag_active.png" />
+                    <img src=http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_tag_active.png" />
                     <button class="search_tag_active_item" data-sakai-entityid="${t.original}" title="__MSG__REMOVE__ ${t.value} __MSG__FROM_SEARCH__">
-                        ${sakai.api.Util.applyThreeDots(t.value, 345, null, null, true)}<img src=/dev/images/search_tag_remove.png" />
+                        ${sakai.api.Util.applyThreeDots(t.value, 345, null, null, true)}<img src=http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_tag_remove.png" />
                     </button>
                 </span>
             {/for}
@@ -67,7 +67,7 @@
                 {/if}
                 <span class="s3d-search-tag">
                     <button class="search_tag_refine_item" data-sakai-entityid="${t.original}" title="__MSG__REFINE_SEARCH_TO__ ${t.value}">
-                        <img src=/dev/images/search_tag_add.png" />
+                        <img src=http://d3b0luyqtvsx4y.cloudfront.net/dev/images/search_tag_add.png" />
                         ${sakai.api.Util.applyThreeDots(t.value, 345, null, null, true)}
                     </button>
                 </span>
@@ -112,12 +112,12 @@
                             {elseif i.invited}
                                 <button title="__MSG__ACCEPT_CONNECTION_WITH__ ${i.name|safeOutput}" class="s3d-link-button s3d-actions-addtolibrary searchpeople_result_left_filler link_accept_invitation" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" {if i.picture}sakai-entitypicture="${i.picture}"{/if}><span class="s3d-aural-text">__MSG__ACCEPT_CONNECTION_WITH__ ${i.name|safeOutput}</span></button>
                                 <button title="__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}</span></button>
-                                <div class="searchpeople_result_left_filler" id="search_result_contact_${i.userid|safeOutput}" style="display:none;"><img src="/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
+                                <div class="searchpeople_result_left_filler" id="search_result_contact_${i.userid|safeOutput}" style="display:none;"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
                             {elseif i.pending}
                                 <div class="searchpeople_result_left_filler"></div>
                                 <button title="__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}</span></button>
                             {else}
-                                <div class="searchpeople_result_left_filler"><img src="/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
+                                <div class="searchpeople_result_left_filler"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/accept.png" alt="__MSG__USER_IS_A_CONTACT__" /></div>
                                 <button title="__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}" class="s3d-link-button s3d-action-icon s3d-actions-message searchpeople_result_message_icon sakai_sendmessage_overlay" sakai-entityid="${i.userid|safeOutput}" sakai-entityname="${i.name|safeOutput}" sakai-entitytype="user"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i.name|safeOutput}</span></button>
                             {/if}
                         {else}
@@ -179,7 +179,7 @@
             {macro listGroup(i, sakai)}
                 <li id="${i.id}" class="fl-container fl-fix searchgroups_result s3d-search-result-group s3d-search-result{if i_index === "0"} s3d-search-result-first{/if}">
                     <span class="s3d-search-result-user-functions">
-                        <div class="{if !i.userMember && i["sakai:group-joinable"] !== "no"} s3d-action-icon s3d-actions-addtolibrary searchgroups_result_plus {/if} searchgroups_result_left_filler" data-group-joinable="${i["sakai:group-joinable"]}" data-groupid="${i['sakai:group-id']}"><img src="/dev/images/accept.png" alt="" class="searchgroups_memberimage_${i['sakai:group-id']}" {if !i.userMember}style="display:none;" {/if}>{if !i.userMember && i["sakai:group-joinable"] !== "no"}<span class="s3d-aural-text">__MSG__JOIN__ ${i['sakai:group-title']|safeOutput}</span>{/if}</div>
+                        <div class="{if !i.userMember && i["sakai:group-joinable"] !== "no"} s3d-action-icon s3d-actions-addtolibrary searchgroups_result_plus {/if} searchgroups_result_left_filler" data-group-joinable="${i["sakai:group-joinable"]}" data-groupid="${i['sakai:group-id']}"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/accept.png" alt="" class="searchgroups_memberimage_${i['sakai:group-id']}" {if !i.userMember}style="display:none;" {/if}>{if !i.userMember && i["sakai:group-joinable"] !== "no"}<span class="s3d-aural-text">__MSG__JOIN__ ${i['sakai:group-title']|safeOutput}</span>{/if}</div>
                         <button title="__MSG__SEND_A_MESSAGE_TO__ ${i['sakai:group-title']|safeOutput}" class="s3d-link-button searchgroups_result_message_icon s3d-action-icon s3d-actions-message sakai_sendmessage_overlay" sakai-entityid="${i['sakai:group-id']|safeOutput}" sakai-entityname="${i['sakai:group-title']|safeOutput}" sakai-entitytype="group"><span class="s3d-aural-text">__MSG__SEND_A_MESSAGE_TO__ ${i['sakai:group-title']|safeOutput}</span></button>
                     </span>
                     <span class="s3d-search-result-anonuser"></span>

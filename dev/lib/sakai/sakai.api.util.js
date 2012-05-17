@@ -701,7 +701,7 @@ define(
                 if ($("#sakai_progressindicator").length === 0){
                     var htmlCode = '<div id="sakai_progressindicator" class="s3d-dialog s3d-dialog-container" style="display:none;">';
                     htmlCode += '<h1 id="sakai_progressindicator_title" class="s3d-dialog-header"></h1><p id="sakai_progressindicator_body"></p>';
-                    htmlCode += '<div class="s3d-inset-shadow-container"><img src="/dev/images/progress_bar.gif"/></div></div>';
+                    htmlCode += '<div class="s3d-inset-shadow-container"><img src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/progress_bar.gif"/></div></div>';
                     var notification = $(htmlCode);
                     $('body').append(notification);
                     sakai_util.Modal.setup('#sakai_progressindicator', {

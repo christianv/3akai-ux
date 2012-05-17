@@ -15,7 +15,7 @@
  * KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-#signup_header {background:url("/dev/images/signup_artwork.png") no-repeat scroll left top transparent;height:520px;width:920px;}
+#signup_header {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/signup_artwork.png") no-repeat scroll left top transparent;height:520px;width:920px;}
 #signup_header_bg {
     background:#e0eef5;
     border-radius: 0 0 6px 6px;
@@ -80,12 +80,12 @@ h2 {color:#666;font-size:15px;}
 .strength_four {
     font-weight: bold;
 }
-#signup_form_container #signup_form_shadow {background:url("/dev/images/signup_form_bgshadow.png") no-repeat scroll left top transparent;height:15px;margin-left:95px;margin-top:-14px;position:absolute;width:700px;}
+#signup_form_container #signup_form_shadow {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/signup_form_bgshadow.png") no-repeat scroll left top transparent;height:15px;margin-left:95px;margin-top:-14px;position:absolute;width:700px;}
 #signup_form_container #checkUserName{float:right;margin-top:10px;}
 
-#signup_form_container .username_available_icon {background:url("/dev/images/green_tick.png") no-repeat scroll 194px 4px #fff !important;}
-#signup_form_container .username_available_icon[disabled] {background:url("/dev/images/green_tick.png") no-repeat scroll 194px 4px transparent !important;}
-#signup_form_container .username_unavailable_icon {background:url("/dev/images/red_cross.png") no-repeat scroll 194px 4px #fff;}
+#signup_form_container .username_available_icon {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/green_tick.png") no-repeat scroll 194px 4px #fff !important;}
+#signup_form_container .username_available_icon[disabled] {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/green_tick.png") no-repeat scroll 194px 4px transparent !important;}
+#signup_form_container .username_unavailable_icon {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/red_cross.png") no-repeat scroll 194px 4px #fff;}
 
 .create_account_input_error {background:#cc0000;color:#fff;font-size:11px;padding:4px 0 2px 10px;width:206px;clear:both;}
 
@@ -105,14 +105,14 @@ h2 {color:#666;font-size:15px;}
     margin-bottom: 85px;
 }
 .signup_comment_box.last {margin-right:0;}
-.signup_comment_box_arrow_down {background:url("/dev/images/signup_arrow_down.png") no-repeat scroll left top transparent;height:24px;margin-left:100px;margin-top:205px;position:absolute;width:44px;}
+.signup_comment_box_arrow_down {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/signup_arrow_down.png") no-repeat scroll left top transparent;height:24px;margin-left:100px;margin-top:205px;position:absolute;width:44px;}
 .signup_comment_box_commenter {color:#666;font-size:12px;margin-left:150px;margin-top:220px;position:absolute;}
 .signup_comment_quote {color:#666;display:block;font-size:15px;font-style:italic;margin:14px;overflow:hidden;line-height:19px;}
 .signup_comment_box blockquote{margin:0;padding:0;}
 .signup_comment_icon {width:50px;float:left;margin:13px 5px 0;}
-.signup_comment_icon_personalspace {background:url("/dev/images/personalspace_icon_50x50.png") no-repeat top left transparent;height:50px;}
-.signup_comment_icon_cohere {background:url("/dev/images/cohere_icon_50x110.png") no-repeat top left transparent;height:110px;}
-.signup_comment_icon_editable {background:url("/dev/images/editable_icon_50x50.png") no-repeat top left transparent;height:50px;}
+.signup_comment_icon_personalspace {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/personalspace_icon_50x50.png") no-repeat top left transparent;height:50px;}
+.signup_comment_icon_cohere {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/cohere_icon_50x110.png") no-repeat top left transparent;height:110px;}
+.signup_comment_icon_editable {background:url("http://d3b0luyqtvsx4y.cloudfront.net/dev/images/editable_icon_50x50.png") no-repeat top left transparent;height:50px;}
 
 #signup_institution_logos {height:40px;width:925px;margin:25px 0 0 0;padding:0}
 #signup_institution_logos li{list-style:none;float:left;padding:0;margin:0}

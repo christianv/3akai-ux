@@ -19,8 +19,8 @@
         }
     },
     "id":"googlemaps",
-    "img":"/devwidgets/googlemaps/images/googlemaps.png",
-    "imghover":"/devwidgets/googlemaps/images/googlemaps_hover.png",
+    "img":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/googlemaps/images/googlemaps.png",
+    "imghover":"http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/googlemaps/images/googlemaps_hover.png",
     "type":"sakai",
     "enabled":true,
     "defaultLat":52.2025441,

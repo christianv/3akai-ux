@@ -215,7 +215,7 @@ require(["jquery", "sakai/sakai.api.core", "jquery-plugins/jquery.cookie"], func
             if (picture) {
                 return picture;
             } else {
-                return "/dev/images/user_avatar_icon_32x32.png";
+                return "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/user_avatar_icon_32x32.png";
             }
         };
 

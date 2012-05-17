@@ -30,7 +30,7 @@
                                 <a title="__MSG__VIEW_PROFILE__" href="/~${profile.userid|safeURL}" class="s3d-bold" target="_blank">${displayName}</a>
                             {elseif profile.collectionid}
                                 {var displayName = profile["sakai:group-title"]}
-                                <img alt="${displayName|safeOutput}" class="s3d-icon-32 fl-force-left" src="/dev/images/mimetypes/collection.png">
+                                <img alt="${displayName|safeOutput}" class="s3d-icon-32 fl-force-left" src="http://d3b0luyqtvsx4y.cloudfront.net/dev/images/mimetypes/collection.png">
                                 {if profile.showLink}
                                     <a title="__MSG__VIEW_PROFILE__" href="/content#p=${profile.collectionid}/${displayName|safeURL}" class="s3d-bold" target="_blank">
                                 {else}

@@ -42,7 +42,7 @@
                                 {/if}
                                 {if i.commentcount}
                                     <span class="relatedcontent_comments">
-                                        <img alt="comments-icon" src="/devwidgets/entity/images/entity_comment_icon.png">
+                                        <img alt="comments-icon" src="http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/entity/images/entity_comment_icon.png">
                                         <a href="/content#p={if i['sakai:pooled-content-file-name']}${i['_path']|safeURL}/${i['sakai:pooled-content-file-name']|safeOutput}" title="${i['sakai:pooled-content-file-name']|safeOutput}"{else}${i['_path']|safeURL}" title="${i['_path']}"{/if}" id="entity_comments_link">${i.commentcount} {if i.commentcount == 1} comment{else} comments{/if}</a>
                                     </span>
                                 {/if}

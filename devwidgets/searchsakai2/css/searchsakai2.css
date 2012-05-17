@@ -42,7 +42,7 @@ strong{color:#000;}
 
 /* widget icon (for widgets that may appear on a dashboard) 
    icons are usually around 18 x 18 pixels */
-.searchsakai2.s3d-widget .s3d-widget-titlebar .widget_title {background: url('/devwidgets/searchsakai2/images/searchsakai2_icon.png') 17px 18px no-repeat;}
+.searchsakai2.s3d-widget .s3d-widget-titlebar .widget_title {background: url('http://d3b0luyqtvsx4y.cloudfront.net/devwidgets/searchsakai2/images/searchsakai2_icon.png') 17px 18px no-repeat;}
 
 /* SEARCH RESULTS */
 #searchsakai2_results_container{margin: 10px 0 0;padding:0;}
@@ -56,7 +56,7 @@ strong{color:#000;}
 .searchsakai2_result img{float:left;padding:0 10px 0px 0;width:40px;}
 .searchsakai2_result_sites img{width:30px;}
 .searchsakai2_result_right{margin-left:55px; margin-top: 5px;}
-.searchsakai2_result_star{background-image:url(/dev/images//star.png);display:block;float:left;position:relative;top:-4px;left:0;}
+.searchsakai2_result_star{background-image:url(http://d3b0luyqtvsx4y.cloudfront.net/dev/images//star.png);display:block;float:left;position:relative;top:-4px;left:0;}
 .searchsakai2_result_header{color:#39c;margin:0 0 5px 25px;font-weight:bold;font-size:1.1em;}
 .searchsakai2_result_description{margin:0 0 5px;color:#333;font-size:.90em;padding:6px 0;}
 .searchsakai2_result_footer{margin:0 0 5px 25px;color:#999;font-size:.85em;}

@@ -55,7 +55,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
                     if (item.picture) {
                         item.picture = "/~" + sakai.api.Util.safeURL(item.userid) + "/public/profile/" + $.parseJSON(item.picture).name;
                     } else {
-                        item.picture = "/dev/images/default_User_icon_50x50.png";
+                        item.picture = "http://d3b0luyqtvsx4y.cloudfront.net/dev/images/default_User_icon_50x50.png";
                     }
                     item.baseHref = "/~" + sakai.api.Util.safeURL(item.userid);
                     if (item.userid === sakai.data.me.user.userid) {
