@@ -7,7 +7,7 @@
 //     http://documentcloud.github.com/underscore
 
 (function() {
-
+    var START_TIME = new Date().getTime();
   // Baseline setup
   // --------------
 
@@ -977,5 +977,7 @@
   wrapper.prototype.value = function() {
     return this._wrapped;
   };
+
+    report('Loaded underscore', START_TIME);
 
 }).call(this);

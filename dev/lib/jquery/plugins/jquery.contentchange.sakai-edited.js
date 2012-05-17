@@ -21,6 +21,7 @@
  * http://stackoverflow.com/questions/3233991/jquery-watch-div
  */
 require(['jquery'], function (jQuery) {
+    var START_TIME = new Date().getTime();
     jQuery.fn.contentChange = function(callback){
       var elms = jQuery(this);
       elms.each(
@@ -43,4 +44,5 @@ require(['jquery'], function (jQuery) {
         }
       }
     },500);
+    report('Loaded jquery.contentchange.sakai-edited.js', START_TIME);
 });

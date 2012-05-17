@@ -55,6 +55,7 @@
  */
 require(['jquery'], function (jQuery) {
 jQuery.cookie = function(name, value, options) {
+    var START_TIME = new Date().getTime();
     if (typeof value != 'undefined') { // name and value given, set cookie
         options = options || {};
         if (value === null) {
@@ -94,5 +95,6 @@ jQuery.cookie = function(name, value, options) {
         }
         return cookieValue;
     }
+    report('Loaded jquery.cookie.js', START_TIME);
 };
 });

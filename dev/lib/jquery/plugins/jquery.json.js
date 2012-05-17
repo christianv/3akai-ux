@@ -24,6 +24,7 @@
  */
 
 require(['jquery'], function (jQuery) {
+    var START_TIME = new Date().getTime();
 (function($) {
     /**
      * jQuery.toJSON( json-serializble )
@@ -121,4 +122,5 @@ require(['jquery'], function (jQuery) {
     };
 
 })(jQuery);
+report('Loaded jquery JSON', START_TIME);
 });

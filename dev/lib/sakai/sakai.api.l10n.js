@@ -34,8 +34,9 @@ define(
         "misc/l10n/detect_timezone"
     ],
     function(sakai_conf) {
+        var START_TIME = new Date().getTime();
+        
     return {
-
         /**
          * Get the current logged in user's locale
          *
@@ -250,5 +251,7 @@ define(
             }
             return split.join("/").toUpperCase();
         }
+        
     };
+    report('Loaded sakai.api.l10n.js', START_TIME);
 });

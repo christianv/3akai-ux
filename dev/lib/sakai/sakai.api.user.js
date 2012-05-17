@@ -40,6 +40,8 @@ define(
     ],
     function($, sakai_serv, sakai_l10n, sakai_i18n, sakai_util, sakai_conf) {
 
+    var START_TIME = new Date().getTime();
+
     var sakaiUserAPI = {
         data : {
             me: {}
@@ -972,6 +974,8 @@ define(
         }
 
     };
+
+    report('Loaded sakai.api.User', START_TIME);
 
     return sakaiUserAPI;
 });

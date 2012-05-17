@@ -11,6 +11,8 @@
 require(['jquery'], function (jQuery) {
 (function($){
 
+    var START_TIME = new Date().getTime();
+
     /**
      * Set it up as an object under the jQuery namespace
      */
@@ -390,6 +392,8 @@ require(['jquery'], function (jQuery) {
         }
 
     }
+
+    report('Loaded jquery.gritter.sakai-edited.js', START_TIME);
 
 })(jQuery);
 });

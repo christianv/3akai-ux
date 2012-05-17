@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations under the License.
  */
 define(function(){
+    var START_TIME = new Date().getTime();
     var config = {
         URL: {
             // Static URLs
@@ -2014,6 +2015,6 @@ define(function(){
             }
         }
     };
-
+    report('Loaded config.js', START_TIME);
     return config;
 });

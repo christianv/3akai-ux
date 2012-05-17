@@ -39,10 +39,11 @@ define(
         "jquery-ui"
     ],
     function($, sakai_serv, sakai_l10n, sakai_i18n, sakai_conf, _) {
-
+    var START_TIME = new Date().getTime();
     var sakai_util = {
 
         startup : function(meData) {
+            var START_TIME = new Date().getTime();
             // I know this is hideous
             (function () {
                 var script = document.createElement("script");
@@ -77,18 +78,21 @@ define(
                     });
                 }, 60000);
             }
+            report('Finished doing util startup', START_TIME);
         },
 
         /**
          * Get the world templates from the server
          */
         getTemplates: function() {
+            var START_TIME = new Date().getTime();
             var templates = [];
             $.ajax({
                 url: sakai_conf.URL.WORLD_INFO_URL,
                 async:false,
                 success: function(data) {
                     templates = _.toArray(sakai_serv.removeServerCreatedObjects(data, ["jcr:"]));
+                    report('Finish world templates', START_TIME);
                 }
             });
             $.each(templates, function(i,temp) {
@@ -2697,6 +2701,6 @@ define(
             return ret;
         }
     };
-
+    report('Loaded sakai.api.util', START_TIME);
     return sakai_util;
 });

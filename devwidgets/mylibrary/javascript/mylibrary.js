@@ -36,6 +36,7 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
         // Configuration variables //
         /////////////////////////////
 
+        var START_TIME = new Date().getTime();
         var mylibrary = {  // global data for mylibrary widget
             sortBy: '_lastModified',
             sortOrder: 'desc',
@@ -300,9 +301,8 @@ require(['jquery', 'sakai/sakai.api.core'], function($, sakai) {
             $.each($('.mylibrary_check:checked:visible', $rootel), function(i, checked) {
                 addToIdArr.push($(checked).attr('data-entityid'));
                 addToTitleArr.push($(checked).attr('data-entityname'));
-                if ($(checked).attr('data-canshare') === 'true') {
-                    shareIdArr.push($(checked).attr('data-entityid'));
-                } else if (!$(checked).attr('data-canshare-error')) {
+                shareIdArr.push($(checked).attr('data-entityid'));
+                if (!$(checked).attr('data-canshare-error')) {
                     $(checked).attr('data-canshare-error', 'true');
                 }
             });

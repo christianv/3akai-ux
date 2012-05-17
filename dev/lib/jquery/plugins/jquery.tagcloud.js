@@ -7,6 +7,8 @@
  */
 (function($) {
 
+    var START_TIME = new Date().getTime();
+
   /*global jQuery*/
   "use strict";
 
@@ -88,5 +90,7 @@
   $.fn.tagcloud.defaults = {
     size: {start: 14, end: 18, unit: "pt"}
   };
+
+  report('Loaded jquery.tagcloud.js', START_TIME);
 
 })(jQuery);

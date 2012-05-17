@@ -12,6 +12,7 @@
 /*# AVOID COLLISIONS #*/
 require(['jquery', 'jquery-ui', 'jquery-plugins/jquery.fileupload'], function (jQuery) {
 ;if(window.jQuery) (function($){
+    var START_TIME = new Date().getTime();
 /*# AVOID COLLISIONS #*/
  
 	// plugin initialization
@@ -531,7 +532,7 @@ require(['jquery', 'jquery-ui', 'jquery-plugins/jquery.fileupload'], function (j
   $("input[type=file].multi").MultiFile();
  });
 	
-	
+report('Loaded jquery.MultiFile.sakai-edited.js', START_TIME);
 	
 /*# AVOID COLLISIONS #*/
 })(jQuery);

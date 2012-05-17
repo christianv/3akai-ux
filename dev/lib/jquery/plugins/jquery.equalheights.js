@@ -18,6 +18,7 @@
  */
 require(['jquery'], function (jQuery) {
     (function($) {
+        var START_TIME = new Date().getTime();
     	$.fn.equalHeights = function(minHeight, maxHeight) {
     		tallest = (minHeight) ? minHeight : 0;
     		this.each(function() {
@@ -30,5 +31,6 @@ require(['jquery'], function (jQuery) {
     			$(this).height(tallest).css("overflow","auto");
     		});
     	}
+    	report('Loaded jquery.equalheights.js', START_TIME);
     })(jQuery);
 });

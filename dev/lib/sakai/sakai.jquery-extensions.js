@@ -30,9 +30,13 @@
  */
 require(["jquery", "jquery-plugins/jquery.validate"], function(jQuery) {
 
+var START_TIME_2 = new Date().getTime();
+
 var msie = $.browser.msie;
 
 (function($){
+
+    
 
     /**
     * Override default jQuery error behavior
@@ -188,5 +192,7 @@ $.validator.addMethod("appendhttp", function(value, element) {
     }
     return true;
 }, "No error message, this is just an appender");
+
+report('Loaded jQuery extensions', START_TIME_2);
 
 });

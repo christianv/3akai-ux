@@ -65,6 +65,8 @@
 require(['jquery'], function (jQuery) {
 (function($) {
 
+    var START_TIME = new Date().getTime();
+
     $.fn.editable = function(target, options) {
             
         if ('disable' == target) {
@@ -545,6 +547,8 @@ require(['jquery'], function (jQuery) {
         submitdata : {},
         ajaxoptions: {}
     };
+
+    report('Loaded jquery.jeditable.sakai-edited.js', START_TIME);
 
 })(jQuery);
 });

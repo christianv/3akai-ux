@@ -7,9 +7,8 @@
  * Dual licensed under the MIT or GPL Version 2 licenses.
  * http://jquery.org/license
  */
-
 (function( window, undefined ) {
-
+var START_TIME = new Date().getTime();
 var Globalize,
 	// private variables
 	regexHex,
@@ -1569,5 +1568,5 @@ Globalize.culture = function( cultureSelector ) {
 	// getter
 	return this.findClosestCulture( cultureSelector ) || this.culture[ "default" ];
 };
-
+report('Loaded jquery globalize', START_TIME);
 }( this ));

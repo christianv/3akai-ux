@@ -15,6 +15,7 @@
  * KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
+var START_TIME_1 = new Date().getTime();
 define(
     [
         "sakai/sakai.api.communication",
@@ -63,6 +64,7 @@ define(
     // Load in the world templates
     var templates = sakai_util.getTemplates();
     sakai.config.worldTemplates = templates;
+    report('Loaded sakai.api.core.js', START_TIME_1);
     return sakai;
 
 });

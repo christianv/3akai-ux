@@ -3,6 +3,26 @@
 
     <head>
 
+        <script type="text/javascript" language="JavaScript">
+            var START_TIME_GLOBAL = new Date().getTime();
+
+            var resultsObj = {
+                'name': [],
+                'timetaken': [],
+                'totaltime': []
+            };
+
+            var report = function(message, start){
+                start = start || START_TIME;
+                var END_TIME = new Date().getTime();
+                console.log("=> " + message + " | Time taken: " + (END_TIME - start) + " | Total load time so far: " + (END_TIME - START_TIME_GLOBAL));
+                resultsObj.name.push(message);
+                resultsObj.timetaken.push(END_TIME - start);
+                resultsObj.totaltime.push(END_TIME - START_TIME_GLOBAL);
+                //console.log(JSON.stringify(resultsObj));
+            };
+        </script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title></title>
@@ -14,7 +34,7 @@
         <link rel="stylesheet" type="text/css" href="/dev/css/sakai/sakai.corev1.css" />
 
     </head>
-    <body class="fl-centered me i18nable">
+    <body class="fl-centered me i18nable" onload="report('Browser load event');">
         <!-- HEADER -->
         <div id="widget_branding" class="widget_inline"></div>
         <div class="fl-container-flex header s3d-header">

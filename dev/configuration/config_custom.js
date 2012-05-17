@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations under the License.
  */
 define(["config/config"], function(config) {
-
+    var START_TIME = new Date().getTime();
     // Custom CSS Files to load in
     // config.skinCSS = ["/dev/skins/default/skin.css"];
 
@@ -29,6 +29,6 @@ define(["config/config"], function(config) {
         partnerId:  100, //INSERT_YOUR_PARTNER_ID_HERE
         playerId: 100 //INSERT_YOUR_PLAYER_ID_HERE
     };
-
+    report('Loaded config custom', START_TIME);
     return config;
 });

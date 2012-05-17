@@ -191,6 +191,8 @@
 require(['jquery'], function (jQuery) {
 (function($) {
 
+var START_TIME = new Date().getTime();
+
 	/**********************************************************************************
 
 		METHOD
@@ -646,6 +648,8 @@ require(['jquery'], function (jQuery) {
 			}
 		}
 	}
+
+report('Loaded jquery.threedots.js', START_TIME);
 	
 })(jQuery);
 });

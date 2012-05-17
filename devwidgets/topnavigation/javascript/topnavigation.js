@@ -40,6 +40,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
      */
     sakai_global.topnavigation = function(tuid, showSettings){
 
+        var START_TIME = new Date().getTime();
 
         ///////////////////
         // CONFIGURATION //
@@ -1078,6 +1079,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
         };
 
         doInit();
+        report('Finished top navigation', START_TIME);
     };
     sakai.api.Widgets.widgetLoader.informOnLoad("topnavigation");
 });

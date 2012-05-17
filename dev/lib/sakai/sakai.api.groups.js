@@ -39,6 +39,8 @@ define(
     ],
     function($, sakai_conf, sakai_serv, sakai_util, sakai_i18n, sakai_user, sakai_comm, _){
 
+    var START_TIME = new Date().getTime();
+
     var sakaiGroupsAPI = {
         /**
          * Get the data for the specified group
@@ -1404,5 +1406,8 @@ define(
         }
 
     };
+    
+    report('Loaded sakai.api.groups.js', START_TIME);
+    
     return sakaiGroupsAPI;
 });

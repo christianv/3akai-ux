@@ -19,6 +19,7 @@ require(['jquery'], function (jQuery) {
 "use strict";
 // Common functions not related to jsTree 
 // decided to move them to a `vakata` "namespace"
+var START_TIME = new Date().getTime();
 (function ($) {
 	$.vakata = {};
 	// CSS related functions
@@ -3534,6 +3535,9 @@ require(['jquery'], function (jQuery) {
 			}
 		}
 	});
+	
+	report('Loaded jquery.jstree.sakai-edit.js', START_TIME);
+	
 })(jQuery);
 //*/
 });

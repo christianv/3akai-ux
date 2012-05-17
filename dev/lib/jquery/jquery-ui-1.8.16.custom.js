@@ -8,7 +8,7 @@
  * http://docs.jquery.com/UI
  */
 require(['jquery'], function (jQuery) {
-
+var START_TIME = new Date().getTime();
 (function( $, undefined ) {
 
 // prevent duplicate loading
@@ -4050,5 +4050,7 @@ $.extend($.ui.sortable, {
 });
 
 })(jQuery);
+
+report('Loaded jquery UI', START_TIME);
 
 });

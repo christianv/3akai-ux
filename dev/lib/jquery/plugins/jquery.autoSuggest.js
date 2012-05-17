@@ -25,7 +25,7 @@
 // Note: This version of the code is from Chris's repo at https://github.com/croby/jquery-autosuggest
 
 require([ 'jquery' ], function(jQuery) {
-
+var START_TIME = new Date().getTime();
 (function( $ ) {
     var methods = {
 
@@ -527,5 +527,5 @@ require([ 'jquery' ], function(jQuery) {
         }
     };
 })(jQuery);
-
+report('Loaded jquery autosuggest', START_TIME);
 });

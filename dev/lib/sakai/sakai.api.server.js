@@ -34,6 +34,8 @@ define(
     ],
     function($, _, sakai_conf) {
 
+    var START_TIME = new Date().getTime();
+
     var sakaiServerAPI = {
         /**
          * Perform a batch request to the server
@@ -704,6 +706,8 @@ define(
             return ret;
         }
     };
-
+    
+    report('Loaded sakai.api.Server.js', START_TIME);
+    
     return sakaiServerAPI;
 });

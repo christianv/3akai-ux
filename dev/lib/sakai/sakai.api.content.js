@@ -30,6 +30,8 @@ define(
     ],
     function($, sakai_conf, sakai_serv, sakai_groups, sakai_util, sakai_i18n, sakai_l10n, sakai_user, _) {
 
+    var START_TIME = new Date().getTime();
+
     var sakai_content = {
         /**
          * Parses a full profile as received from the loadFullProfile function
@@ -1897,6 +1899,8 @@ define(
 
         }
     };
+    
+    report('Loaded sakai.api.content.js', START_TIME);
     
     return sakai_content;
 });

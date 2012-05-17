@@ -16,6 +16,9 @@
 require(['jquery'], function (jQuery) {
 /*global window, jQuery */
 (function($) {
+    
+    var START_TIME = new Date().getTime();
+    
     // Default configuration properties.
     var defaults = {
         vertical: false,
@@ -1055,6 +1058,8 @@ require(['jquery'], function (jQuery) {
             });
         }
     };
+
+    report('Loaded jquery.jcarousel.sakai-edit.js', START_TIME);
 
 })(jQuery);
 });

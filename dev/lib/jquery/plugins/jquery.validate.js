@@ -12,6 +12,7 @@
  */
 
 require(['jquery'], function (jQuery) {
+    var START_TIME = new Date().getTime();
 (function($) {
 
 $.extend($.fn, {
@@ -1186,5 +1187,7 @@ $.format = $.validator.format;
 			});
 		}
 	});
+	
 })(jQuery);
+    report('Loaded jquery validate', START_TIME);
 });

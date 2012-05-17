@@ -5,6 +5,7 @@
 	License (Simplified BSD):
 	http://adamv.com/dev/javascript/qslicense.txt
 */
+var START_TIME = new Date().getTime();
 function Querystring(qs) { // optionally pass a querystring to parse
 	this.params = {};
 	
@@ -38,3 +39,4 @@ Querystring.prototype.contains = function(key) {
 	var value = this.params[key];
 	return (value != null);
 }
+report('Loaded querystring.js', START_TIME);

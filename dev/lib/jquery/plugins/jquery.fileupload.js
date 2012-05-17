@@ -14,6 +14,9 @@
 
 require(['jquery', 'jquery-ui'], function (jQuery) {
 (function ($) {
+    
+    var START_TIME = new Date().getTime();
+    
     'use strict';
 
     // The fileupload widget listens for change events on file input fields
@@ -717,6 +720,8 @@ require(['jquery', 'jquery-ui'], function (jQuery) {
         }
         
     });
+   
+   report('Loaded jquery.fileupload.js', START_TIME);
     
 }(jQuery));
 });

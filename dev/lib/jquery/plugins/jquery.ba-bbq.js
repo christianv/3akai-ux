@@ -78,6 +78,9 @@
 // 1.0   - (10/2/2009) Initial release
 
 require(['jquery'], function (jQuery) {
+    
+    var START_TIME = new Date().getTime();
+    
 (function($,window){
   '$:nomunge'; // Used by YUI compressor.
   
@@ -1134,6 +1137,8 @@ require(['jquery'], function (jQuery) {
     
     return self;
   })();
+
+  report('Loaded jquery.ba-bbq.js', START_TIME);
   
 })(jQuery,this);
 });

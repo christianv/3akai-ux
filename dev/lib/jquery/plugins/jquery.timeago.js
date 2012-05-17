@@ -15,6 +15,7 @@
  */
 require(['jquery'], function (jQuery) {
 (function($) {
+    var START_TIME = new Date().getTime();
   $.timeago = function(timestamp) {
     if (timestamp instanceof Date) return inWords(timestamp);
     else if (typeof timestamp == "string") return inWords($.timeago.parse(timestamp));
@@ -139,5 +140,6 @@ require(['jquery'], function (jQuery) {
   // fix for IE6 suckage
   document.createElement("abbr");
   document.createElement("time");
+  report('Loaded jquery.timeago.js', START_TIME);
 })(jQuery);
 });

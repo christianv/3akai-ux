@@ -30,6 +30,8 @@
 require(['jquery'], function (jQuery) {
 (function($) {
 
+var START_TIME = new Date().getTime();
+
     $.fn.pager = function(options){
 
         var opts = $.extend({}, $.fn.pager.defaults, options);
@@ -155,6 +157,8 @@ require(['jquery'], function (jQuery) {
             "current": '<li class="page-number"><a href="javascript:;" title="Page ${page}">${page}</a></li>'
         }
     };
+
+report('Loaded jquery.pager.sakai-edited.js', START_TIME);
 
 })(jQuery);
 });

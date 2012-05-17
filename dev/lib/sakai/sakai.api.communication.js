@@ -41,6 +41,8 @@ define(
     ],
     function($, sakai_user, sakai_l10n, sakai_i18n, sakai_util, sakai_server, sakai_conf, _) {
 
+    var START_TIME = new Date().getTime();
+
     var sakaiCommunicationsAPI =  {
         /**
          * Sends a Sakai message to one or more users. If a group id is received, the
@@ -517,6 +519,7 @@ define(
             if (!ignoreCache && sakai_user.data.me.messages.countOverview && $.isFunction(callback)) {
                 callback(true, sakai_user.data.me.messages.countOverview);
             } else {
+                var START_TIME = new Date().getTime();
                 var url = "/~" + sakai_util.safeURL(sakai_user.data.me.user.userid) + "/message.count.json?filters=sakai:messagebox,sakai:read&values=" + box + ",false&groupedby=sakai:category";
                 $.ajax({
                     url: url,
@@ -524,6 +527,7 @@ define(
                     success: function(data){
                         sakai_user.data.me.messages.countOverview = data;
                         if ($.isFunction(callback)) {
+                            report('Loaded unread message count', START_TIME);
                             callback(true, data);
                         }
                     },
@@ -546,6 +550,7 @@ define(
                     callback(true, sakai_user.data.me.messages.unread);
                 }
             } else {
+                var START_TIME = new Date().getTime();
                 var url = "/~" + sakai_util.safeURL(sakai_user.data.me.user.userid) + "/message.count.json?filters=sakai:messagebox,sakai:read&values=" + box + ",false&groupedby=sakai:category";
                 $.ajax({
                     url: url,
@@ -571,6 +576,7 @@ define(
                             sakai_user.data.me.messages.unread = count;
                         }
                         if ($.isFunction(callback)) {
+                            report('Loaded unread message count', START_TIME);
                             callback(true, count);
                         }
                     },
@@ -619,5 +625,8 @@ define(
 
         }
     };
+    
+    report('Loaded sakai.api.communication.js', START_TIME);
+    
     return sakaiCommunicationsAPI;
 });

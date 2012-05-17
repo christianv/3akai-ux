@@ -14,7 +14,7 @@
  * Date: Thu Nov 3 16:18:21 2011 -0400
  */
 (function( window, undefined ) {
-
+var START_TIME = new Date().getTime();
 // Use the correct document accordingly with window argument (sandbox)
 var document = window.document,
 	navigator = window.navigator,
@@ -9291,10 +9291,11 @@ jQuery.each([ "Height", "Width" ], function( i, name ) {
 			return this.css( type, typeof size === "string" ? size : size + "px" );
 		}
 	};
-
+    
 });
 
 
 // Expose jQuery to the global object
+report('Loaded jQuery', START_TIME);
 window.jQuery = window.$ = jQuery;
 })( window );

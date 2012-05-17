@@ -10,6 +10,8 @@
  */
 ;(function($) {
 
+var START_TIME = new Date().getTime();
+
 /*
 	Usage Note:
 	-----------
@@ -960,5 +962,7 @@ function log() {
 		window.opera.postError(msg);
 	}
 };
+
+report('Loaded jquery.form.js', START_TIME);
 
 })(jQuery);
