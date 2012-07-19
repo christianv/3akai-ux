@@ -313,7 +313,7 @@
     </target>
 
     <!-- Target: Release Builds-->
-    <target name="release" depends="init, create_target_folders, copy_optimized, permissions, formatting, unpackMathFonts, optimize, cssembed, hash_files">
+    <target name="release" depends="init, create_target_folders, copy_optimized, permissions, formatting, unpackMathFonts, optimize, cssembed, hash_files, documentation">
         <echo message="Sakai OAE UX Build: Build complete." />
     </target>
 
